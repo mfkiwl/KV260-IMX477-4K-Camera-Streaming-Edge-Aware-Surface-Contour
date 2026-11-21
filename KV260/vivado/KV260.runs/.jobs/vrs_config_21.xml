@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="kv260_video_clk_wiz_0_0_synth_1" LaunchDir="R:/KV260/vivado/KV260.runs/kv260_video_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1" LaunchDir="R:/KV260/vivado/KV260.runs/kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_04f9_phy_0_synth_1"/>
+		<Parent Id="bd_04f9_rx_0_synth_1"/>
+		<Parent Id="bd_04f9_vfb_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_04f9_phy_0_synth_1" LaunchDir="R:/KV260/vivado/KV260.runs/bd_04f9_phy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_04f9_rx_0_synth_1" LaunchDir="R:/KV260/vivado/KV260.runs/bd_04f9_rx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_04f9_vfb_0_0_synth_1" LaunchDir="R:/KV260/vivado/KV260.runs/bd_04f9_vfb_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="R:/KV260/vivado/KV260.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="kv260_video_clk_wiz_0_0_synth_1"/>
+		<Parent Id="kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,1782 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 20 19:20:21 2026
+# Process ID: 52640
+# Current directory: R:/KV260/vivado/KV260.runs/impl_1
+# Command line: vivado.exe -log kv260_video_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kv260_video_wrapper.tcl -notrace
+# Log file: R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper.vdi
+# Journal file: R:/KV260/vivado/KV260.runs/impl_1\vivado.jou
+# Running On: LAPTOP-I3ECBFK4, OS: Windows, CPU Frequency: 2795 MHz, CPU Physical cores: 8, Host memory: 16363 MB
+#-----------------------------------------------------------
+source kv260_video_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'r:/KV260/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1371.840 ; gain = 0.000
+Command: link_design -top kv260_video_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_0/kv260_video_ila_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/kv260_video_mipi_csi2_rx_subsyst_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/kv260_video_mipi_csi2_rx_subsyst_1_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_demosaic_0_0/kv260_video_v_demosaic_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_demosaic_1_0/kv260_video_v_demosaic_1_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_vfp_0_0/kv260_video_vfp_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_gpio_0/kv260_video_axi_gpio_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/axi_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_ila_0/kv260_video_clk_wiz_ila_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_clk_wiz_ctrl_0/kv260_video_rst_clk_wiz_ctrl_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_clk_wiz_ctrl'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_ps8_0_249M_0/kv260_video_rst_ps8_0_249M_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_ps8_0_249M'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_zynq_ultra_ps_e_0_0/kv260_video_zynq_ultra_ps_e_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_xbar_0/kv260_video_xbar_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_m03_regslice_0/kv260_video_m03_regslice_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/m03_couplers/m03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/m09_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_ds_0/kv260_video_auto_ds_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_pc_0/kv260_video_auto_pc_0.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_ds_1/kv260_video_auto_ds_1.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_pc_1/kv260_video_auto_pc_1.dcp' for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_1/kv260_video_ila_0_1.dcp' for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_1_0/kv260_video_ila_1_0.dcp' for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_axi4s_vid_out_0_0/kv260_video_v_axi4s_vid_out_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_tc_0_0/kv260_video_v_tc_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_smc_0/kv260_video_axi_smc_0.dcp' for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.dcp' for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_1'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_04f9_r_sync_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/r_sync'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_04f9_rx_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_04f9_vfb_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/vfb_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_0/bd_c4a8_r_sync_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/r_sync'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_2/bd_c4a8_rx_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/rx'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_4/bd_c4a8_vfb_0_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_0'
+INFO: [Project 1-454] Reading design checkpoint 'r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_1/bd_c4a8_vfb_sync_0.dcp' for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_sync'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1938.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3334 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0 UUID: eb89e04e-17cf-5269-939d-cbc68abf30cd 
+INFO: [Chipscope 16-324] Core: kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila UUID: 42c16364-51e9-5a20-9b5c-fd0f7db61c89 
+INFO: [Chipscope 16-324] Core: kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0 UUID: 83ff1994-b0bd-5c73-a40b-e67af589cbde 
+INFO: [Chipscope 16-324] Core: kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1 UUID: f1637c3e-6a03-58ae-96f9-a5263df64743 
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_04f9_r_sync_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_04f9_r_sync_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_04f9_r_sync_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_04f9_r_sync_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/r_sync/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_04f9_rx_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_04f9_rx_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_04f9_phy_0_hssio_rx.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_04f9_phy_0_rx_support_i/slave_rx.bd_04f9_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_04f9_phy_0_hssio_rx.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy/inst/inst/bd_04f9_phy_0_rx_support_i/slave_rx.bd_04f9_phy_0_rx_hssio_i/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/kv260_video_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/kv260_video_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_0/bd_c4a8_r_sync_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/r_sync/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_0/bd_c4a8_r_sync_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/r_sync/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_0/bd_c4a8_r_sync_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/r_sync/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_0/bd_c4a8_r_sync_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/r_sync/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_1/bd_c4a8_vfb_sync_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_sync/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_1/bd_c4a8_vfb_sync_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_sync/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_1/bd_c4a8_vfb_sync_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_sync/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_1/bd_c4a8_vfb_sync_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_sync/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_2/bd_c4a8_rx_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/rx/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_2/bd_c4a8_rx_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/rx/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/ip_1/bd_c4a8_phy_0_hssio_rx.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst/inst/bd_c4a8_phy_0_rx_support_i/slave_rx.bd_c4a8_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/ip_1/bd_c4a8_phy_0_hssio_rx.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst/inst/bd_c4a8_phy_0_rx_support_i/slave_rx.bd_c4a8_phy_0_rx_hssio_i/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/ip_0/bd_c4a8_phy_0_clock_module_rx.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst/inst/bd_c4a8_phy_0_rx_support_i/slave_rx.bd_c4a8_phy_0_rx_clock_module_support_i/bd_c4a8_phy_0_clock_module_rx_i/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/ip_0/bd_c4a8_phy_0_clock_module_rx.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst/inst/bd_c4a8_phy_0_rx_support_i/slave_rx.bd_c4a8_phy_0_rx_clock_module_support_i/bd_c4a8_phy_0_clock_module_rx_i/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/kv260_video_mipi_csi2_rx_subsyst_1_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/kv260_video_mipi_csi2_rx_subsyst_1_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_gpio_0/kv260_video_axi_gpio_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/axi_gpio/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_gpio_0/kv260_video_axi_gpio_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/axi_gpio/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_gpio_0/kv260_video_axi_gpio_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/axi_gpio/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_gpio_0/kv260_video_axi_gpio_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/axi_gpio/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 3271.508 ; gain = 549.145
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_1_0/kv260_video_clk_wiz_1_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_ila_0/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_ila_0/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_ps8_0_249M_0/kv260_video_rst_ps8_0_249M_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_ps8_0_249M/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_ps8_0_249M_0/kv260_video_rst_ps8_0_249M_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_ps8_0_249M/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_ps8_0_249M_0/kv260_video_rst_ps8_0_249M_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_ps8_0_249M/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_ps8_0_249M_0/kv260_video_rst_ps8_0_249M_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_ps8_0_249M/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_zynq_ultra_ps_e_0_0/kv260_video_zynq_ultra_ps_e_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_zynq_ultra_ps_e_0_0/kv260_video_zynq_ultra_ps_e_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_clk_wiz_ctrl_0/kv260_video_rst_clk_wiz_ctrl_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_clk_wiz_ctrl/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_clk_wiz_ctrl_0/kv260_video_rst_clk_wiz_ctrl_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_clk_wiz_ctrl/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_clk_wiz_ctrl_0/kv260_video_rst_clk_wiz_ctrl_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_clk_wiz_ctrl/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_rst_clk_wiz_ctrl_0/kv260_video_rst_clk_wiz_ctrl_0.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/rst_clk_wiz_ctrl/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_1_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_1_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_smc_0/bd_0/ip/ip_1/bd_da43_psr_aclk_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_smc_0/bd_0/ip/ip_1/bd_da43_psr_aclk_0_board.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_smc_0/bd_0/ip/ip_1/bd_da43_psr_aclk_0.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_smc_0/bd_0/ip/ip_1/bd_da43_psr_aclk_0.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_1/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:64]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:84]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-4' is a duplicate and will not be added again. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:112]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:132]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:156]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:160]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:168]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:172]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:176]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:180]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:184]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:188]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc:220]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_1/U0'
+Parsing XDC File [R:/KV260/constraints/vivado_target.xdc]
+Finished Parsing XDC File [R:/KV260/constraints/vivado_target.xdc]
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+WARNING: [Vivado 12-508] No pins matched '*en_hs_datapath_reg/C'. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0_clocks.xdc:74]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0_clocks.xdc:74]
+WARNING: [Vivado 12-508] No pins matched '*init_done_reg/C'. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0_clocks.xdc:75]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0_clocks.xdc:75]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_04f9_phy_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/phy/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/kv260_video_mipi_csi2_rx_subsyst_0_0_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_0_0/kv260_video_mipi_csi2_rx_subsyst_0_0_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst'
+WARNING: [Vivado 12-508] No pins matched '*en_hs_datapath_reg/C'. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0_clocks.xdc:74]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0_clocks.xdc:74]
+WARNING: [Vivado 12-508] No pins matched '*init_done_reg/C'. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0_clocks.xdc:75]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0_clocks.xdc:75]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/bd_0/ip/ip_3/bd_c4a8_phy_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/phy/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/kv260_video_mipi_csi2_rx_subsyst_1_0_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_mipi_csi2_rx_subsyst_1_0/kv260_video_mipi_csi2_rx_subsyst_1_0_impl.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_demosaic_0_0/kv260_video_v_demosaic_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_demosaic_0_0/kv260_video_v_demosaic_0_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_demosaic_1_0/kv260_video_v_demosaic_1_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_demosaic_1_0/kv260_video_v_demosaic_1_0.xdc] for cell 'kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0_late.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_clk_wiz_0_0/kv260_video_clk_wiz_0_0_late.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_ds_0/kv260_video_auto_ds_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_ds_0/kv260_video_auto_ds_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_ds_1/kv260_video_auto_ds_1_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_ds_1/kv260_video_auto_ds_1_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_m03_regslice_0/kv260_video_m03_regslice_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/m03_couplers/m03_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_m03_regslice_0/kv260_video_m03_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_m03_regslice_0/kv260_video_m03_regslice_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/m03_couplers/m03_regslice/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/m09_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_auto_cc_0/kv260_video_auto_cc_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/m09_couplers/auto_cc/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_axi4s_vid_out_0_0/kv260_video_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_axi4s_vid_out_0_0/kv260_video_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_axi4s_vid_out_0/inst'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_tc_0_0/kv260_video_v_tc_0_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_tc_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_tc_0_0/kv260_video_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_v_tc_0_0/kv260_video_v_tc_0_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_tc_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_0/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_0_0/kv260_video_axi_vdma_0_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_0/U0'
+Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_1/U0'
+Finished Parsing XDC File [r:/KV260/vivado/KV260.gen/sources_1/bd/kv260_video/ip/kv260_video_axi_vdma_1_0/kv260_video_axi_vdma_1_0_clocks.xdc] for cell 'kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_1/U0'
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/xpm_array_single_01 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[44].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/ecc_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/img_info_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[0].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[9].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[10].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[11].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[12].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[13].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[14].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[15].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[16].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[17].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[18].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[1].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[19].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[20].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[21].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[22].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[23].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[24].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[25].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[26].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[27].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[28].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[2].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[29].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[30].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[31].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[32].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[33].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[34].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[35].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[36].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[37].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[38].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[3].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[39].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[40].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[41].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[42].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[43].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[4].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[5].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[6].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[7].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[8].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/xpm_single_05 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/xpm_single_02 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/xpm_single_vfb_01 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-1714] 548 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 4 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3279.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 582 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 384 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 55 instances
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 8 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 125 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+55 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:49 . Memory (MB): peak = 3279.004 ; gain = 1907.164
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3279.004 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a1b0f3b9
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 3279.004 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 1388f3217d986f86.
+get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 3644.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.336 . Memory (MB): peak = 3644.566 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 96836634
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 3644.566 ; gain = 44.809
+
+Phase 2 Retarget
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/ila_0/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[11]_i_4, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/isr_i[31]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0/U0/rx/inst/AXI_LITE.reg_inf/isr_i[55]_i_4, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/rx/inst/AXI_LITE.reg_inf/isr_i[31]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/rx/inst/AXI_LITE.reg_inf/isr_i[55]_i_4, which resulted in an inversion of 27 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_0/inst/VFB_MAX.async_asym/fifo_async_asym/xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_0/inst/VFB_MAX.async_asym/fifo_async_asym/xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_0/inst/VFB_MAX.async_asymsb/fifo_async_asym/xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_1/U0/vfb_0/inst/VFB_MAX.async_asymsb/fifo_async_asym/xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/grp_DebayerRandBatG_Pipeline_VITIS_LOOP_836_2_fu_156/icmp_ln836_reg_1922[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/grp_DebayerRandBatG_Pipeline_VITIS_LOOP_836_2_fu_156/flow_control_loop_pipe_sequential_init_U/xpm_memory_sdpram_inst_i_17__1, which resulted in an inversion of 34 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/grp_DebayerRatBorBatR_Pipeline_VITIS_LOOP_588_2_fu_184/icmp_ln588_reg_2190[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/grp_DebayerRatBorBatR_Pipeline_VITIS_LOOP_588_2_fu_184/flow_control_loop_pipe_sequential_init_U/xpm_memory_sdpram_inst_i_17, which resulted in an inversion of 39 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/ZipperRemoval_U0/grp_ZipperRemoval_Pipeline_VITIS_LOOP_1056_2_fu_100/icmp_ln1056_reg_696[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/ZipperRemoval_U0/grp_ZipperRemoval_Pipeline_VITIS_LOOP_1056_2_fu_100/flow_control_loop_pipe_sequential_init_U/x_fu_106[16]_i_4, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/Debayer_U0/DebayerRandBatG_U0/grp_DebayerRandBatG_Pipeline_VITIS_LOOP_836_2_fu_156/icmp_ln836_reg_1918[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/Debayer_U0/DebayerRandBatG_U0/grp_DebayerRandBatG_Pipeline_VITIS_LOOP_836_2_fu_156/flow_control_loop_pipe_sequential_init_U/xpm_memory_sdpram_inst_i_16__1, which resulted in an inversion of 38 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/Debayer_U0/DebayerRatBorBatR_U0/grp_DebayerRatBorBatR_Pipeline_VITIS_LOOP_588_2_fu_184/icmp_ln588_reg_2190[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/Debayer_U0/DebayerRatBorBatR_U0/grp_DebayerRatBorBatR_Pipeline_VITIS_LOOP_588_2_fu_184/flow_control_loop_pipe_sequential_init_U/xpm_memory_sdpram_inst_i_16, which resulted in an inversion of 39 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/ZipperRemoval_U0/grp_ZipperRemoval_Pipeline_VITIS_LOOP_1056_2_fu_100/icmp_ln1056_reg_696[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/ZipperRemoval_U0/grp_ZipperRemoval_Pipeline_VITIS_LOOP_1056_2_fu_100/flow_control_loop_pipe_sequential_init_U/x_fu_106[16]_i_4, which resulted in an inversion of 23 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_ila/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[12]_i_4, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/current_word_1[3]_i_1 into driver instance kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/s_axi_rvalid_INST_0_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/first_mi_word_i_2 into driver instance kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/s_axi_bvalid_INST_0_i_1, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/current_word_1[3]_i_1 into driver instance kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/s_axi_rvalid_INST_0_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/first_mi_word_i_2 into driver instance kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/s_axi_bvalid_INST_0_i_1, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d[2]_i_2 into driver instance kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/splitter_aw/m_ready_d[2]_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_0/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[12]_i_3, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1 into driver instance kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/xsdb_memory_read_inst/read_addr[12]_i_3, which resulted in an inversion of 15 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-138] Pushed 137 inverter(s) to 9000 load pin(s).
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_273_4_fu_210/mac_muladd_14s_10ns_24s_25_4_1_U61/kv260_video_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_3_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_273_4_fu_210/mac_muladd_14s_10ns_24s_25_4_1_U62/kv260_video_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_3_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_273_4_fu_210/mac_muladd_14s_10ns_24s_25_4_1_U61/kv260_video_v_demosaic_1_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_3_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_1/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_273_4_fu_210/mac_muladd_14s_10ns_24s_25_4_1_U62/kv260_video_v_demosaic_1_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_3_U/p_reg_reg
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/ila_1/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1224d726e
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 3644.566 ; gain = 44.809
+INFO: [Opt 31-389] Phase Retarget created 337 cells and removed 2131 cells
+INFO: [Opt 31-1021] In phase Retarget, 585 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 171c486fc
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:01:04 . Memory (MB): peak = 3644.566 ; gain = 44.809
+INFO: [Opt 31-389] Phase Constant propagation created 19 cells and removed 880 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 901 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: bc177f37
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:21 . Memory (MB): peak = 3644.566 ; gain = 44.809
+INFO: [Opt 31-389] Phase Sweep created 3 cells and removed 16643 cells
+INFO: [Opt 31-1021] In phase Sweep, 3277 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 5 BUFG optimization | Checksum: e8d81012
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:24 . Memory (MB): peak = 3644.566 ; gain = 44.809
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: e8d81012
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:01:25 . Memory (MB): peak = 3644.566 ; gain = 44.809
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: bc605899
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:26 . Memory (MB): peak = 3644.566 ; gain = 44.809
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 325 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             337  |            2131  |                                            585  |
+|  Constant propagation         |              19  |             880  |                                            901  |
+|  Sweep                        |               3  |           16643  |                                           3277  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            325  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.469 . Memory (MB): peak = 3644.566 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14d55f5a0
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:32 . Memory (MB): peak = 3644.566 ; gain = 44.809
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 45 BRAM(s) out of a total of 96 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 27 WE to EN ports
+Number of BRAM Ports augmented: 77 newly gated: 27 Total Ports: 192
+Ending PowerOpt Patch Enables Task | Checksum: 1e0dd2055
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 4507.484 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1e0dd2055
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:09 . Memory (MB): peak = 4507.484 ; gain = 862.918
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 13c8395fd
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 4507.484 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 13c8395fd
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 4507.484 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 4507.484 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 13c8395fd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 4507.484 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+124 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:04:09 ; elapsed = 00:03:32 . Memory (MB): peak = 4507.484 ; gain = 1228.480
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.222 . Memory (MB): peak = 4507.484 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:42 ; elapsed = 00:00:28 . Memory (MB): peak = 4507.484 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file kv260_video_wrapper_drc_opted.rpt -pb kv260_video_wrapper_drc_opted.pb -rpx kv260_video_wrapper_drc_opted.rpx
+Command: report_drc -file kv260_video_wrapper_drc_opted.rpt -pb kv260_video_wrapper_drc_opted.pb -rpx kv260_video_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:06 ; elapsed = 00:00:50 . Memory (MB): peak = 4653.098 ; gain = 145.613
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 4653.098 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 65f84eab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 4653.098 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.066 . Memory (MB): peak = 4653.098 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12153c0e1
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 4653.098 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 19dbdb98a
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:59 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19dbdb98a
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:00 . Memory (MB): peak = 4767.574 ; gain = 114.477
+Phase 1 Placer Initialization | Checksum: 19dbdb98a
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:01 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 14528f481
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:02:02 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 22dcefd49
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:07 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 1e6004086
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:07 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 1e6004086
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1dc3b9639
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:10 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1e9ffd38f
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:18 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1e9ffd38f
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:18 . Memory (MB): peak = 4767.574 ; gain = 114.477
+Phase 2.1.1 Partition Driven Placement | Checksum: 1e9ffd38f
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:18 . Memory (MB): peak = 4767.574 ; gain = 114.477
+Phase 2.1 Floorplanning | Checksum: 1e9ffd38f
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:19 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1e9ffd38f
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:19 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 20a3effce
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:19 . Memory (MB): peak = 4767.574 ; gain = 114.477
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 459 LUTNM shape to break, 2248 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 260, two critical 199, total 459, new lutff created 93
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 1363 nets or LUTs. Breaked 459 LUTs, combined 904 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 23 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 15 nets.  Re-placed 119 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 15 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 119 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.362 . Memory (MB): peak = 4836.578 ; gain = 0.000
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-76] Pass 1. Identified 2 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/TO_PS/rst_ps8_0_249M/U0/peripheral_aresetn[0]. Replicated 22 times.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin kv260_video_i/PS_VIDEO/TO_PS/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/VIDEO_PIPELINE/v_tc_0/U0/U_VIDEO_CTRL/resetn_out. Replicated 8 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 30 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 30 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.807 . Memory (MB): peak = 4836.578 ; gain = 0.000
+INFO: [Physopt 32-457] Pass 1. Identified 9 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[2][b]1. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[2][r]1. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[1][r]1. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[3][r]1. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/means_reg[2][g]1. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[2][g]1. 8 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[0][r]1. 12 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[2][r]1. No change.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[0][r]1. 8 registers were pushed out.
+INFO: [Physopt 32-457] Pass 2. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[2][r]1. No change.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 8 nets or cells. Created 68 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.359 . Memory (MB): peak = 4836.578 ; gain = 0.000
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 12 nets or cells. Created 12 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.321 . Memory (MB): peak = 4836.578 ; gain = 0.000
+INFO: [Physopt 32-527] Pass 1: Identified 1 candidate cell for BRAM register optimization
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/V_DMA/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4. 3 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 3 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.159 . Memory (MB): peak = 4836.578 ; gain = 0.000
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_1_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_2_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_3_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_V_2_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_V_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_V_1_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_V_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_1_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_2_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_3_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_V_U/kv260_video_v_demosaic_0_0_DebayerG_linebuf_yuv_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_V_2_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_V_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_V_1_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-864] URAM cell kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_V_U/kv260_video_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_V_XPM_MEMORY_URAM_1R1W_ram_U/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_1 has active reset signal. Do not use cascaded pipeline register for timing optimization.
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 4836.578 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          459  |            904  |                  1363  |           0  |           1  |  00:00:04  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                    15  |           3  |           1  |  00:00:06  |
+|  Very High Fanout                                 |           30  |              0  |                     2  |           0  |           1  |  00:00:03  |
+|  DSP Register                                     |           68  |              0  |                     8  |           0  |           1  |  00:00:05  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |           12  |              0  |                    12  |           0  |           1  |  00:00:01  |
+|  BRAM Register                                    |            3  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          572  |            904  |                  1401  |           3  |          10  |  00:00:19  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 11b75bfe2
+
+Time (s): cpu = 00:07:22 ; elapsed = 00:05:32 . Memory (MB): peak = 4836.578 ; gain = 183.480
+Phase 2.4 Global Placement Core | Checksum: 13c392089
+
+Time (s): cpu = 00:07:36 ; elapsed = 00:05:42 . Memory (MB): peak = 4836.578 ; gain = 183.480
+Phase 2 Global Placement | Checksum: 13c392089
+
+Time (s): cpu = 00:07:36 ; elapsed = 00:05:43 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1cfc9fa9e
+
+Time (s): cpu = 00:07:51 ; elapsed = 00:05:53 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1162ab5c4
+
+Time (s): cpu = 00:08:14 ; elapsed = 00:06:11 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 9b45e312
+
+Time (s): cpu = 00:09:09 ; elapsed = 00:07:21 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 115eb6ff7
+
+Time (s): cpu = 00:09:12 ; elapsed = 00:07:26 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 10470bd8e
+
+Time (s): cpu = 00:09:34 ; elapsed = 00:08:08 . Memory (MB): peak = 4836.578 ; gain = 183.480
+Phase 3.3.3 Slice Area Swap | Checksum: 10470bd8e
+
+Time (s): cpu = 00:09:35 ; elapsed = 00:08:09 . Memory (MB): peak = 4836.578 ; gain = 183.480
+Phase 3.3 Small Shape DP | Checksum: 18f65eff5
+
+Time (s): cpu = 00:10:50 ; elapsed = 00:09:04 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 16c93e9e2
+
+Time (s): cpu = 00:11:05 ; elapsed = 00:09:22 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 139224852
+
+Time (s): cpu = 00:11:07 ; elapsed = 00:09:24 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: bfdc35cf
+
+Time (s): cpu = 00:13:40 ; elapsed = 00:11:32 . Memory (MB): peak = 4836.578 ; gain = 183.480
+Phase 3 Detail Placement | Checksum: bfdc35cf
+
+Time (s): cpu = 00:13:41 ; elapsed = 00:11:33 . Memory (MB): peak = 4836.578 ; gain = 183.480
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 8f5c0c0e
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.424 | TNS=-67.207 |
+Phase 1 Physical Synthesis Initialization | Checksum: d87505c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 4874.457 ; gain = 0.000
+INFO: [Place 46-34] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/edge_r, BUFG insertion was skipped due to possible timing degradation.
+INFO: [Place 46-34] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/edge_r, BUFG insertion was skipped due to possible timing degradation.
+INFO: [Place 46-34] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,0], BUFG insertion was skipped due to possible timing degradation.
+INFO: [Place 46-34] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[0,0], BUFG insertion was skipped due to possible timing degradation.
+INFO: [Place 46-35] Processed net kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_0/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg_0, inserted BUFG to drive 1087 loads.
+INFO: [Place 46-56] BUFG insertion identified 5 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 4, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: c892fff4
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 4874.457 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 4854f4cf
+
+Time (s): cpu = 00:15:49 ; elapsed = 00:13:07 . Memory (MB): peak = 4874.457 ; gain = 221.359
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.130. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 91e92198
+
+Time (s): cpu = 00:19:05 ; elapsed = 00:16:39 . Memory (MB): peak = 4874.457 ; gain = 221.359
+
+Time (s): cpu = 00:19:05 ; elapsed = 00:16:39 . Memory (MB): peak = 4874.457 ; gain = 221.359
+Phase 4.1 Post Commit Optimization | Checksum: 91e92198
+
+Time (s): cpu = 00:19:06 ; elapsed = 00:16:40 . Memory (MB): peak = 4874.457 ; gain = 221.359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 4874.457 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 154ef8679
+
+Time (s): cpu = 00:19:40 ; elapsed = 00:17:11 . Memory (MB): peak = 4874.457 ; gain = 221.359
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                2x2|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                2x2|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                2x2|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 154ef8679
+
+Time (s): cpu = 00:19:42 ; elapsed = 00:17:12 . Memory (MB): peak = 4874.457 ; gain = 221.359
+Phase 4.3 Placer Reporting | Checksum: 154ef8679
+
+Time (s): cpu = 00:19:43 ; elapsed = 00:17:13 . Memory (MB): peak = 4874.457 ; gain = 221.359
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 4874.457 ; gain = 0.000
+
+Time (s): cpu = 00:19:43 ; elapsed = 00:17:13 . Memory (MB): peak = 4874.457 ; gain = 221.359
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e60bf939
+
+Time (s): cpu = 00:19:44 ; elapsed = 00:17:14 . Memory (MB): peak = 4874.457 ; gain = 221.359
+Ending Placer Task | Checksum: 1c140dad5
+
+Time (s): cpu = 00:19:45 ; elapsed = 00:17:15 . Memory (MB): peak = 4874.457 ; gain = 221.359
+INFO: [Common 17-83] Releasing license: Implementation
+202 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:19:56 ; elapsed = 00:17:22 . Memory (MB): peak = 4874.457 ; gain = 221.359
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 4874.457 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 4874.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:02 ; elapsed = 00:00:44 . Memory (MB): peak = 4874.457 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file kv260_video_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 4874.457 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file kv260_video_wrapper_utilization_placed.rpt -pb kv260_video_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file kv260_video_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.465 . Memory (MB): peak = 4874.457 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 70.00s |  WALL: 41.86s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 4874.457 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-3.768 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1d4ad391f
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 4897.859 ; gain = 23.402
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-3.768 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-457] Pass 1. Identified 2 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[2][r]1. 12 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/means_reg[3][r]1. 12 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 2 nets or cells. Created 24 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-3.768 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.177 . Memory (MB): peak = 4897.859 ; gain = 0.000
+Phase 2 DSP Register Optimization | Checksum: 166bff38e
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:34 . Memory (MB): peak = 4897.859 ; gain = 23.402
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-3.768 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[139]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_402. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][19]_i_1__1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][19]_i_1__1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][19]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.100 | TNS=-3.997 |
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][19]_i_1__1_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][19]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.083 | TNS=-3.573 |
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[235].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[1,0][19]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[235]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.078 | TNS=-3.490 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[138]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_403. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][18]_i_1__1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][18]_i_1__1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][18]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.073 | TNS=-3.412 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[381]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_400. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 62 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][21]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.057 | TNS=-3.271 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[261]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][21]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][21]_i_1__1_n_0. Critical path length was reduced through logic transformation on cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][21]_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[21]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.051 | TNS=-3.175 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[255]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_406. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 45 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][15]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.048 | TNS=-2.986 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][21]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[21]_i_1__1_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[21]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.045 | TNS=-2.885 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[137]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_404. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][17]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][17]_i_1__1_n_0. Critical path length was reduced through logic transformation on cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][17]_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[17]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.038 | TNS=-2.782 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[254]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_407. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 48 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][14]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.034 | TNS=-2.750 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[6].dout[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/active_width_reg_n_0_[3].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/active_width_reg[3]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/active_width_reg_n_0_[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.032 | TNS=-2.724 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[241]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_420. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][1]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][1]_i_1__1_n_0. Critical path length was reduced through logic transformation on cell kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][1]_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[1]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.031 | TNS=-2.584 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[240]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_421. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 52 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][0]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.031 | TNS=-2.531 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/win_taps_flat[151]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[439]_i_1__0_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[439]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.030 | TNS=-2.425 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[2,3][7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[295]_i_1__0_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[295]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.030 | TNS=-2.251 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[2,11][5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[293]_i_1__0_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[293]_i_1__0
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[293]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.030 | TNS=-2.221 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[2,13][3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[291]_i_1__0_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[291]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.030 | TNS=-2.151 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[1,10][18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[0].dout[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[450]_i_1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[450]_i_1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[450]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.029 | TNS=-2.121 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[363]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_418. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][3]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[3]_i_1__1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[3]_i_1__1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[3]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.029 | TNS=-2.152 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[3,5][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[145]_i_1__0_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[145]_i_1__0
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[145]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.029 | TNS=-2.121 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[1,1][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[0]_i_1__0_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[0]_i_1__0
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[0]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.028 | TNS=-2.044 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[136]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_405. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[1,0][16]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[16]_i_1__1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[16]_i_1__1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[16]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.028 | TNS=-1.940 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[2,15][7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[3].dout[55]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[295]_i_1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[295]_i_1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[295]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.028 | TNS=-1.891 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[1,17][10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[0].dout[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 50 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[442]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.027 | TNS=-1.805 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[0,14][2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,2][2]_i_2__0_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,2][2]_i_2__0
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,2][2]_i_2__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.027 | TNS=-1.665 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[53]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/banks[0].ram_reg_uram_0_n_416. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/data0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/write_data_q[5]_i_1__2_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/write_data_q[5]_i_1__2
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/write_data_q[5]_i_1__2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.026 | TNS=-1.629 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[3]_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,12][3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.026 | TNS=-1.629 |
+Phase 3 Critical Path Optimization | Checksum: 217c0c8a2
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:09 . Memory (MB): peak = 4905.141 ; gain = 30.684
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.026 | TNS=-1.629 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[363]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_418. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 41 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][3]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.026 | TNS=-1.603 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[3,8][14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_407. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][14]_i_1__1_n_0. Net driver kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][14]_i_1__1 was replaced.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[3,0][14]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.025 | TNS=-1.550 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[2,8][20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_401. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][20]_i_1__1_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][20]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.025 | TNS=-1.499 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[0,19][5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,2][5]_i_2__0_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,2][5]_i_2__0
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps[0,2][5]_i_2__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.025 | TNS=-1.402 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[0,20][15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[0].dout[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps[0,2][15]_i_2_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps[0,2][15]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.025 | TNS=-1.330 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[49]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/banks[0].ram_reg_uram_0_n_420. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/data0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/write_data_q[1]_i_1__2_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/write_data_q[1]_i_1__2
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/write_data_q[1]_i_1__2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.024 | TNS=-1.317 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[0,1][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_421. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[0]_i_1__1_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/write_data_q[0]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.024 | TNS=-1.255 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[254]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][14]_i_1__1_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][14]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-1.232 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[2,10][17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/banks[0].ram_reg_uram_0_n_404. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 42 pins.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps[2,0][17]_i_1__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-1.210 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[1,_n_0_0][7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[7]_i_1__0_n_0. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[7]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-1.172 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/blend_mean_reg[r][6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/s3_best_score[1].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/s3_best_score_reg[1]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/s3_best_score[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-1.166 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[0,15][11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[0].dout[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps[0,2][11]_i_2_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps[0,2][11]_i_2
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps[0,2][11]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-1.002 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[1,7][7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[0].dout[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[439]_i_1_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[439]_i_1
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[439]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.022 | TNS=-0.968 |
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/CTRL_s_axi_U/Q[3].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/CTRL_s_axi_U/int_width_reg[3]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/v_demosaic_0/inst/CTRL_s_axi_U/Q[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.022 | TNS=-0.946 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/taps_reg[1,1][14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/banks[0].dout[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[14]_i_1__0_n_0.  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[14]_i_1__0
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/write_data_q[14]_i_1__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.022 | TNS=-0.924 |
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q_reg_n_0_[309].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q_reg[309]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q_reg_n_0_[309]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.022 | TNS=-0.902 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[71]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/banks[0].ram_reg_uram_0_n_398. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/data0[23].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/taps[0,0][23]_i_2__2
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/data0[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.021 | TNS=-0.880 |
+INFO: [Physopt 32-702] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[6].dout[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/active_width_reg_n_0_[12].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/active_width_reg[12]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/active_width_reg_n_0_[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.021 | TNS=-0.854 |
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/y_req_reg[10].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/y_req_reg[10]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/y_req_reg[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.021 | TNS=-0.832 |
+INFO: [Physopt 32-663] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/y_req_reg[11].  Re-placed instance kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/y_req_reg[11]
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/finish_pixel/u_win/y_req_reg[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.021 | TNS=-0.811 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.021 | TNS=-0.811 |
+Phase 4 Critical Path Optimization | Checksum: 22d105c33
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:22 . Memory (MB): peak = 4905.141 ; gain = 30.684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.317 . Memory (MB): peak = 4905.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 4905.141 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.021 | TNS=-0.811 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |           24  |              0  |                     2  |           0  |           1  |  00:00:08  |
+|  Critical Path  |          0.104  |          2.957  |           15  |              0  |                    46  |           0  |           2  |  00:00:48  |
+|  Total          |          0.104  |          2.957  |           39  |              0  |                    48  |           0  |           3  |  00:00:56  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 4905.141 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 2fb1755e4
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:25 . Memory (MB): peak = 4905.141 ; gain = 30.684
+INFO: [Common 17-83] Releasing license: Implementation
+443 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:03:05 ; elapsed = 00:02:08 . Memory (MB): peak = 4905.141 ; gain = 30.684
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 4905.141 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 4905.141 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:49 ; elapsed = 00:00:32 . Memory (MB): peak = 4905.141 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 93d47bee ConstDB: 0 ShapeSum: fcec5315 RouteDB: 7c4d6562
+Nodegraph reading from file.  Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4939.121 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 9a50d255 NumContArr: ab819726 Constraints: 2995b708 Timing: 0
+Phase 1 Build RT Design | Checksum: 16f682083
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:54 . Memory (MB): peak = 5002.129 ; gain = 63.008
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 16f682083
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:55 . Memory (MB): peak = 5006.125 ; gain = 67.004
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 16f682083
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:56 . Memory (MB): peak = 5006.125 ; gain = 67.004
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1c97829d3
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:03 . Memory (MB): peak = 5067.395 ; gain = 128.273
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1651864f5
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:31 . Memory (MB): peak = 5067.395 ; gain = 128.273
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.034  | TNS=0.000  | WHS=-0.104 | THS=-294.713|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1374e69e6
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:02:40 . Memory (MB): peak = 5240.840 ; gain = 301.719
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.034  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 10f3c239e
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:02:42 . Memory (MB): peak = 5240.840 ; gain = 301.719
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00132618 %
+  Global Horizontal Routing Utilization  = 0.000896768 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 98742
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 85643
+  Number of Partially Routed Nets     = 13099
+  Number of Node Overlaps             = 1
+
+Phase 2 Router Initialization | Checksum: 1905b1b65
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:45 . Memory (MB): peak = 5242.332 ; gain = 303.211
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1905b1b65
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:45 . Memory (MB): peak = 5242.332 ; gain = 303.211
+Phase 3 Initial Routing | Checksum: 27e60442f
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:28 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 19229
+ Number of Nodes with overlaps = 1684
+ Number of Nodes with overlaps = 259
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.329 | TNS=-27.047| WHS=-0.067 | THS=-1.494 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 209deb21c
+
+Time (s): cpu = 00:11:02 ; elapsed = 00:07:26 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 273
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.174 | TNS=-7.409 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2ca7960ac
+
+Time (s): cpu = 00:12:24 ; elapsed = 00:08:40 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 958
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.150 | TNS=-2.901 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 2e2a8c281
+
+Time (s): cpu = 00:13:54 ; elapsed = 00:10:05 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 371
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.068 | TNS=-0.558 | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 1ed9d9508
+
+Time (s): cpu = 00:15:00 ; elapsed = 00:11:08 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 4.5 Global Iteration 4
+ Number of Nodes with overlaps = 865
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.069 | TNS=-0.650 | WHS=N/A    | THS=N/A    |
+
+Phase 4.5 Global Iteration 4 | Checksum: 2bae3ed47
+
+Time (s): cpu = 00:16:29 ; elapsed = 00:12:33 . Memory (MB): peak = 5287.547 ; gain = 348.426
+Phase 4 Rip-up And Reroute | Checksum: 2bae3ed47
+
+Time (s): cpu = 00:16:29 ; elapsed = 00:12:33 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1e2edcd12
+
+Time (s): cpu = 00:17:10 ; elapsed = 00:13:00 . Memory (MB): peak = 5287.547 ; gain = 348.426
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.068 | TNS=-0.558 | WHS=0.010  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 8b9faa8a
+
+Time (s): cpu = 00:17:15 ; elapsed = 00:13:04 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 8b9faa8a
+
+Time (s): cpu = 00:17:16 ; elapsed = 00:13:04 . Memory (MB): peak = 5287.547 ; gain = 348.426
+Phase 5 Delay and Skew Optimization | Checksum: 8b9faa8a
+
+Time (s): cpu = 00:17:16 ; elapsed = 00:13:05 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 94b854e7
+
+Time (s): cpu = 00:17:51 ; elapsed = 00:13:27 . Memory (MB): peak = 5287.547 ; gain = 348.426
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.056 | TNS=-0.496 | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: e7d9e13f
+
+Time (s): cpu = 00:17:52 ; elapsed = 00:13:28 . Memory (MB): peak = 5287.547 ; gain = 348.426
+Phase 6 Post Hold Fix | Checksum: e7d9e13f
+
+Time (s): cpu = 00:17:52 ; elapsed = 00:13:29 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.6004 %
+  Global Horizontal Routing Utilization  = 12.2016 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 68.5446%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 72.5118%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 74.0385%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 76.9231%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: a7edc356
+
+Time (s): cpu = 00:17:54 ; elapsed = 00:13:30 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: a7edc356
+
+Time (s): cpu = 00:17:55 ; elapsed = 00:13:31 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: a7edc356
+
+Time (s): cpu = 00:18:11 ; elapsed = 00:13:47 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: a7edc356
+
+Time (s): cpu = 00:18:12 ; elapsed = 00:13:48 . Memory (MB): peak = 5287.547 ; gain = 348.426
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.056 | TNS=-0.496 | WHS=0.010  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: a7edc356
+
+Time (s): cpu = 00:18:28 ; elapsed = 00:13:58 . Memory (MB): peak = 5287.547 ; gain = 348.426
+Time taken to check if laguna hold fix is required (in secs): 0
+
+Phase 12 Physical Synthesis in Router
+
+Phase 12.1 Physical Synthesis Initialization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.056 | TNS=-0.431 | WHS=0.010 | THS=0.000 |
+Phase 12.1 Physical Synthesis Initialization | Checksum: a7edc356
+
+Time (s): cpu = 00:19:52 ; elapsed = 00:14:47 . Memory (MB): peak = 5310.656 ; gain = 371.535
+
+Phase 12.2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.056 | TNS=-0.431 | WHS=0.010 | THS=0.000 |
+INFO: [Physopt 32-952] Improved path group WNS = -0.052. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[301].
+INFO: [Physopt 32-952] Improved path group WNS = -0.046. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[181].
+INFO: [Physopt 32-952] Improved path group WNS = -0.045. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[1,2][2].
+INFO: [Physopt 32-952] Improved path group WNS = -0.035. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[2,10][17].
+INFO: [Physopt 32-952] Improved path group WNS = -0.032. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[103].
+INFO: [Physopt 32-952] Improved path group WNS = -0.016. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[122].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[4,10][9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/banks[0].dout[9].
+INFO: [Physopt 32-952] Improved path group WNS = -0.015. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/write_data_q[9]_i_1_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.008. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[2].surfaces/u_win/taps_reg[4,19][9].
+INFO: [Physopt 32-952] Improved path group WNS = -0.004. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/taps_reg[1,2][4].
+INFO: [Physopt 32-952] Improved path group WNS = -0.002. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/u_win/m_window_data[409].
+INFO: [Physopt 32-952] Improved path group WNS = -0.002. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[97].
+INFO: [Physopt 32-952] Improved path group WNS = -0.001. Path group: clk_out2_kv260_video_clk_wiz_1_0. Processed net: kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[1].surfaces/blend_mean_reg[r][6].
+INFO: [Physopt 32-735] Processed net kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/surface_contour/core/gen_surfaces[0].surfaces/u_win/m_window_data[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.000 | TNS=0.000 | WHS=0.010 | THS=0.000 |
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.000 | TNS=0.000 | WHS=0.010 | THS=0.000 |
+Phase 12.2 Critical Path Optimization | Checksum: 1466fa84f
+
+Time (s): cpu = 00:20:15 ; elapsed = 00:15:02 . Memory (MB): peak = 5339.582 ; gain = 400.461
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 5339.582 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=0.000 | TNS=0.000 | WHS=0.010 | THS=0.000 |
+Phase 12 Physical Synthesis in Router | Checksum: 1a0d04b65
+
+Time (s): cpu = 00:20:18 ; elapsed = 00:15:05 . Memory (MB): peak = 5339.582 ; gain = 400.461
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:20:18 ; elapsed = 00:15:05 . Memory (MB): peak = 5339.582 ; gain = 400.461
+INFO: [Common 17-83] Releasing license: Implementation
+485 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:21:21 ; elapsed = 00:15:48 . Memory (MB): peak = 5339.582 ; gain = 434.441
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 5339.582 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 5339.582 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:01 ; elapsed = 00:00:44 . Memory (MB): peak = 5339.582 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file kv260_video_wrapper_drc_routed.rpt -pb kv260_video_wrapper_drc_routed.pb -rpx kv260_video_wrapper_drc_routed.rpx
+Command: report_drc -file kv260_video_wrapper_drc_routed.rpt -pb kv260_video_wrapper_drc_routed.pb -rpx kv260_video_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:52 ; elapsed = 00:00:29 . Memory (MB): peak = 5378.184 ; gain = 38.602
+INFO: [runtcl-4] Executing : report_methodology -file kv260_video_wrapper_methodology_drc_routed.rpt -pb kv260_video_wrapper_methodology_drc_routed.pb -rpx kv260_video_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file kv260_video_wrapper_methodology_drc_routed.rpt -pb kv260_video_wrapper_methodology_drc_routed.pb -rpx kv260_video_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file R:/KV260/vivado/KV260.runs/impl_1/kv260_video_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:20 ; elapsed = 00:00:47 . Memory (MB): peak = 5378.184 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file kv260_video_wrapper_power_routed.rpt -pb kv260_video_wrapper_power_summary_routed.pb -rpx kv260_video_wrapper_power_routed.rpx
+Command: report_power -file kv260_video_wrapper_power_routed.rpt -pb kv260_video_wrapper_power_summary_routed.pb -rpx kv260_video_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+497 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:31 ; elapsed = 00:00:59 . Memory (MB): peak = 5407.715 ; gain = 29.531
+INFO: [runtcl-4] Executing : report_route_status -file kv260_video_wrapper_route_status.rpt -pb kv260_video_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file kv260_video_wrapper_timing_summary_routed.rpt -pb kv260_video_wrapper_timing_summary_routed.pb -rpx kv260_video_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 5450.344 ; gain = 42.629
+INFO: [runtcl-4] Executing : report_incremental_reuse -file kv260_video_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file kv260_video_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 5459.457 ; gain = 9.113
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file kv260_video_wrapper_bus_skew_routed.rpt -pb kv260_video_wrapper_bus_skew_routed.pb -rpx kv260_video_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 20 20:07:33 2026...

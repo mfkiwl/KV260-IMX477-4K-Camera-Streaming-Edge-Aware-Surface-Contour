@@ -1,0 +1,2740 @@
+!SESSION 2026-11-20 10:48:34.574 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file R:\KV260\vitis\.metadata\.bak_1.log
+Created Time: 2026-11-20 18:50:54.006
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.007
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_2 C_ENABLE_PROFILE], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.011
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_2 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.012
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_2 C_ENABLE_ADVANCED], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.016
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_2 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.017
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_2 C_NUM_OF_COUNTERS], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.020
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_2 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.021
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.026
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.027
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_S_AXI_BASEADDR], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.030
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_S_AXI_BASEADDR], Result: [null, 0xFD490000]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.031
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_ENABLE_PROFILE], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.034
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.035
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_ENABLE_ADVANCED], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.038
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.039
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_NUM_OF_COUNTERS], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.042
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa psu_apm_5 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.043
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa PS_VIDEO_TO_PS_zynq_ultra_ps_e_0 PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.053
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa PS_VIDEO_TO_PS_zynq_ultra_ps_e_0 PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Result: [null, 249.997498]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:54.055
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.281
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.316
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.347
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.349
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.351
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.352
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.353
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 18:50:56.354
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:56.364
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:56.368
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:56.815
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:56.823
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.091
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.092
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.111
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.139
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.147
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.148
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.168
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.284
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.292
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.310
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.312
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.319
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.320
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.344
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.347
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.361
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.362
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.389
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.391
+!MESSAGE XSCT Command: [version -server], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.396
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.397
+!MESSAGE XSCT Command: [version], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.398
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.0
+SW Build 303 on 2022-04-13-17:42:48
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.401
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.410
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.412
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.437
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.438
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.461
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level == 0}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.463
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.468
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.470
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.486
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.487
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.747
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:57.749
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:58.435
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:50:58.436
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.452
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.495
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.542
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.543
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.562
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.579
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL14FBTFCXMA-04724093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.835
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL14FBTFCXMA-04724093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:01.836
+!MESSAGE XSCT Command: [fpga -file R:/KV260/vitis/mipi/_ide/bitstream/kv260_video_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:06.550
+!MESSAGE XSCT command with result: [fpga -file R:/KV260/vitis/mipi/_ide/bitstream/kv260_video_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:06.594
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:06.625
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:06.626
+!MESSAGE XSCT Command: [loadhw -hw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.778
+!MESSAGE XSCT command with result: [loadhw -hw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, kv260_video_wrapper_7]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.780
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.783
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.784
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.793
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.793
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.812
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.813
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.825
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.826
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:07.833
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 2]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:08.961
+!MESSAGE XSCT Command: [mask_write 0xFF5E0200 0xf000 0], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:08.975
+!MESSAGE XSCT command with result: [mask_write 0xFF5E0200 0xf000 0], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:08.976
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:08.995
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:08.996
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:09.038
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:09.041
+!MESSAGE XSCT Command: [dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:09.610
+!MESSAGE XSCT command with result: [dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:09.611
+!MESSAGE XSCT Command: [set bp_51_9_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:09.844
+!MESSAGE XSCT command with result: [set bp_51_9_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 0]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:09.845
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.909
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.910
+!MESSAGE XSCT Command: [bpremove $bp_51_9_fsbl_bp], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.926
+!MESSAGE XSCT command with result: [bpremove $bp_51_9_fsbl_bp], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.927
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.940
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.942
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.991
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:11.992
+!MESSAGE XSCT Command: [dow R:/KV260/vitis/mipi/Debug/mipi.elf], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.645
+!MESSAGE XSCT command with result: [dow R:/KV260/vitis/mipi/Debug/mipi.elf], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.646
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.661
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.836
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.859
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.860
+!MESSAGE XSCT Command: [con], Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 18:51:13.903
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-84: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:05.396
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-94: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:05.453
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-94: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:05.454
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-94: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:05.476
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-94: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:03:05.477
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:05.480
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-94: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:05.488
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-94: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:16.948
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:16.963
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:16.965
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:16.977
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:03:16.978
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:16.981
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:16.985
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:23.328
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-86: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:23.342
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-86: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:23.343
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-86: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:23.353
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-86: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:03:23.354
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:23.357
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-86: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:23.361
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-86: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:37.362
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-358
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:37.412
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-358
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:46.585
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:46.599
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:46.600
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:46.606
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:03:46.607
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:46.610
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:46.614
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-88: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:51.469
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.716
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.717
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.718
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.720
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.721
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.722
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.723
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.724
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:03:53.724
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:53.791
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:53.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.467
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.469
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.489
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.491
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.519
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.526
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.536
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.537
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.564
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.628
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.629
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.658
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.660
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.671
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.672
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.700
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.701
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.713
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.714
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.745
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.746
+!MESSAGE XSCT Command: [version -server], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.750
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.751
+!MESSAGE XSCT Command: [version], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.753
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.0
+SW Build 303 on 2022-04-13-17:42:48
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.754
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.766
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.767
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.792
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.793
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.823
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level == 0}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.824
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.828
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.829
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.834
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:54.835
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:55.088
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:55.089
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:55.529
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:55.531
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.558
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.611
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.665
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.666
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.695
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.697
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL14FBTFCXMA-04724093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.969
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL14FBTFCXMA-04724093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:03:58.971
+!MESSAGE XSCT Command: [fpga -file R:/KV260/vitis/mipi/_ide/bitstream/kv260_video_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.708
+!MESSAGE XSCT command with result: [fpga -file R:/KV260/vitis/mipi/_ide/bitstream/kv260_video_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.765
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.798
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.800
+!MESSAGE XSCT Command: [loadhw -hw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.960
+!MESSAGE XSCT command with result: [loadhw -hw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, kv260_video_wrapper_7]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.962
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.970
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.978
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.995
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:03.998
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:04.044
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:04.046
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:04.089
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:04.092
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:04.132
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 2]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.248
+!MESSAGE XSCT Command: [mask_write 0xFF5E0200 0xf000 0], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.265
+!MESSAGE XSCT command with result: [mask_write 0xFF5E0200 0xf000 0], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.266
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.284
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.286
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.339
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.342
+!MESSAGE XSCT Command: [dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.953
+!MESSAGE XSCT command with result: [dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:16.956
+!MESSAGE XSCT Command: [set bp_4_16_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:17.027
+!MESSAGE XSCT command with result: [set bp_4_16_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 1]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:17.029
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.194
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.195
+!MESSAGE XSCT Command: [bpremove $bp_4_16_fsbl_bp], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.231
+!MESSAGE XSCT command with result: [bpremove $bp_4_16_fsbl_bp], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.232
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.301
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.304
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.367
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:19.369
+!MESSAGE XSCT Command: [dow R:/KV260/vitis/mipi/Debug/mipi.elf], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.152
+!MESSAGE XSCT command with result: [dow R:/KV260/vitis/mipi/Debug/mipi.elf], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.153
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.157
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.262
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.277
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.279
+!MESSAGE XSCT Command: [con], Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:04:21.327
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-87: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:09.058
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:09.068
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:09.069
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:09.075
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:13:09.076
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:09.078
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:09.081
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:30.626
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:30.636
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:30.637
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:30.643
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:13:30.644
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:30.646
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:30.650
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:34.546
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:34.615
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa ], Result: [null, {"psu_cortexa53_0": "",
+"psu_cortexa53_1": "",
+"psu_cortexa53_2": "",
+"psu_cortexa53_3": "",
+"psu_cortexr5_0": "",
+"psu_cortexr5_1": "",
+"psu_pmu_0": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:38.605
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:38.616
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:38.617
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:38.623
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:13:38.624
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:38.626
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:38.629
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:42.559
+!MESSAGE XSCT Command: [disconnect tcfchan#11], Thread: Thread-466
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:42.839
+!MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-466
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:51.674
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:51.687
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:51.688
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:51.693
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:13:51.694
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:51.697
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:13:51.701
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-99: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:01.613
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:01.624
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:01.626
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:01.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 19:14:01.633
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:01.636
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:01.639
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-97: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:05.944
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.094
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.096
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.096
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.097
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.098
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.099
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.100
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.101
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.102
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.103
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 19:14:08.104
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.163
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.165
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.862
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.863
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.878
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.879
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.899
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.903
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.912
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.913
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.936
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.982
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:08.983
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.006
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.007
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.015
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.016
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.037
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.039
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.048
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.049
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.071
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.072
+!MESSAGE XSCT Command: [version -server], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.074
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.075
+!MESSAGE XSCT Command: [version], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.077
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.0
+SW Build 303 on 2022-04-13-17:42:48
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.078
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.086
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.087
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.109
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.110
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.130
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level == 0}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.132
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.134
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.135
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.139
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2022.1/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.141
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.398
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.399
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.830
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:09.831
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:12.860
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:12.892
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:12.933
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:12.934
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:12.961
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:12.963
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL14FBTFCXMA-04724093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:13.003
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL14FBTFCXMA-04724093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:13.004
+!MESSAGE XSCT Command: [fpga -file R:/KV260/vitis/mipi/_ide/bitstream/kv260_video_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.427
+!MESSAGE XSCT command with result: [fpga -file R:/KV260/vitis/mipi/_ide/bitstream/kv260_video_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.492
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.520
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.523
+!MESSAGE XSCT Command: [loadhw -hw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.610
+!MESSAGE XSCT command with result: [loadhw -hw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, kv260_video_wrapper_7]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.611
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.617
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.619
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.627
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx X-MLCC-01 XFL14FBTFCXMA]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.628
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.651
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL14FBTFCXMA" && level==1}], Result: [null,      2  xck26 (idcode 04724093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.652
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.668
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.669
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:14:18.684
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 2]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.003
+!MESSAGE XSCT Command: [mask_write 0xFF5E0200 0xf000 0], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.014
+!MESSAGE XSCT command with result: [mask_write 0xFF5E0200 0xf000 0], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.016
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.034
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.036
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.107
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.110
+!MESSAGE XSCT Command: [dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.636
+!MESSAGE XSCT command with result: [dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.637
+!MESSAGE XSCT Command: [set bp_16_35_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.683
+!MESSAGE XSCT command with result: [set bp_16_35_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 2]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:35.684
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.817
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.818
+!MESSAGE XSCT Command: [bpremove $bp_16_35_fsbl_bp], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.853
+!MESSAGE XSCT command with result: [bpremove $bp_16_35_fsbl_bp], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.854
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.902
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.903
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.959
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:37.960
+!MESSAGE XSCT Command: [dow R:/KV260/vitis/mipi/Debug/mipi.elf], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.741
+!MESSAGE XSCT command with result: [dow R:/KV260/vitis/mipi/Debug/mipi.elf], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.742
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.745
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.851
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.866
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.867
+!MESSAGE XSCT Command: [con], Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 19:16:39.907
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-91: Launching Debugger_mipi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:06:05.799
+!MESSAGE XSCT Command: [disconnect tcfchan#14], Thread: Thread-545
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:06:05.868
+!MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-545
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:06:17.794
+!MESSAGE XSCT Command: [platform read {R:/KV260/vitis/kv260_video_wrapper/platform.spr}], Thread: Worker-99: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:06:39.203
+!MESSAGE XSCT command with result: [platform read {R:/KV260/vitis/kv260_video_wrapper/platform.spr}], Result: [null, ]. Thread: Worker-99: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:09:27.589
+!MESSAGE XSCT Command: [platform config -updatehw {R:/KV260/vitis/kv260_video_wrapper.xsa}], Thread: Worker-100: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:10:16.554
+!MESSAGE XSCT command with result: [platform config -updatehw {R:/KV260/vitis/kv260_video_wrapper.xsa}], Result: [null, ]. Thread: Worker-100: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:06.184
+!MESSAGE XSCT Command: [::hsi::utils::closehw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:06.886
+!MESSAGE XSCT command with result: [::hsi::utils::closehw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Result: [null, ]. Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:06.888
+!MESSAGE XSCT Command: [::hsi::utils::openhw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.318
+!MESSAGE XSCT command with result: [::hsi::utils::openhw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Result: [null, ]. Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.320
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.348
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.350
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.359
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 21:56:34.361
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.367
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:56:34.372
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-118: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:10.672
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-121: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:10.689
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-121: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:10.691
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-121: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:10.700
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-121: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 21:57:10.701
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:10.704
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-121: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:10.708
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-121: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:12.797
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-124: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:12.815
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-124: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:12.816
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-124: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:12.823
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-124: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 21:57:12.825
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:12.828
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-124: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:12.840
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-124: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:14.991
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:15.006
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:15.008
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:15.019
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 21:57:15.021
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:15.024
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:15.031
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.755
+!MESSAGE XSCT Command: [::hsi::utils::openhw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.758
+!MESSAGE XSCT command with result: [::hsi::utils::openhw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Result: [null, ]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.763
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {R:\KV260\vitis\mipi\_ide\bitstream}], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.908
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {R:\KV260\vitis\mipi\_ide\bitstream}], Result: [null, ]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.913
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.921
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Result: [null, {"device": "xck26",
+"family": "zynquplus",
+"timestamp": "Fri Nov 20 18:59:31 2026",
+"vivado_version": "2022.1",
+"part": "xck26-sfvc784-2LV-c",
+}]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:16.923
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:17.001
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa], Result: [null, {"PS_VIDEO_RX_VIDEO_ila_0": {"hier_name": "PS_VIDEO_RX_VIDEO_ila_0",
+"type": "ila",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0",
+"type": "mipi_csi2_rx_subsystem",
+"version": "5.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1",
+"type": "mipi_csi2_rx_subsystem",
+"version": "5.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_v_demosaic_0": {"hier_name": "PS_VIDEO_RX_VIDEO_v_demosaic_0",
+"type": "v_demosaic",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_v_demosaic_1": {"hier_name": "PS_VIDEO_RX_VIDEO_v_demosaic_1",
+"type": "v_demosaic",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_vfp_0": {"hier_name": "PS_VIDEO_RX_VIDEO_vfp_0",
+"type": "vfp",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_TO_PS_axi_gpio": {"hier_name": "PS_VIDEO_TO_PS_axi_gpio",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_TO_PS_clk_wiz_0": {"hier_name": "PS_VIDEO_TO_PS_clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_TO_PS_clk_wiz_1": {"hier_name": "PS_VIDEO_TO_PS_clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_TO_PS_clk_wiz_ila": {"hier_name": "PS_VIDEO_TO_PS_clk_wiz_ila",
+"type": "ila",
+"version": "6.2",
+"ip_type": "MONITOR",
+},
+"PS_VIDEO_TO_PS_ps8_0_axi_periph": {"hier_name": "PS_VIDEO_TO_PS_ps8_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"PS_VIDEO_TO_PS_rst_clk_wiz_ctrl": {"hier_name": "PS_VIDEO_TO_PS_rst_clk_wiz_ctrl",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_TO_PS_rst_ps8_0_249M": {"hier_name": "PS_VIDEO_TO_PS_rst_ps8_0_249M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_TO_PS_zynq_ultra_ps_e_0": {"hier_name": "PS_VIDEO_TO_PS_zynq_ultra_ps_e_0",
+"type": "zynq_ultra_ps_e",
+"version": "3.4",
+"ip_type": "",
+},
+"PS_VIDEO_VIDEO_PIPELINE_ila_0": {"hier_name": "PS_VIDEO_VIDEO_PIPELINE_ila_0",
+"type": "ila",
+"version": "6.2",
+"ip_type": "MONITOR",
+},
+"PS_VIDEO_VIDEO_PIPELINE_ila_1": {"hier_name": "PS_VIDEO_VIDEO_PIPELINE_ila_1",
+"type": "ila",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_VIDEO_PIPELINE_v_axi4s_vid_out_0": {"hier_name": "PS_VIDEO_VIDEO_PIPELINE_v_axi4s_vid_out_0",
+"type": "v_axi4s_vid_out",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_VIDEO_PIPELINE_v_tc_0": {"hier_name": "PS_VIDEO_VIDEO_PIPELINE_v_tc_0",
+"type": "v_tc",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_VIDEO_PIPELINE_xlconstant_0": {"hier_name": "PS_VIDEO_VIDEO_PIPELINE_xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_V_DMA_axi_smc": {"hier_name": "PS_VIDEO_V_DMA_axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"PS_VIDEO_V_DMA_axi_vdma_0": {"hier_name": "PS_VIDEO_V_DMA_axi_vdma_0",
+"type": "axi_vdma",
+"version": "6.3",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_V_DMA_axi_vdma_1": {"hier_name": "PS_VIDEO_V_DMA_axi_vdma_1",
+"type": "axi_vdma",
+"version": "6.3",
+"ip_type": "PERIPHERAL",
+},
+"psu_axi_interconnect_0": {"hier_name": "psu_axi_interconnect_0",
+"type": "psu_axi_interconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"psu_coresight_0": {"hier_name": "psu_coresight_0",
+"type": "psu_coresight_0",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_acpu_gic": {"hier_name": "psu_acpu_gic",
+"type": "psu_acpu_gic",
+"version": "1.0",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"psu_rcpu_gic": {"hier_name": "psu_rcpu_gic",
+"type": "psu_rcpu_gic",
+"version": "1.0",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"psu_r5_tcm_ram_global": {"hier_name": "psu_r5_tcm_ram_global",
+"type": "psu_r5_tcm_ram",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_tcm_ram_0": {"hier_name": "psu_r5_tcm_ram_0",
+"type": "psu_r5_tcm_ram",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ocm_ram_0": {"hier_name": "psu_ocm_ram_0",
+"type": "psu_ocm_ram_0",
+"version": "1.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"psu_ocm": {"hier_name": "psu_ocm",
+"type": "psu_ocm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_1_btcm": {"hier_name": "psu_r5_1_btcm",
+"type": "psu_r5_1_btcm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_1_btcm_global": {"hier_name": "psu_r5_1_btcm_global",
+"type": "psu_r5_1_btcm_global",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_1_atcm": {"hier_name": "psu_r5_1_atcm",
+"type": "psu_r5_1_atcm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_1_atcm_global": {"hier_name": "psu_r5_1_atcm_global",
+"type": "psu_r5_1_atcm_global",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_0_btcm_lockstep": {"hier_name": "psu_r5_0_btcm_lockstep",
+"type": "psu_r5_0_btcm_lockstep",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_0_btcm": {"hier_name": "psu_r5_0_btcm",
+"type": "psu_r5_0_btcm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_0_btcm_global": {"hier_name": "psu_r5_0_btcm_global",
+"type": "psu_r5_0_btcm_global",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_0_atcm_lockstep": {"hier_name": "psu_r5_0_atcm_lockstep",
+"type": "psu_r5_0_atcm_lockstep",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_0_atcm": {"hier_name": "psu_r5_0_atcm",
+"type": "psu_r5_0_atcm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_0_atcm_global": {"hier_name": "psu_r5_0_atcm_global",
+"type": "psu_r5_0_atcm_global",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_bbram_0": {"hier_name": "psu_bbram_0",
+"type": "psu_bbram_0",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_pmu_ram": {"hier_name": "psu_pmu_ram",
+"type": "psu_pmu_ram",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_pmu_iomodule": {"hier_name": "psu_pmu_iomodule",
+"type": "psu_pmu_iomodule",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_pmu_global_0": {"hier_name": "psu_pmu_global_0",
+"type": "psu_pmu_global_0",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_mbistjtag": {"hier_name": "psu_mbistjtag",
+"type": "psu_mbistjtag",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_rsa": {"hier_name": "psu_rsa",
+"type": "psu_rsa",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_efuse": {"hier_name": "psu_efuse",
+"type": "psu_efuse",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_csu_0": {"hier_name": "psu_csu_0",
+"type": "psu_csu",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_csu_wdt": {"hier_name": "psu_csu_wdt",
+"type": "psu_wdt",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_csudma": {"hier_name": "psu_csudma",
+"type": "psu_csudma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_smmu_gpv": {"hier_name": "psu_smmu_gpv",
+"type": "psu_smmu_gpv",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_fpd_gpv": {"hier_name": "psu_fpd_gpv",
+"type": "psu_fpd_gpv",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_cci_gpv": {"hier_name": "psu_cci_gpv",
+"type": "psu_cci_gpv",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_fpd_slcr_secure": {"hier_name": "psu_fpd_slcr_secure",
+"type": "psu_fpd_slcr_secure",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_fpd_slcr": {"hier_name": "psu_fpd_slcr",
+"type": "psu_fpd_slcr",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_smmu_reg": {"hier_name": "psu_smmu_reg",
+"type": "psu_smmu_reg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_cci_reg": {"hier_name": "psu_cci_reg",
+"type": "psu_cci_reg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_fpd_xmpu_cfg": {"hier_name": "psu_fpd_xmpu_cfg",
+"type": "psu_fpd_xmpu_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_apu": {"hier_name": "psu_apu",
+"type": "psu_apu",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_7": {"hier_name": "psu_gdma_7",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_6": {"hier_name": "psu_gdma_6",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_5": {"hier_name": "psu_gdma_5",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_4": {"hier_name": "psu_gdma_4",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_3": {"hier_name": "psu_gdma_3",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_2": {"hier_name": "psu_gdma_2",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_1": {"hier_name": "psu_gdma_1",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gdma_0": {"hier_name": "psu_gdma_0",
+"type": "psu_gdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_fpd_xmpu_sink": {"hier_name": "psu_fpd_xmpu_sink",
+"type": "psu_fpd_xmpu_sink",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_dpdma": {"hier_name": "psu_dpdma",
+"type": "psu_dpdma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gpu": {"hier_name": "psu_gpu",
+"type": "psu_gpu",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_dp": {"hier_name": "psu_dp",
+"type": "psu_dp",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_apm_5": {"hier_name": "psu_apm_5",
+"type": "psu_apm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_serdes": {"hier_name": "psu_serdes",
+"type": "psu_serdes",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_siou": {"hier_name": "psu_siou",
+"type": "psu_siou",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_5": {"hier_name": "psu_afi_5",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_4": {"hier_name": "psu_afi_4",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_3": {"hier_name": "psu_afi_3",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_2": {"hier_name": "psu_afi_2",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_1": {"hier_name": "psu_afi_1",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_0": {"hier_name": "psu_afi_0",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_crf_apb": {"hier_name": "psu_crf_apb",
+"type": "psu_crf_apb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_sata": {"hier_name": "psu_sata",
+"type": "psu_sata",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_apm_0": {"hier_name": "psu_apm_0",
+"type": "psu_apm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_qos_ctrl": {"hier_name": "psu_ddr_qos_ctrl",
+"type": "psu_ddr_qos_ctrl",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_phy": {"hier_name": "psu_ddr_phy",
+"type": "psu_ddr_phy",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_xmpu5_cfg": {"hier_name": "psu_ddr_xmpu5_cfg",
+"type": "psu_ddr_xmpu5_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_xmpu4_cfg": {"hier_name": "psu_ddr_xmpu4_cfg",
+"type": "psu_ddr_xmpu4_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_xmpu3_cfg": {"hier_name": "psu_ddr_xmpu3_cfg",
+"type": "psu_ddr_xmpu3_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_xmpu2_cfg": {"hier_name": "psu_ddr_xmpu2_cfg",
+"type": "psu_ddr_xmpu2_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_xmpu1_cfg": {"hier_name": "psu_ddr_xmpu1_cfg",
+"type": "psu_ddr_xmpu1_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ddr_xmpu0_cfg": {"hier_name": "psu_ddr_xmpu0_cfg",
+"type": "psu_ddr_xmpu0_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_7": {"hier_name": "psu_adma_7",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_6": {"hier_name": "psu_adma_6",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_5": {"hier_name": "psu_adma_5",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_4": {"hier_name": "psu_adma_4",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_3": {"hier_name": "psu_adma_3",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_2": {"hier_name": "psu_adma_2",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_1": {"hier_name": "psu_adma_1",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_adma_0": {"hier_name": "psu_adma_0",
+"type": "psu_adma",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ocm_xmpu_cfg": {"hier_name": "psu_ocm_xmpu_cfg",
+"type": "psu_ocm_xmpu_cfg",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_rtc": {"hier_name": "psu_rtc",
+"type": "psu_rtc",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ams": {"hier_name": "psu_ams",
+"type": "psu_ams",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_apm_2": {"hier_name": "psu_apm_2",
+"type": "psu_apm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_apm_1": {"hier_name": "psu_apm_1",
+"type": "psu_apm",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_lpd_xppu_sink": {"hier_name": "psu_lpd_xppu_sink",
+"type": "psu_lpd_xppu_sink",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_afi_6": {"hier_name": "psu_afi_6",
+"type": "psu_afi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_rpu": {"hier_name": "psu_rpu",
+"type": "psu_rpu",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_lpd_xppu": {"hier_name": "psu_lpd_xppu",
+"type": "psu_lpd_xppu",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_crl_apb": {"hier_name": "psu_crl_apb",
+"type": "psu_crl_apb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_lpd_slcr_secure": {"hier_name": "psu_lpd_slcr_secure",
+"type": "psu_lpd_slcr_secure",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_lpd_slcr": {"hier_name": "psu_lpd_slcr",
+"type": "psu_lpd_slcr",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_0": {"hier_name": "psu_ipi_0",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_1": {"hier_name": "psu_ipi_1",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_2": {"hier_name": "psu_ipi_2",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_3": {"hier_name": "psu_ipi_3",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_4": {"hier_name": "psu_ipi_4",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_5": {"hier_name": "psu_ipi_5",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ipi_6": {"hier_name": "psu_ipi_6",
+"type": "psu_ipi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ctrl_ipi": {"hier_name": "psu_ctrl_ipi",
+"type": "PERIPHERAL",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_message_buffers": {"hier_name": "psu_message_buffers",
+"type": "PERIPHERAL",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_iou_s": {"hier_name": "psu_iou_s",
+"type": "psu_iou_s",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_iou_scntrs": {"hier_name": "psu_iou_scntrs",
+"type": "psu_iou_scntrs",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_iou_scntr": {"hier_name": "psu_iou_scntr",
+"type": "psu_iou_scntr",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_iousecure_slcr": {"hier_name": "psu_iousecure_slcr",
+"type": "psu_iousecure_slcr",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_iouslcr_0": {"hier_name": "psu_iouslcr_0",
+"type": "psu_iouslcr",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_r5_ddr_0": {"hier_name": "psu_r5_ddr_0",
+"type": "psu_ddr",
+"version": "1.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"psu_ddr_0": {"hier_name": "psu_ddr_0",
+"type": "psu_ddr",
+"version": "1.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"psu_ddr_1": {"hier_name": "psu_ddr_1",
+"type": "psu_ddr",
+"version": "1.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"psu_ddrc_0": {"hier_name": "psu_ddrc_0",
+"type": "psu_ddrc",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_sd_1": {"hier_name": "psu_sd_1",
+"type": "psu_sd",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_sd_0": {"hier_name": "psu_sd_0",
+"type": "psu_sd",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_wdt_0": {"hier_name": "psu_wdt_0",
+"type": "psu_wdt",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_wdt_1": {"hier_name": "psu_wdt_1",
+"type": "psu_wdt",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ttc_3": {"hier_name": "psu_ttc_3",
+"type": "psu_ttc",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ttc_2": {"hier_name": "psu_ttc_2",
+"type": "psu_ttc",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ttc_1": {"hier_name": "psu_ttc_1",
+"type": "psu_ttc",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ttc_0": {"hier_name": "psu_ttc_0",
+"type": "psu_ttc",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_qspi_0": {"hier_name": "psu_qspi_0",
+"type": "psu_qspi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_ethernet_3": {"hier_name": "psu_ethernet_3",
+"type": "psu_ethernet",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_gpio_0": {"hier_name": "psu_gpio_0",
+"type": "psu_gpio",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_spi_1": {"hier_name": "psu_spi_1",
+"type": "psu_spi",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_i2c_1": {"hier_name": "psu_i2c_1",
+"type": "psu_i2c",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_i2c_0": {"hier_name": "psu_i2c_0",
+"type": "psu_i2c",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_uart_1": {"hier_name": "psu_uart_1",
+"type": "psu_uart",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"psu_qspi_linear_0": {"hier_name": "psu_qspi_linear_0",
+"type": "psu_qspi_linear",
+"version": "1.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"psu_cortexa53_0": {"hier_name": "psu_cortexa53_0",
+"type": "psu_cortexa53",
+"version": "1.0",
+"ip_type": "PROCESSOR",
+},
+"psu_cortexa53_1": {"hier_name": "psu_cortexa53_1",
+"type": "psu_cortexa53",
+"version": "1.0",
+"ip_type": "PROCESSOR",
+},
+"psu_cortexa53_2": {"hier_name": "psu_cortexa53_2",
+"type": "psu_cortexa53",
+"version": "1.0",
+"ip_type": "PROCESSOR",
+},
+"psu_cortexa53_3": {"hier_name": "psu_cortexa53_3",
+"type": "psu_cortexa53",
+"version": "1.0",
+"ip_type": "PROCESSOR",
+},
+"psu_cortexr5_0": {"hier_name": "psu_cortexr5_0",
+"type": "psu_cortexr5",
+"version": "1.0",
+"ip_type": "PROCESSOR",
+},
+"psu_cortexr5_1": {"hier_name": "psu_cortexr5_1",
+"type": "psu_cortexr5",
+"version": "1.0",
+"ip_type": "PROCESSOR",
+},
+"psu_pmu_0": {"hier_name": "psu_pmu_0",
+"type": "psu_pmu",
+"version": "9.2",
+"ip_type": "PROCESSOR",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_phy": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_phy",
+"type": "mipi_dphy",
+"version": "4.3",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_r_sync": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_r_sync",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_rx": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_rx",
+"type": "mipi_csi2_rx_ctrl",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_vfb_0": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_0_vfb_0",
+"type": "vfb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_phy": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_phy",
+"type": "mipi_dphy",
+"version": "4.3",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_r_sync": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_r_sync",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_rx": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_rx",
+"type": "mipi_csi2_rx_ctrl",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_vfb_0": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_vfb_0",
+"type": "vfb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_vfb_sync": {"hier_name": "PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1/PS_VIDEO_RX_VIDEO_mipi_csi2_rx_subsyst_1_vfb_sync",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:17.003
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {R:\KV260\vitis\mipi\_ide\psinit} -quiet], Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:18.893
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {R:\KV260\vitis\mipi\_ide\psinit} -quiet], Result: [null, ]. Thread: Worker-125: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:42.284
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-122: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:42.295
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-122: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:42.296
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-122: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:42.304
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-122: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 21:57:42.306
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:42.309
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-122: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:42.313
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-122: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:46.779
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Thread: Worker-120: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:46.818
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-120: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:46.819
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-120: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:46.827
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/hw/kv260_video_wrapper.xsa R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-120: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-11-20 21:57:46.828
+!MESSAGE Generating MD5 hash for file: R:\KV260\vitis\kv260_video_wrapper\export\kv260_video_wrapper\sw\kv260_video_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:46.831
+!MESSAGE XSCT Command: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Thread: Worker-120: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-20 21:57:46.840
+!MESSAGE XSCT command with result: [::hsi::utils::closesw R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-120: Build Project
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:34.956
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.021
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.037
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.038
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.039
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.040
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.041
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.042
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.043
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.045
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.046
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.047
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.048
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:35.050
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.566
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.588
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.589
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.590
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.592
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.593
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.595
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.597
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.598
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.599
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.600
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.601
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.602
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2026-11-20 21:58:39.603
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)

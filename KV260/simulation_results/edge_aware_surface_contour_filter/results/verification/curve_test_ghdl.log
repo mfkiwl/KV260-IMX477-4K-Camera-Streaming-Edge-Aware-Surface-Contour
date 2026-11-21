@@ -1,0 +1,12 @@
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: results/curve_test/curve.jpg (512 x 176)
+tb/tb_pic2.vhd:114:7:@1265635ns:(report note): Input frame 1 accepted: 90112 pixels
+tb/tb_pic2.vhd:165:11:@1397715ns:(report note): Output frame 1: 90112 pixels, 176 EOL, 1 SOF; first/last cycles 10528/139768
+tb/tb_pic2.vhd:178:11:@1398105ns:(report note): PASS: 1 frame(s), 90112 accepted output pixels, 38128 stalled output cycles
+simulation finished @1398105ns
+RTL output: results/curve_test/filtered.bmp
+Independent raster model: 0 mismatched pixels / 90,112
+PASS: every RGB byte matched.
+Input: detrended flat-ramp RMS 3.070 gray levels; ink detected in 1/488 columns; longest missing run 301 columns; median ink depth 2.0 levels; two-pixel curved stroke retained in 488/488 columns
+Output: detrended flat-ramp RMS 0.397 gray levels; ink detected in 488/488 columns; longest missing run 0 columns; median ink depth 73.0 levels; two-pixel curved stroke retained in 488/488 columns
+PASS: smooth ramp and continuous curved contour.
