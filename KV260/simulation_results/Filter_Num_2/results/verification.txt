@@ -1,0 +1,38 @@
+PIC99 native source simulation
+GHDL 5.0.1 (LLVM backend) and NVC 1.23.1 ran the VHDL-2008 JPEG-to-BMP testbench.
+Input images/PIC99.jpg. DUT surface_contour_select. RGB10 wrapper enabled.
+Both runs enabled source gaps and sink backpressure. Each master transfer was checked for
+valid RGB data, correct SOF/EOL and correct lane padding, including stable signals under stalls.
+The GHDL run captured 2,359,296 pixels, 1152 EOL markers, one SOF and 998,590 stalled output clocks.
+The GHDL capture and both post-synthesis PIC99 runs using its decoded input are byte-identical.
+The NVC source run also matched the synthesized hardware byte for byte when driven with the NVC
+decoder output. The two simulations of the original floating-point JPEG decoder differ on five
+input pixels, by at most two channel levels. On their respective decoded inputs the filtered
+captures differ on 23 of 2,359,296 pixels, by at most one channel level. Each source simulation
+matches the independent integer raster model on its own decoded stimulus.
+
+Synthesized RTL simulation
+GHDL synthesized surface_contour_select to Verilog. Verilator 5.48.0 simulated that netlist.
+The testbench drove all pixels from the project's VHDL JPEG decoder. PIC10, PIC11, PIC82 and PIC99
+ran through the same full-gamut profile at 2048 x 1152. Each passed with 786,336 stalled output clocks,
+2,359,296 accepted pixels, 1,152 EOL markers and one SOF. A second PIC99 run with continuous input
+and an always-ready sink produced the same file. The randomized C++ driver uses a different
+stall pattern from the VHDL testbench. Each log records its last-transfer or completion count.
+
+Native pixel verification
+The independent integer raster model matched all 2,359,296 RGB output pixels on each of the four
+available pairs. JPEG decoder checks against Pillow/libjpeg are in the corresponding *_pixels.log.
+The GHDL testbench also passed back-to-back color and grayscale images, narrow and single-pixel
+dimensions and the original profile at reduced saturation. PIC1_filtered.bmp with G_LEGACY_PIC2=true
+matched the previously delivered PIC1-to-PIC2 capture byte for byte.
+
+Reference comparison
+Reference PNGs and simulation captures have different raster sizes. The reference metrics and
+PIC99 region medians were calculated on the complete 1280 x 720 reference raster after one
+Lanczos reduction of the native output. Exact native model agreement and agreement with the
+artistic references are measured separately. See reference_metrics.csv and PIC99_color_regions.csv.
+PIC98 was absent from the supplied pairs. The verified second chart was supplied as PIC82.
+
+Synthesis
+GHDL synthesized the 32-bit board wrapper with maximum dimensions of 2048 x 1152 and 3840 x 2160.
+See logs/synthesis_2048.log and logs/synthesis_3840.log. Device place-and-route was outside this run.

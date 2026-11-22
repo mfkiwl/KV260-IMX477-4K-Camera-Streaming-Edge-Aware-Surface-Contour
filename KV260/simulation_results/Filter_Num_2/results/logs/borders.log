@@ -1,0 +1,40 @@
+1x1-384.bmp tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: work/geometry/1x1-384.jpg (1 x 1)
+tb/tb_pic2.vhd:108:7:@55ns:(report note): Input frame 1 accepted: 1 pixels
+tb/tb_pic2.vhd:159:11:@13175ns:(report note): Output frame 1: 1 pixels, 1 EOL, 1 SOF; first/last cycles 1314/1314
+tb/tb_pic2.vhd:172:11:@13565ns:(report note): PASS: 1 frame(s), 1 accepted output pixels, 0 stalled output cycles
+simulation finished @13565ns
+Independent raster model: 0 mismatched pixels / 1.
+PASS: every RGB byte matched.
+
+1x37-384.bmp tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: work/geometry/1x37-384.jpg (1 x 37)
+tb/tb_pic2.vhd:108:7:@5955ns:(report note): Input frame 1 accepted: 37 pixels
+tb/tb_pic2.vhd:159:11:@25055ns:(report note): Output frame 1: 37 pixels, 37 EOL, 1 SOF; first/last cycles 1618/2502
+tb/tb_pic2.vhd:172:11:@25445ns:(report note): PASS: 1 frame(s), 37 accepted output pixels, 0 stalled output cycles
+simulation finished @25445ns
+Independent raster model: 0 mismatched pixels / 37.
+PASS: every RGB byte matched.
+
+65x1-384.bmp tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: work/geometry/65x1-384.jpg (65 x 1)
+tb/tb_pic2.vhd:108:7:@695ns:(report note): Input frame 1 accepted: 65 pixels
+tb/tb_pic2.vhd:159:11:@47095ns:(report note): Output frame 1: 65 pixels, 1 EOL, 1 SOF; first/last cycles 4642/4706
+tb/tb_pic2.vhd:172:11:@47485ns:(report note): PASS: 1 frame(s), 65 accepted output pixels, 0 stalled output cycles
+simulation finished @47485ns
+Independent raster model: 0 mismatched pixels / 65.
+PASS: every RGB byte matched.
+
+83x49-256.bmp tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: work/geometry/83x49-256.jpg (83 x 49)
+tb/tb_pic2.vhd:108:7:@53915ns:(report note): Input frame 1 accepted: 4067 pixels
+tb/tb_pic2.vhd:159:11:@111835ns:(report note): Output frame 1: 4067 pixels, 49 EOL, 1 SOF; first/last cycles 5882/11180
+tb/tb_pic2.vhd:172:11:@112225ns:(report note): PASS: 1 frame(s), 4067 accepted output pixels, 0 stalled output cycles
+simulation finished @112225ns
+Independent raster model: 0 mismatched pixels / 4,067.
+PASS: every RGB byte matched.
+
+83x49-256-legacy.bmp tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: work/geometry/83x49-256.jpg (83 x 49)
+tb/tb_pic2.vhd:108:7:@53915ns:(report note): Input frame 1 accepted: 4067 pixels
+tb/tb_pic2.vhd:159:11:@111765ns:(report note): Output frame 1: 4067 pixels, 49 EOL, 1 SOF; first/last cycles 5875/11173
+tb/tb_pic2.vhd:172:11:@112155ns:(report note): PASS: 1 frame(s), 4067 accepted output pixels, 0 stalled output cycles
+simulation finished @112155ns
+Independent raster model: 0 mismatched pixels / 4,067.
+PASS: every RGB byte matched.
+

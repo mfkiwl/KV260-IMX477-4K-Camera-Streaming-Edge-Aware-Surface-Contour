@@ -1,6 +1,6 @@
-21:57:46 **** Incremental Build of configuration Debug for project mipi ****
+22:14:40 **** Incremental Build of configuration Debug for project mipi ****
 make all 
 make: Nothing to be done for 'all'.
 
-21:57:47 Build Finished (took 804ms)
+22:14:40 Build Finished (took 807ms)
 

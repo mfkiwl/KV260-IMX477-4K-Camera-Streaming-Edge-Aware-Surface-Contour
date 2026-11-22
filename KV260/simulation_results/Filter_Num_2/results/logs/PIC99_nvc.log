@@ -1,0 +1,6 @@
+** Note: 40ns+0: JPEG decoded: images/PIC99.jpg (2048 x 1152)
+** Note: 33625925ns+0: Input frame 1 accepted: 2359296 pixels
+** Note: 35147375ns+0: Output frame 1: 2359296 pixels, 1152 EOL, 1 SOF; first/last cycles 121358/3514734
+** Note: 35147765ns+0: PASS: 1 frame(s), 2359296 accepted output pixels, 998590 stalled output cycles
+** Note: 35147765ns+1: FINISH called
+151 time-zero IEEE numeric_std warnings on pre-reset combinational signals.

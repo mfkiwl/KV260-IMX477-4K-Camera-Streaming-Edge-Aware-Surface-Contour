@@ -1,0 +1,22 @@
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: /tmp/tmpncmxw3vh/color.jpg (43 x 27)
+tb/tb_pic2.vhd:108:7:@18695ns:(report note): Input frame 1 accepted: 1161 pixels
+tb/jpeg_reader_pkg.vhd:327:5:@18695ns:(report note): JPEG decoded: /tmp/tmpncmxw3vh/gray.jpg (43 x 27)
+tb/tb_pic2.vhd:159:11:@57915ns:(report note): Output frame 1: 1161 pixels, 27 EOL, 1 SOF; first/last cycles 3892/5788
+tb/tb_pic2.vhd:108:7:@76755ns:(report note): Input frame 2 accepted: 1161 pixels
+tb/tb_pic2.vhd:159:11:@116345ns:(report note): Output frame 2: 1161 pixels, 27 EOL, 1 SOF; first/last cycles 9697/11631
+tb/tb_pic2.vhd:172:11:@116735ns:(report note): PASS: 2 frame(s), 2322 accepted output pixels, 1036 stalled output cycles
+simulation finished @116735ns
+RTL output: /tmp/tmpncmxw3vh/color.bmp
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: /tmp/tmpncmxw3vh/gray.jpg (43 x 27)
+tb/tb_pic2.vhd:108:7:@17805ns:(report note): Input frame 1 accepted: 1161 pixels
+tb/tb_pic2.vhd:159:11:@54925ns:(report note): Output frame 1: 1161 pixels, 27 EOL, 1 SOF; first/last cycles 3801/5489
+tb/tb_pic2.vhd:172:11:@55315ns:(report note): PASS: 1 frame(s), 1161 accepted output pixels, 0 stalled output cycles
+simulation finished @55315ns
+RTL output: /tmp/tmpncmxw3vh/gray_alone.bmp
+PASS: the second frame repeated bit for bit in isolation (43 x 27).
+JPEG decoder vs Pillow/libjpeg: mean absolute channel difference 0.04565, max 3.
+Independent raster model: 0 mismatched pixels / 1,161.
+PASS: every RGB byte matched.
+JPEG decoder vs Pillow/libjpeg: mean absolute channel difference 0.00861, max 1.
+Independent raster model: 0 mismatched pixels / 1,161.
+PASS: every RGB byte matched.

@@ -1,0 +1,6 @@
+NVC 1.23.1. GHDL 5.0.1 (LLVM). Sources are VHDL-2008.
+Archived legacy BMP == fresh simulation of the original RTL: PASS
+Refined RGB10 wrapper BMP with stalls == refined core BMP with continuous source/sink: PASS
+Refined display PNG decoded RGB == simulated BMP decoded RGB: PASS
+GHDL 4K-maximum wrapper synthesis frontend: PASS. RAM inference is reported in the log.
+Only local path prefixes in the copied tool logs have been shortened.

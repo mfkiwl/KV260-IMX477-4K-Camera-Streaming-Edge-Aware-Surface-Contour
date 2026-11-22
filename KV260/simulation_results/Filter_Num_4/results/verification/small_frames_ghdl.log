@@ -1,0 +1,36 @@
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: verification_workspace/edge_cases/tiny_19x1.jpg (19 x 1)
+tb/tb_pic2.vhd:114:7:@235ns:(report note): Input frame 1 accepted: 19 pixels
+tb/tb_pic2.vhd:165:11:@5215ns:(report note): Output frame 1: 19 pixels, 1 EOL, 1 SOF; first/last cycles 500/518
+tb/tb_pic2.vhd:178:11:@5605ns:(report note): PASS: 1 frame(s), 19 accepted output pixels, 0 stalled output cycles
+simulation finished @5605ns
+RTL output: verification_workspace/edge_cases/tiny_19x1_out.bmp
+Independent raster model: 0 mismatched pixels / 19
+PASS: every RGB byte matched.
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: verification_workspace/edge_cases/tiny_1x1.jpg (1 x 1)
+tb/tb_pic2.vhd:114:7:@55ns:(report note): Input frame 1 accepted: 1 pixels
+tb/tb_pic2.vhd:165:11:@1795ns:(report note): Output frame 1: 1 pixels, 1 EOL, 1 SOF; first/last cycles 176/176
+tb/tb_pic2.vhd:178:11:@2185ns:(report note): PASS: 1 frame(s), 1 accepted output pixels, 0 stalled output cycles
+simulation finished @2185ns
+RTL output: verification_workspace/edge_cases/tiny_1x1_out.bmp
+Independent raster model: 0 mismatched pixels / 1
+PASS: every RGB byte matched.
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: verification_workspace/edge_cases/tiny_1x14.jpg (1 x 14)
+tb/tb_pic2.vhd:114:7:@475ns:(report note): Input frame 1 accepted: 14 pixels
+tb/tb_pic2.vhd:165:11:@2965ns:(report note): Output frame 1: 14 pixels, 14 EOL, 1 SOF; first/last cycles 200/293
+tb/tb_pic2.vhd:178:11:@3355ns:(report note): PASS: 1 frame(s), 14 accepted output pixels, 0 stalled output cycles
+simulation finished @3355ns
+RTL output: verification_workspace/edge_cases/tiny_1x14_out.bmp
+Independent raster model: 0 mismatched pixels / 14
+PASS: every RGB byte matched.
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: verification_workspace/edge_cases/tiny_8x8.jpg (8 x 8)
+tb/tb_pic2.vhd:114:7:@895ns:(report note): Input frame 1 accepted: 64 pixels
+tb/tb_pic2.vhd:165:11:@4245ns:(report note): Output frame 1: 64 pixels, 8 EOL, 1 SOF; first/last cycles 326/421
+tb/tb_pic2.vhd:178:11:@4635ns:(report note): PASS: 1 frame(s), 64 accepted output pixels, 0 stalled output cycles
+simulation finished @4635ns
+RTL output: verification_workspace/edge_cases/tiny_8x8_out.bmp
+Independent raster model: 0 mismatched pixels / 64
+PASS: every RGB byte matched.

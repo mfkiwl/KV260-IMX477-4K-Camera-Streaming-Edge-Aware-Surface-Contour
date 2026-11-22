@@ -1,0 +1,121 @@
+{
+  "3": {
+    "width": 2048,
+    "height": 1152,
+    "pixels": 2359296,
+    "mae": 16.353104061550564,
+    "mse": 1011.2325039616337,
+    "psnr": 18.082293402141083,
+    "ssim": 0.8012588972152621,
+    "exact": 10701,
+    "max_error": 236,
+    "rgb_sha256": "c193f8d57c2c14e8c5a74d770e963a34032b0eaeaed577fb5ed54374562cb8f9",
+    "simulator": "NVC 1.23.1",
+    "input": "images/PIC1.JPG",
+    "reference": "images/Designer3.jpg",
+    "output": "results/PIC1_filtered.bmp",
+    "reference_jpeg_sha256": "d88b6b29290f5a9d22780197123395d2384f6c9897a3b9371c5ebd0c3bb2c173",
+    "bmp_sha256": "b0d2b8050c171a1ba9f2eca988fd1d01772002d5877af8b75793873dca63c945",
+    "input_pixels": 2359296,
+    "output_eol": 1152,
+    "output_sof": 1,
+    "stalled_output_cycles": 997056,
+    "raster_model_mismatches": 0,
+    "continuous_test": {
+      "stalled_output_cycles": 0,
+      "raster_model_mismatches": 0,
+      "bmp_identical_to_stalled_capture": true,
+      "bmp_sha256": "b0d2b8050c171a1ba9f2eca988fd1d01772002d5877af8b75793873dca63c945"
+    }
+  },
+  "2": {
+    "width": 2048,
+    "height": 1143,
+    "pixels": 2340864,
+    "mae": 8.801877426454507,
+    "mse": 346.36366714740086,
+    "psnr": 22.735480317517226,
+    "ssim": 0.8609212869029387,
+    "exact": 11262,
+    "max_error": 223,
+    "rgb_sha256": "a3f36e2e3d4428393a107e0b3a6b4060b6ea8a579d0f0c21c473469515e94cd0",
+    "simulator": "NVC 1.23.1",
+    "input": "images/PIC1.JPG",
+    "reference": "images/Designer2.jpg",
+    "output": "results/PIC1_filtered_Designer2.bmp",
+    "reference_jpeg_sha256": "700523ab0e754b64d18e4eef72dd70bcf65c4c7f73ce994dc5f6da4f1689361d",
+    "bmp_sha256": "7554b9b00480e2544dd462c08e9ac0ca433f81d591ff1ed2b97d067a3813d5f9",
+    "input_pixels": 2359296,
+    "output_eol": 1143,
+    "output_sof": 1,
+    "stalled_output_cycles": 1000420,
+    "raster_model_mismatches": 0
+  },
+  "native_baseline": {
+    "width": 2048,
+    "height": 1152,
+    "pixels": 2359296,
+    "mae": 29.010247830991393,
+    "mse": 1292.815939867938,
+    "psnr": 17.015436627390613,
+    "ssim": 0.8092510767816462,
+    "exact": 6,
+    "max_error": 181,
+    "rgb_sha256": "f54779ddca1f98f498899f72852ad1fade88963156d762ab809a842988b4e0be",
+    "simulator": "NVC 1.23.1",
+    "input": "images/PIC1.JPG",
+    "reference": "images/Designer3.jpg",
+    "output": "results/PIC1_native_baseline.bmp",
+    "reference_jpeg_sha256": "d88b6b29290f5a9d22780197123395d2384f6c9897a3b9371c5ebd0c3bb2c173",
+    "bmp_sha256": "d3bd55b1cb58e49990a476717027fee01d9e8d63c248a78a503c7f8e9014197e",
+    "input_pixels": 2359296,
+    "output_eol": 1152,
+    "output_sof": 1,
+    "stalled_output_cycles": 999022,
+    "raster_model_mismatches": 0
+  },
+  "input_jpeg_sha256": "910b50372c49a8a0580f37fe48f3ed1333af010a911aa24320d5962a11d244d2",
+  "spatial_alignment": {
+    "input_file_bytes": 369973,
+    "prior_bmp_sha256": "355304d24a0892e20bbbe9579b71073ce0ae4e0c395e2b3929d5142c2d7220f5",
+    "measurement_order": [
+      "input_jpeg",
+      "supplied_bmp",
+      "corrected_bmp"
+    ],
+    "edge_measurements": {
+      "chair_top_y_at_x80": [
+        481,
+        460,
+        482
+      ],
+      "jacket_edge_x_at_y1100": [
+        414,
+        449,
+        414
+      ],
+      "jacket_edge_x_at_y1120": [
+        394,
+        441,
+        393
+      ],
+      "jacket_edge_x_at_y1140": [
+        375,
+        431,
+        375
+      ],
+      "chair_x40_to_400_median_abs_displacement_px": [
+        0.0,
+        18.0,
+        0.0
+      ],
+      "jacket_y1090_to_1145_median_abs_displacement_px": [
+        0.0,
+        42.0,
+        1.0
+      ]
+    },
+    "profile_3_two_frame_coordinate_count": 4718592,
+    "profile_3_coordinate_mismatches": 0
+  }
+}

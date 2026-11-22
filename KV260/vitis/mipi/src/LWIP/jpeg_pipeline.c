@@ -493,7 +493,7 @@ int jpeg_pipeline_start(void)
     vdma_config = XAxiVdma_LookupConfig(XPAR_AXIVDMA_0_DEVICE_ID);
     if (!vdma_config ||
         (Xil_In32(vdma_config->BaseAddress + MM2S_CONTROL) & CIRCULAR_GENLOCK_CONTROL) != CIRCULAR_GENLOCK_CONTROL ||
-		(Xil_In32(vdma_config->BaseAddress + S2MM_CONTROL) & 0x03U) != 0x03U) {
+        (Xil_In32(vdma_config->BaseAddress + S2MM_CONTROL) & CIRCULAR_GENLOCK_CONTROL) != CIRCULAR_GENLOCK_CONTROL) {
         printf("JPEG pipeline requires the working 4K circular VDMA.\r\n");
         return 0;
     }

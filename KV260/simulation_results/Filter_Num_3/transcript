@@ -1,0 +1,260 @@
+# do sim/run_questa.do
+# 3
+# PIC1
+# 3
+# PIC1
+# images/PIC1.JPG
+# PIC1
+# python
+# K:/KV260/simulation_results/Filter_Num_3/build/questa
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap work K:/KV260/simulation_results/Filter_Num_3/build/questa 
+# Modifying modelsim.ini
+# filedda1380
+# rtl/pic2_types.vhd rtl/axis_window5.vhd rtl/axis_surface_pass.vhd rtl/axis_tone_contour.vhd rtl/axis_contour_finish.vhd rtl/pic2_filter_axis.vhd rtl/axis_designer_view.vhd rtl/axis_designer_grade.vhd rtl/axis_designer_ink.vhd rtl/axis_scene_exposure.vhd rtl/designer_filter_axis.vhd tb/jpeg_reader_pkg.vhd tb/bmp_writer_pkg.vhd tb/tb_pic2.vhd tb/tb_designer_view.vhd tb/tb_scene_exposure.vhd
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:46 on Nov 21,2026
+# vcom -2008 -work work rtl/pic2_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: rtl/pic2_types.vhd(13): (vcom-1615) Existing package 'pic2_types' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/pic2_types.vhd(13) will be overwritten.
+# -- Compiling package pic2_types
+# ** Warning: rtl/pic2_types.vhd(78): (vcom-1615) Existing package body 'pic2_types(body)' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/pic2_types.vhd(78) will be overwritten.
+# -- Compiling package body pic2_types
+# -- Loading package pic2_types
+# End time: 17:06:46 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:46 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_window5.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# ** Warning: rtl/axis_window5.vhd(16): (vcom-1615) Existing entity 'axis_window5' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_window5.vhd(16) will be overwritten.
+# -- Compiling entity axis_window5
+# ** Warning: rtl/axis_window5.vhd(45): (vcom-1615) Existing architecture 'axis_window5(rtl)' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_window5.vhd(45) will be overwritten.
+# -- Compiling architecture rtl of axis_window5
+# End time: 17:06:46 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:46 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_surface_pass.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: rtl/axis_surface_pass.vhd(14): (vcom-1615) Existing entity 'axis_surface_pass' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_surface_pass.vhd(14) will be overwritten.
+# -- Compiling entity axis_surface_pass
+# ** Warning: rtl/axis_surface_pass.vhd(44): (vcom-1615) Existing architecture 'axis_surface_pass(rtl)' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_surface_pass.vhd(44) will be overwritten.
+# -- Compiling architecture rtl of axis_surface_pass
+# -- Loading package pic2_types
+# -- Loading entity axis_window5
+# End time: 17:06:46 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:46 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_tone_contour.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: rtl/axis_tone_contour.vhd(14): (vcom-1615) Existing entity 'axis_tone_contour' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_tone_contour.vhd(14) will be overwritten.
+# -- Compiling entity axis_tone_contour
+# ** Warning: rtl/axis_tone_contour.vhd(44): (vcom-1615) Existing architecture 'axis_tone_contour(rtl)' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_tone_contour.vhd(44) will be overwritten.
+# -- Compiling architecture rtl of axis_tone_contour
+# -- Loading package pic2_types
+# -- Loading entity axis_window5
+# End time: 17:06:47 on Nov 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:47 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_contour_finish.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: rtl/axis_contour_finish.vhd(14): (vcom-1615) Existing entity 'axis_contour_finish' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_contour_finish.vhd(14) will be overwritten.
+# -- Compiling entity axis_contour_finish
+# ** Warning: rtl/axis_contour_finish.vhd(44): (vcom-1615) Existing architecture 'axis_contour_finish(rtl)' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/axis_contour_finish.vhd(44) will be overwritten.
+# -- Compiling architecture rtl of axis_contour_finish
+# -- Loading package pic2_types
+# -- Loading entity axis_window5
+# End time: 17:06:47 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:47 on Nov 21,2026
+# vcom -2008 -work work rtl/pic2_filter_axis.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: rtl/pic2_filter_axis.vhd(18): (vcom-1615) Existing entity 'pic2_filter_axis' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/pic2_filter_axis.vhd(18) will be overwritten.
+# -- Compiling entity pic2_filter_axis
+# ** Warning: rtl/pic2_filter_axis.vhd(50): (vcom-1615) Existing architecture 'pic2_filter_axis(rtl)' at R:/KV260/simulation_results/pic_axis/pic2_axis/rtl/pic2_filter_axis.vhd(50) will be overwritten.
+# -- Compiling architecture rtl of pic2_filter_axis
+# -- Loading entity axis_surface_pass
+# -- Loading entity axis_tone_contour
+# -- Loading entity axis_contour_finish
+# End time: 17:06:47 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:47 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_designer_view.vhd 
+# -- Loading package STANDARD
+# -- Compiling package designer_geometry
+# -- Compiling package body designer_geometry
+# -- Loading package designer_geometry
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package designer_geometry
+# -- Compiling entity axis_designer_view
+# -- Compiling architecture rtl of axis_designer_view
+# End time: 17:06:47 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:47 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_designer_grade.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# -- Loading package designer_geometry
+# -- Compiling entity axis_designer_grade
+# -- Compiling architecture rtl of axis_designer_grade
+# -- Loading entity axis_window5
+# End time: 17:06:47 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:47 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_designer_ink.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# -- Loading package designer_geometry
+# -- Compiling entity axis_designer_ink
+# -- Compiling architecture rtl of axis_designer_ink
+# -- Loading entity axis_window5
+# End time: 17:06:47 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:47 on Nov 21,2026
+# vcom -2008 -work work rtl/axis_scene_exposure.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# -- Compiling entity axis_scene_exposure
+# -- Compiling architecture rtl of axis_scene_exposure
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:48 on Nov 21,2026
+# vcom -2008 -work work rtl/designer_filter_axis.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package designer_geometry
+# -- Compiling entity designer_filter_axis
+# -- Compiling architecture rtl of designer_filter_axis
+# -- Loading package pic2_types
+# -- Loading entity axis_scene_exposure
+# -- Loading entity pic2_filter_axis
+# -- Loading entity axis_surface_pass
+# -- Loading entity axis_designer_grade
+# -- Loading entity axis_designer_view
+# -- Loading entity axis_designer_ink
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:48 on Nov 21,2026
+# vcom -2008 -work work tb/jpeg_reader_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package MATH_REAL
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# ** Warning: tb/jpeg_reader_pkg.vhd(7): (vcom-1615) Existing package 'jpeg_reader_pkg' at R:/KV260/simulation_results/pic_axis/pic2_axis/tb/jpeg_reader_pkg.vhd(7) will be overwritten.
+# -- Compiling package jpeg_reader_pkg
+# ** Warning: tb/jpeg_reader_pkg.vhd(14): (vcom-1615) Existing package body 'jpeg_reader_pkg(body)' at R:/KV260/simulation_results/pic_axis/pic2_axis/tb/jpeg_reader_pkg.vhd(14) will be overwritten.
+# -- Compiling package body jpeg_reader_pkg
+# -- Loading package jpeg_reader_pkg
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:48 on Nov 21,2026
+# vcom -2008 -work work tb/bmp_writer_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# -- Loading package MATH_REAL
+# -- Loading package jpeg_reader_pkg
+# ** Warning: tb/bmp_writer_pkg.vhd(6): (vcom-1615) Existing package 'bmp_writer_pkg' at R:/KV260/simulation_results/pic_axis/pic2_axis/tb/bmp_writer_pkg.vhd(6) will be overwritten.
+# -- Compiling package bmp_writer_pkg
+# ** Warning: tb/bmp_writer_pkg.vhd(14): (vcom-1615) Existing package body 'bmp_writer_pkg(body)' at R:/KV260/simulation_results/pic_axis/pic2_axis/tb/bmp_writer_pkg.vhd(14) will be overwritten.
+# -- Compiling package body bmp_writer_pkg
+# -- Loading package bmp_writer_pkg
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:48 on Nov 21,2026
+# vcom -2008 -work work tb/tb_pic2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package pic2_types
+# -- Loading package designer_geometry
+# -- Loading package MATH_REAL
+# -- Loading package jpeg_reader_pkg
+# -- Loading package bmp_writer_pkg
+# ** Warning: tb/tb_pic2.vhd(10): (vcom-1615) Existing entity 'tb_pic2' at R:/KV260/simulation_results/pic_axis/pic2_axis/tb/tb_pic2.vhd(9) will be overwritten.
+# -- Compiling entity tb_pic2
+# ** Warning: tb/tb_pic2.vhd(27): (vcom-1615) Existing architecture 'tb_pic2(bench)' at R:/KV260/simulation_results/pic_axis/pic2_axis/tb/tb_pic2.vhd(23) will be overwritten.
+# -- Compiling architecture bench of tb_pic2
+# -- Loading entity pic2_filter_axis
+# -- Loading entity designer_filter_axis
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:48 on Nov 21,2026
+# vcom -2008 -work work tb/tb_designer_view.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package designer_geometry
+# -- Compiling entity tb_designer_view
+# -- Compiling architecture bench of tb_designer_view
+# -- Loading entity axis_designer_view
+# -- Loading package ENV
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:06:48 on Nov 21,2026
+# vcom -2008 -work work tb/tb_scene_exposure.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package pic2_types
+# -- Compiling entity tb_scene_exposure
+# -- Compiling architecture bench of tb_scene_exposure
+# -- Loading entity axis_scene_exposure
+# -- Loading package ENV
+# End time: 17:06:48 on Nov 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# results/PIC1_filtered.bmp
+# build/PIC1_decoded_3.bmp

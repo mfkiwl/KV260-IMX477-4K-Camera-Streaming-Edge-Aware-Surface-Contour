@@ -1,0 +1,5 @@
+tb/jpeg_reader_pkg.vhd:327:5:@40ns:(report note): JPEG decoded: images/PIC99.jpg (2048 x 1152)
+tb/tb_pic2.vhd:108:7:@33625925ns:(report note): Input frame 1 accepted: 2359296 pixels
+tb/tb_pic2.vhd:159:11:@35147375ns:(report note): Output frame 1: 2359296 pixels, 1152 EOL, 1 SOF; first/last cycles 121358/3514734
+tb/tb_pic2.vhd:172:11:@35147765ns:(report note): PASS: 1 frame(s), 2359296 accepted output pixels, 998590 stalled output cycles
+simulation finished @35147765ns

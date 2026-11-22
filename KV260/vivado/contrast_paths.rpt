@@ -1,0 +1,667 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date              : Thu Nov 19 21:24:25 2026
+| Host              : LAPTOP-I3ECBFK4 running 64-bit major release  (build 9200)
+| Command           : report_timing -delay_type max -to [get_cells -hier -filter {IS_SEQUENTIAL && NAME =~ *rgb_contrast_brightness_1_inst*}] -max_paths 10 -file contrast_paths.rpt
+| Design            : kv260_video_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.29 08-03-2020
+| Temperature Grade : C
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.983ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.190ns  (logic 1.892ns (86.393%)  route 0.298ns (13.607%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.171     7.543 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[7]
+                         net (fo=1, unplaced)         0.034     7.577    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[15]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.577    
+  -------------------------------------------------------------------
+                         slack                                  0.983    
+
+Slack (MET) :             0.994ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.179ns  (logic 1.882ns (86.370%)  route 0.297ns (13.630%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.161     7.533 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[5]
+                         net (fo=1, unplaced)         0.033     7.566    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[13]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[13]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[13]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.566    
+  -------------------------------------------------------------------
+                         slack                                  0.994    
+
+Slack (MET) :             0.997ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.176ns  (logic 1.878ns (86.305%)  route 0.298ns (13.695%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.157     7.529 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[6]
+                         net (fo=1, unplaced)         0.034     7.563    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[14]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[14]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[14]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.563    
+  -------------------------------------------------------------------
+                         slack                                  0.997    
+
+Slack (MET) :             0.999ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.174ns  (logic 1.872ns (86.109%)  route 0.302ns (13.891%))
+  Logic Levels:           4  (CARRY8=3 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     7.445 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.451    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]_0[0]
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.078     7.529 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]_i_1/O[0]
+                         net (fo=1, unplaced)         0.032     7.561    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]_i_1_n_15
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[16]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.561    
+  -------------------------------------------------------------------
+                         slack                                  0.999    
+
+Slack (MET) :             1.037ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.136ns  (logic 1.840ns (86.142%)  route 0.296ns (13.858%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.119     7.491 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[4]
+                         net (fo=1, unplaced)         0.032     7.523    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[12]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[12]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[12]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.523    
+  -------------------------------------------------------------------
+                         slack                                  1.037    
+
+Slack (MET) :             1.040ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.133ns  (logic 1.835ns (86.029%)  route 0.298ns (13.971%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[3])
+                                                      0.114     7.486 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[3]
+                         net (fo=1, unplaced)         0.034     7.520    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[11]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[11]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[11]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.520    
+  -------------------------------------------------------------------
+                         slack                                  1.040    
+
+Slack (MET) :             1.049ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.124ns  (logic 1.827ns (86.017%)  route 0.297ns (13.983%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.106     7.478 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[1]
+                         net (fo=1, unplaced)         0.033     7.511    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[9]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[9]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[9]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.511    
+  -------------------------------------------------------------------
+                         slack                                  1.049    
+
+Slack (MET) :             1.061ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.112ns  (logic 1.814ns (85.890%)  route 0.298ns (14.110%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[2])
+                                                      0.093     7.465 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[2]
+                         net (fo=1, unplaced)         0.034     7.499    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[10]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[10]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[10]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.499    
+  -------------------------------------------------------------------
+                         slack                                  1.061    
+
+Slack (MET) :             1.078ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.095ns  (logic 1.799ns (85.871%)  route 0.296ns (14.129%))
+  Logic Levels:           3  (CARRY8=2 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.286     7.366 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.006     7.372    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.078     7.450 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_i_1/O[0]
+                         net (fo=1, unplaced)         0.032     7.482    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[8]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[8]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[8]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.482    
+  -------------------------------------------------------------------
+                         slack                                  1.078    
+
+Slack (MET) :             1.114ns  (required time - arrival time)
+  Source:                 kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Destination:            kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_kv260_video_clk_wiz_1_0  {rise@0.000ns fall@1.667ns period=3.333ns})
+  Path Group:             clk_out2_kv260_video_clk_wiz_1_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            3.333ns  (clk_out2_kv260_video_clk_wiz_1_0 rise@3.333ns - clk_out2_kv260_video_clk_wiz_1_0 rise@0.000ns)
+  Data Path Delay:        2.059ns  (logic 1.767ns (85.818%)  route 0.292ns (14.182%))
+  Logic Levels:           2  (CARRY8=1 LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.905ns = ( 9.238 - 3.333 ) 
+    Source Clock Delay      (SCD):    5.387ns
+    Clock Pessimism Removal (CPR):    -0.663ns
+  Clock Uncertainty:      0.059ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.095ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      0.000     0.000 r  
+                         BUFG_PS                      0.000     0.000 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.584     2.584    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                     -0.103     2.481 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.278     2.759    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.044     2.803 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.584     5.387    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         RAMB18E2                                     r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.353     6.740 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]/DOUTADOUT[0]
+                         net (fo=4, unplaced)         0.236     6.976    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/lo_reg[q]_0[0]
+                         LUT2 (Prop_LUT2_I0_O)        0.082     7.058 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid[7]_i_9/O
+                         net (fo=1, unplaced)         0.022     7.080    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0_n_991
+                         CARRY8 (Prop_CARRY8_S[0]_O[7])
+                                                      0.332     7.412 r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]_i_1/O[7]
+                         net (fo=1, unplaced)         0.034     7.446    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[15]_0[7]
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_kv260_video_clk_wiz_1_0 rise edge)
+                                                      3.333     3.333 r  
+                         BUFG_PS                      0.000     3.333 r  kv260_video_i/PS_VIDEO/TO_PS/zynq_ultra_ps_e_0/U0/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2465, unplaced)      2.439     5.772    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_in1
+                         MMCME4_ADV (Prop_MMCME4_ADV_CLKIN1_CLKOUT1)
+                                                      0.739     6.511 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT1
+                         net (fo=1, unplaced)         0.249     6.760    kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clk_out2_kv260_video_clk_wiz_1_0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.039     6.799 r  kv260_video_i/PS_VIDEO/TO_PS/clk_wiz_1/inst/clkout2_buf/O
+                         net (fo=88101, unplaced)     2.439     9.238    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/ivideo_aclk
+                         FDRE                                         r  kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]/C
+                         clock pessimism             -0.663     8.575    
+                         clock uncertainty           -0.059     8.516    
+                         FDRE (Setup_FDRE_C_D)        0.044     8.560    kv260_video_i/PS_VIDEO/RX_VIDEO/vfp_0/U0/rgb_contrast_brightness_1_inst/q_lo_mid_reg[7]
+  -------------------------------------------------------------------
+                         required time                          8.560    
+                         arrival time                          -7.446    
+  -------------------------------------------------------------------
+                         slack                                  1.114    
+
+
+
+

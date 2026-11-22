@@ -1,0 +1,9 @@
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@1315ns:(report note): Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@2225ns:(report note): Meter mean RGB 108,113,113  Q8 gain 125,114,97  shadow lift 14
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@3485ns:(report note): Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@4785ns:(report note): Meter mean RGB 108,113,113  Q8 gain 125,114,97  shadow lift 14
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@6085ns:(report note): Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@6985ns:(report note): Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+../pic2_axis/rtl/axis_scene_exposure.vhd:106:13:@8235ns:(report note): Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+../pic2_axis/tb/tb_scene_exposure.vhd:80:26:@8505ns:(report note): PASS: meter-only suppression, first-frame unity, live frame transitions, grid corners and AXI stalls
+simulation finished @8505ns
