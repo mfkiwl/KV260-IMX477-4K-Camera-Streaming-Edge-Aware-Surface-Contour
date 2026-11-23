@@ -13,7 +13,9 @@ entity axis_designer1_grade is
     s_axis_tready : out std_logic;
     m_axis_tdata : out std_logic_vector(23 downto 0);
     m_axis_tvalid, m_axis_tuser, m_axis_tlast : out std_logic;
-    m_axis_tready : in std_logic
+    m_axis_tready : in std_logic;
+    -- Sampled with each input beat. Low selects the camera filter's RGB.
+    s_use_designer : in std_logic := '1'
   );
 end entity;
 
@@ -101,7 +103,11 @@ begin
           y := luma(pixel); u := pixel(0)-pixel(1); vb := pixel(1)-pixel(2);
           span := largest(pixel(0),largest(pixel(1),pixel(2)))
                   -smallest(pixel(0),smallest(pixel(1),pixel(2)));
-          weight(0) <= clamp(smallest(y-16,smallest(240-y,128-span)),0,32);
+          if s_use_designer='1' then
+            weight(0) <= clamp(smallest(y-16,smallest(240-y,128-span)),0,32);
+          else
+            weight(0) <= 0;
+          end if;
           input_rgb(0) <= pixel;
           for ch in 0 to 2 loop diff1(ch) <= pixel(ch)-y; end loop;
           exposure1 <= EXPOSURE(y);

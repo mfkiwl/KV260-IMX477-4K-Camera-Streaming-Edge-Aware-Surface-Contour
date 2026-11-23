@@ -3445,13 +3445,6 @@ int imx477_sensor_init(XIicPs *IicInstance,u16 config_number)
     }
 	
 }
-int imx477_read_register(XIicPs *IicInstance,u16 addr)
-{
-	u8 sensor_id[1];
-    imx477_read(IicInstance, addr, &sensor_id[0]);
-    printf("Read IMX477 Read Reg Address  =  %x   Value = %x\n",addr,sensor_id[0]);
-	return 0;
-}
 int imx477_write_register(XIicPs *IicInstance,u16 addr,u8 data)
 {
 	imx477_write(IicInstance,REG_MODE_SEL, 0x00);
@@ -3546,10 +3539,26 @@ static int tuning_identify(XIicPs *iic)
     return IMX477_TUNING_IO_ERROR;
 }
 
+int imx477_read_register(XIicPs *iic, u16 addr)
+{
+    u8 value;
+    int status = tuning_identify(iic);
+    if (status != IMX477_TUNING_OK)
+        return status;
+    status = tuning_read_at(iic, tuning_device, addr, &value);
+    if (status == IMX477_TUNING_OK)
+        printf("IMX477 0x%04X = 0x%02X\r\n", (unsigned)addr, (unsigned)value);
+    else
+        printf("IMX477 read failed at 0x%04X\r\n", (unsigned)addr);
+    return status;
+}
+
 void imx477_tuning_diagnose(XIicPs *iic)
 {
     static const u16 registers[] = {
         REG_MODEL_ID_MSB, REG_MODEL_ID_LSB, REG_MODE_SEL,
+        REG_CSI_LANE, REG_REQ_LINK_BIT_RATE_MSB, REG_REQ_LINK_BIT_RATE_LMSB,
+        REG_REQ_LINK_BIT_RATE_MLSB, REG_REQ_LINK_BIT_RATE_LSB,
         REG_FRAME_LEN_MSB, REG_FRAME_LEN_LSB,
         REG_LINE_LEN_MSB, REG_LINE_LEN_LSB,
         REG_X_OUT_SIZE_MSB, REG_X_OUT_SIZE_LSB,

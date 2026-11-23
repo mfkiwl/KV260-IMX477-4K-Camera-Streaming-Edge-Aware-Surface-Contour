@@ -12,6 +12,16 @@ def luma(rgb):
     return (5 * rgb[..., 0] + 9 * rgb[..., 1] + 2 * rgb[..., 2] + 8) // 16
 
 
+def frame_profile(decoded, requested):
+    if requested != "auto":
+        return requested
+    band = decoded[:8].astype(np.int32)
+    green_minus_blue = band[..., 1] - band[..., 2]
+    if luma(band).mean() <= 80 and green_minus_blue.mean() >= 4 and np.ptp(band, axis=2).mean() <= 32:
+        return "designer1"
+    return "source"
+
+
 def surface(frame, step, tolerance):
     h, w, _ = frame.shape
     padded = np.pad(frame, ((2 * step, 2 * step), (2 * step, 2 * step), (0, 0)), mode="edge")
@@ -112,12 +122,15 @@ def main():
     parser.add_argument("--jpeg", help="cross-check the testbench JPEG decoder against Pillow")
     parser.add_argument("--designer1", action="store_true",
                         help="include the Designer1 grade and contour finish at native pixel coordinates")
+    parser.add_argument("--color-profile", choices=("auto", "source", "designer1"), default="auto")
     parser.add_argument("--medium", type=int, default=3)
     parser.add_argument("--coarse", type=int, default=6)
     parser.add_argument("--contour", type=int, default=6)
     parser.add_argument("--chroma-q8", type=int, default=384)
     args = parser.parse_args()
     pixels = np.asarray(Image.open(args.decoded).convert("RGB"), dtype=np.int16)
+    profile = frame_profile(pixels, args.color_profile) if args.designer1 else None
+    source_rgb = pixels if profile == "source" else None
     with Image.open(args.actual) as im:
         if im.size != (pixels.shape[1], pixels.shape[0]):
             raise SystemExit(f"Geometry FAIL: decoded {pixels.shape[1]} x {pixels.shape[0]}, "
@@ -137,13 +150,23 @@ def main():
     expected = finish(render(pixels, args.contour, args.chroma_q8))
     if args.designer1:
         from check_designer1_datapath import grade, finish as contour_finish
-        # Every output pixel is evaluated directly on the decoded source raster.
-        # Only the pointwise grade is striped. The finishing window spans full rows.
-        graded = np.empty_like(expected)
-        for start in range(0, expected.shape[0], 96):
-            rows = slice(start, start + 96)
-            graded[rows] = grade(expected[rows])
-        expected = contour_finish(graded)
+        print(f"Frame color profile from decoded pixels: {profile}")
+        if profile == "designer1":
+            for start in range(0, expected.shape[0], 96):
+                rows = slice(start, start + 96)
+                expected[rows] = grade(expected[rows])
+        expected = contour_finish(expected)
+        if source_rgb is not None:
+            # A common RGB offset preserves both signed channel differences.
+            # This form checks the RTL's green-channel reconstruction independently.
+            dy = luma(expected.astype(np.int16)) - luma(source_rgb)
+            dy = np.clip(dy, -source_rgb.min(axis=2), 255-source_rgb.max(axis=2))
+            expected = (source_rgb + dy[..., None]).astype(np.uint8)
+            offsets = actual.astype(np.int16) - source_rgb
+            errors = int(np.any(offsets != offsets[..., :1], axis=2).sum())
+            print(f"Source chroma: {errors:,} pixels with altered channel differences")
+            if errors:
+                raise SystemExit("Source chroma check failed")
     print(f"Native raster geometry: {actual.shape[1]} x {actual.shape[0]}, x scale 1, y scale 1")
     diff = (actual != expected).any(axis=-1)
     count = int(diff.sum())

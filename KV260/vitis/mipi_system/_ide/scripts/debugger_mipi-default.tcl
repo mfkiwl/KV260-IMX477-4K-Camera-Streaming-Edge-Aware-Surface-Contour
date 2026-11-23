@@ -25,9 +25,9 @@ mask_write 0xFF5E0200 0xf000 0
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow R:/KV260/vitis/kv260_video_wrapper/export/kv260_video_wrapper/sw/kv260_video_wrapper/boot/fsbl.elf
-set bp_32_42_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_16_35_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_32_42_fsbl_bp
+bpremove $bp_16_35_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow R:/KV260/vitis/mipi/Debug/mipi.elf

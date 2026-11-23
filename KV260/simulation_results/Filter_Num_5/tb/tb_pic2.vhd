@@ -21,7 +21,8 @@ entity tb_pic2 is
     G_DESIGNER_VIEW : boolean := G_WIDTH=INPUT_WIDTH and G_HEIGHT=INPUT_HEIGHT;
     G_LARGE_VIEW : boolean := true;
     G_DESIGNER1 : boolean := true;
-    G_PORTRAIT_FRAMING : boolean := false
+    G_PORTRAIT_FRAMING : boolean := false;
+    G_COLOR_PROFILE : string := "auto"
   );
 end entity;
 
@@ -63,7 +64,8 @@ begin
       generic map (G_MEDIUM_STEP=>G_MEDIUM_STEP, G_COARSE_STEP=>G_COARSE_STEP,
                    G_CONTOUR_STEP=>G_CONTOUR_STEP, G_CHROMA_Q8=>G_CHROMA_Q8,
                    G_LARGE_VIEW=>G_LARGE_VIEW, G_DESIGNER1=>G_DESIGNER1,
-                   G_PORTRAIT_FRAMING=>G_PORTRAIT_FRAMING, G_WIDTH=>G_WIDTH, G_HEIGHT=>G_HEIGHT)
+                   G_PORTRAIT_FRAMING=>G_PORTRAIT_FRAMING, G_WIDTH=>G_WIDTH, G_HEIGHT=>G_HEIGHT,
+                   G_COLOR_PROFILE=>G_COLOR_PROFILE)
       port map (aclk=>clk, aresetn=>rst_n,
                 s_axis_tdata=>sd, s_axis_tvalid=>sv, s_axis_tready=>sr, s_axis_tuser=>ss, s_axis_tlast=>sl,
                 m_axis_tdata=>md, m_axis_tvalid=>mv, m_axis_tready=>mr, m_axis_tuser=>ms, m_axis_tlast=>ml);
@@ -108,10 +110,16 @@ begin
 
   sink_ready : process(clk)
     variable rng : unsigned(15 downto 0) := x"17B5";
+    variable first_stall : boolean := true;
   begin
     if rising_edge(clk) then
       rng := next_lfsr(rng);
-      if rst_n='0' or (G_STALLS and (rng(1 downto 0)="00" or rng(7 downto 4)="1111")) then mr <= '0';
+      if rst_n='0' then mr <= '0'; first_stall := true;
+      elsif G_STALLS and NP_OUT<=4 and first_stall then
+        -- A very short frame may miss every pseudorandom stall. Hold its first beat.
+        mr <= '0';
+        if mv='1' then first_stall := false; end if;
+      elsif G_STALLS and (rng(1 downto 0)="00" or rng(7 downto 4)="1111") then mr <= '0';
       else mr <= '1';
       end if;
     end if;

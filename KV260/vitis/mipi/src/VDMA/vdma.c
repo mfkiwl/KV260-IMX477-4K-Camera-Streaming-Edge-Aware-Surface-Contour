@@ -135,6 +135,8 @@ int vdma_write_init(short DeviceID,short HoriSizeInput,short VertSizeInput,short
 			xdbg_printf(XDBG_DEBUG_ERROR,"Write channel set buffer address failed %d\r\n", Status);
 			return XST_FAILURE;
 	}
+	vdmaDMA.FrameDelay = 1;
+	Status = XAxiVdma_DmaConfig(&Vdma, XAXIVDMA_READ, &(vdmaDMA));
 	Status = XAxiVdma_DmaConfig(&Vdma, XAXIVDMA_READ, &(vdmaDMA));
 	if (Status != XST_SUCCESS) {
 		xdbg_printf(XDBG_DEBUG_ERROR,"Read channel config failed %d\r\n", Status);
@@ -249,7 +251,7 @@ void fetch_rgb_data() {
 	xil_printf("pS2MM_Mem = %X\n\r", pS2MM_Mem);
 	xil_printf("pMM2S_Mem = %X\n\r", pMM2S_Mem);
 	uint32_t Blue = 0, Red = 0, Green = 0;
-	per_write_reg(VFP_FRAME_DIMENSIONS,3);
+
     //Xil_DCacheFlush();
 	for (j = 0; j < 5; j++) {
             for (i = 0; i < res; i++) {
@@ -278,6 +280,6 @@ void fetch_rgb_data() {
 	XAxiVdma_WriteReg(XPAR_PS_VIDEO_V_DMA_AXI_VDMA_0_BASEADDR, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_MM2S_DMACR | XAXIVDMA_CR_TAIL_EN_MASK);
 	vdma_S2MM_DMACR = XAxiVdma_ReadReg(XPAR_PS_VIDEO_V_DMA_AXI_VDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET);
 	XAxiVdma_WriteReg(XPAR_PS_VIDEO_V_DMA_AXI_VDMA_0_BASEADDR, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_S2MM_DMACR | XAXIVDMA_CR_TAIL_EN_MASK);
-	per_write_reg(VFP_FRAME_DIMENSIONS,4);
+
 	return;
 }

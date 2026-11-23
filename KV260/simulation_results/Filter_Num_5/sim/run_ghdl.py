@@ -34,7 +34,7 @@ def jpeg_dimensions(path):
 
 
 def run(source, output, build, decoded=None, stalls=False, second=None, second_output=None,
-        profile=None, reference=None, exact=False):
+        profile=None, reference=None, exact=False, color_profile="auto"):
     ghdl = shutil.which(os.environ.get("GHDL", "ghdl"))
     if not ghdl:
         raise SystemExit("GHDL is required. Put ghdl on PATH or set GHDL to its executable.")
@@ -55,7 +55,8 @@ def run(source, output, build, decoded=None, stalls=False, second=None, second_o
         elif not large_view:
             reference = ROOT / "reference/Designer.jpg"
     args = [f"-gG_DESIGNER1={str(designer1).lower()}", f"-gG_LARGE_VIEW={str(large_view).lower()}", f"-gG_DESIGNER_VIEW={str(styled).lower()}", f"-gG_PORTRAIT_FRAMING={str(portrait).lower()}", f"-gG_INPUT={source}", f"-gG_WIDTH={width}", f"-gG_HEIGHT={height}",
-            f"-gG_OUTPUT={output}", f"-gG_STALLS={str(stalls).lower()}"]
+            f"-gG_OUTPUT={output}", f"-gG_STALLS={str(stalls).lower()}",
+            f"-gG_COLOR_PROFILE={color_profile}"]
     destinations = [output]
     inputs = [source]
     if reference:
@@ -88,7 +89,7 @@ def run(source, output, build, decoded=None, stalls=False, second=None, second_o
     print(f"RTL output: {output}", flush=True)
     if check_aligned:
         subprocess.run([sys.executable, str(ROOT / "tools/check_pixels.py"), str(decoded), str(output),
-                        "--designer1", "--jpeg", str(source)], check=True)
+                        "--designer1", "--color-profile", color_profile, "--jpeg", str(source)], check=True)
     if reference:
         script = "compare_rgb.py" if exact or not (styled and designer1) else "compare_style.py"
         check = subprocess.run([sys.executable, str(ROOT / "sim" / script), str(output), str(reference)])
@@ -103,6 +104,8 @@ if __name__ == "__main__":
     parser.add_argument("--build", type=Path, default=ROOT / "build/ghdl")
     parser.add_argument("--decoded-bmp", type=Path, help="also dump the unfiltered JPEG decoder output")
     parser.add_argument("--stalls", action="store_true", help="insert pseudo-random source gaps and output backpressure")
+    parser.add_argument("--color-profile", choices=("auto", "source", "designer1"), default="auto",
+                        help="select the Designer1 color treatment, independently of image geometry")
     parser.add_argument("--second-jpeg", type=Path, help="stream another frame without reset")
     parser.add_argument("--second-output", type=Path)
     profiles = parser.add_mutually_exclusive_group()
@@ -120,4 +123,4 @@ if __name__ == "__main__":
     parser.add_argument("--exact", action="store_true", help="require identical decoded RGB pixels")
     opts = parser.parse_args()
     run(opts.input, opts.output, opts.build, opts.decoded_bmp, opts.stalls, opts.second_jpeg, opts.second_output,
-        opts.profile, opts.reference, opts.exact)
+        opts.profile, opts.reference, opts.exact, opts.color_profile)

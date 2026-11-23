@@ -88,12 +88,7 @@ int init_camera()
 }
 void read_imx477_reg(u16 addr)
 {
-	int Status;
-	print("IMX477 Camera\n\r");
-    Status = imx477_sensor_init(&iic_cam,addr);
-  	if (Status != 477) {
-  		print("IMX477 Camera Sensor Not connected\n\r");
-  	}
+    (void)imx477_read_register(&iic_cam, addr);
 }
 void write_imx477_reg(u16 addr,u8 data)
 {

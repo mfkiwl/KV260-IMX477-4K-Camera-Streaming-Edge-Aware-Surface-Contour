@@ -13,6 +13,8 @@ if {[info exists 1]} {set input [set 1]}
 set stem [file rootname [file tail $input]]
 set output [file join results "${stem}_filtered.bmp"]
 if {[info exists 2]} {set output [set 2]}
+set color_profile auto
+if {[info exists 3]} {set color_profile [set 3]}
 set decoded [file join build "${stem}_decoded.bmp"]
 if {[file normalize $input] eq [file normalize $output] ||
     [file normalize $input] eq [file normalize $decoded] ||
@@ -44,7 +46,7 @@ if {[auto_execok python] ne ""} {
 set dimensions [exec {*}$py -c {from PIL import Image; import sys; im=Image.open(sys.argv[1]); print(*im.size)} $input]
 lassign $dimensions width height
 vsim -onfinish stop -voptargs=+acc -gG_STALLS=true -gG_DESIGNER_VIEW=true -gG_DESIGNER1=true \
-    -gG_PORTRAIT_FRAMING=false -gG_WIDTH=$width -gG_HEIGHT=$height \
+    -gG_PORTRAIT_FRAMING=false -gG_WIDTH=$width -gG_HEIGHT=$height -gG_COLOR_PROFILE=$color_profile \
     -gG_INPUT=$input -gG_OUTPUT=$output -gG_DECODED_BMP=$decoded work.tb_pic2
 set BreakOnAssertion 2
 run -all
@@ -53,7 +55,7 @@ if {[string trim [examine -radix binary sim:/tb_pic2/capture_complete] "'"] ne "
     quit -code 1
 }
 # Independently calculate the Filter 5 RGB value at every source coordinate.
-set status [catch {exec {*}$py tools/check_pixels.py $decoded $output --designer1 --jpeg $input 2>@1} message options]
+set status [catch {exec {*}$py tools/check_pixels.py $decoded $output --designer1 --color-profile $color_profile --jpeg $input 2>@1} message options]
 echo $message
 if {$status} {
     set reason [dict get $options -errorcode]
