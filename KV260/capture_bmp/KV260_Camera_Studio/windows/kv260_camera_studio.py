@@ -1,12 +1,15 @@
 """KV260 4K MJPEG viewer with IMX477 and VFP control."""
 import argparse
+import io
 import ipaddress
 import math
 import queue
+import re
+from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
-from PIL import ImageTk
+from PIL import Image, ImageTk
 
 from control_client import ControlClient
 from video_engine import VideoEngine
@@ -16,6 +19,39 @@ PANEL = "#162135"
 MUTED = "#aab9cc"
 ACCENT = "#55d5c4"
 WHITE = "#edf5ff"
+
+SAVE_SIZES = {
+    "Option 1 - 3840x2160": (3840, 2160),
+    "Option 2 - 2048x1152": (2048, 1152),
+}
+
+
+def save_received_jpeg(data, size, folder):
+    with Image.open(io.BytesIO(data)) as image:
+        if image.size != size:
+            resized = image.convert("RGB").resize(size, Image.Resampling.LANCZOS)
+            encoded = io.BytesIO()
+            resized.save(encoded, format="JPEG", quality=95, subsampling=0)
+            data = encoded.getvalue()
+
+    numbers = (int(match[1]) for entry in folder.iterdir()
+               if (match := re.fullmatch(r"PIC([0-9]+)\.jpg", entry.name, re.I)))
+    number = max(numbers, default=0) + 1
+    while True:
+        path = folder / f"PIC{number}.jpg"
+        try:
+            output = path.open("xb")
+            break
+        except FileExistsError:
+            number += 1
+    try:
+        with output:
+            output.write(data)
+    except OSError:
+        path.unlink()
+        raise
+    return path
+
 
 OUTPUTS = {
     "0  Camera bypass": 0,
@@ -199,13 +235,16 @@ class CameraStudio:
                                 fill=MUTED, tags="placeholder", font=("Segoe UI", 14))
         actions = ttk.Frame(viewer)
         actions.pack(fill="x", pady=(8, 0))
+        self.save_size = tk.StringVar(value=next(iter(SAVE_SIZES)))
+        self.save_folder = None
+        ttk.Combobox(actions, state="readonly", width=21, textvariable=self.save_size,
+                     values=tuple(SAVE_SIZES)).pack(side="left", padx=(0, 6))
         ttk.Button(actions, text="Save received JPEG…", command=self.save_jpeg).pack(side="left")
         ttk.Label(actions, text="Rotation", style="Muted.TLabel").pack(side="left", padx=(16, 4))
         rot = ttk.Combobox(actions, state="readonly", width=6, textvariable=self.rotation,
                            values=("0°", "90°", "180°", "270°"))
         rot.pack(side="left")
         rot.bind("<<ComboboxSelected>>", lambda _e: self._update_preview_settings())
-        self._note(actions, "Saved JPEG is the original received frame.").pack(side="left", padx=12)
 
         side = ttk.Frame(body, width=435)
         side.pack(side="right", fill="y")
@@ -357,7 +396,7 @@ class CameraStudio:
         self._note(frame, "The current VFP has no direct hue-offset register. Hardware effect is unverified until tested on your bitstream.").pack(anchor="w", pady=(4, 5))
         ttk.Separator(frame).pack(fill="x", pady=8)
         ttk.Label(frame, text="HSV • Windows preview only", style="Section.TLabel").pack(anchor="w")
-        self._note(frame, "The sliders below affect only this PC window, not the FPGA, monitor, or saved original JPEG.").pack(anchor="w", pady=(4, 4))
+        self._note(frame, "The sliders below affect only this PC window, not the FPGA, monitor, or saved JPEG.").pack(anchor="w", pady=(4, 4))
         for name, var, lower, upper, resolution in (
                 ("Hue shift (degrees)", self.hue, -180, 180, 1),
                 ("Saturation multiplier", self.saturation, 0, 2, 0.05),
@@ -537,15 +576,17 @@ class CameraStudio:
         if data is None:
             self.message.set("No complete JPEG received yet")
             return
-        path = filedialog.asksaveasfilename(title="Save original received JPEG", defaultextension=".jpg",
-                 initialfile=f"kv260_frame_{frame_id}.jpg", filetypes=[("JPEG image", "*.jpg")])
-        if path:
-            try:
-                with open(path, "wb") as output:
-                    output.write(data)
-                self.message.set(f"Saved original frame {frame_id}: {path}")
-            except OSError as exc:
-                self.message.set(f"Could not save JPEG: {exc}")
+        folder = filedialog.askdirectory(title="Choose folder for PIC images",
+                                         initialdir=self.save_folder, mustexist=True)
+        if not folder:
+            return
+        self.save_folder = folder
+        size = SAVE_SIZES[self.save_size.get()]
+        try:
+            path = save_received_jpeg(data, size, Path(folder))
+            self.message.set(f"Saved frame {frame_id} ({size[0]}x{size[1]}): {path}")
+        except OSError as exc:
+            self.message.set(f"Could not save JPEG: {exc}")
 
     def _sensor_reply(self, values):
         if len(values) != 10:
