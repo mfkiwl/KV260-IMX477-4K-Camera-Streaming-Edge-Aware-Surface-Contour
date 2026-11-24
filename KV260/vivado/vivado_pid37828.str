@@ -89,3 +89,10 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // WARNING: HEventQueue.dispatchEvent() is taking  2972 ms.
 // TclEventType: START_PROGRESS_DIALOG
 // TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: INFO: [TE_INIT-139] Run project finished without Error.    ------ 
+// Tcl Message: ----------------------------------------------------------------------- 
+dismissDialog("Sourcing Tcl script '../scripts/script_main.tcl'"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 130 MB. Current time: 11/23/26, 9:46:43 PM EST
+// [GUI Memory]: 186 MB (+14440kb) [00:00:34]
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1045 ms. Increasing delay to 3135 ms.
