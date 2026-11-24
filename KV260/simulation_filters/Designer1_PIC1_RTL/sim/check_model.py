@@ -1,54 +1,93 @@
-"""Compare all 32 bits of the accepted AXI stream with a source-only raster model."""
+"""Raster arithmetic for the live surface, structure and tone paths."""
 import argparse
 from pathlib import Path
 
 import numpy as np
 from PIL import Image
 
-from live_tone_model import tone_with_context
+
+def taps(a, axis, spacing):
+    positions = np.arange(a.shape[axis])
+    lo = np.where(positions >= spacing, positions-spacing, positions)
+    hi = np.where(positions+spacing < a.shape[axis], positions+spacing, positions)
+    return np.take(a, lo, axis=axis), np.take(a, hi, axis=axis)
 
 
-def smooth(rgb, threshold_base=16, threshold_step=2):
-    """Apply centered separable filters at four scales. One RGB outlier vetoes a tap."""
-    a = np.asarray(rgb, dtype=np.int16)
-    for scale in range(4):
-        threshold = min(255, threshold_base + scale*threshold_step)
-        for axis in (1, 0):  # Horizontal, then vertical.
-            reach = min(2**scale, a.shape[axis]-1)
-            if reach == 0:
-                continue
-            lo = a.copy()
-            hi = a.copy()
-            nearer_origin = [slice(None)] * a.ndim
-            farther_from_origin = [slice(None)] * a.ndim
-            nearer_origin[axis] = slice(None, -reach)
-            farther_from_origin[axis] = slice(reach, None)
-            lo[tuple(farther_from_origin)] = a[tuple(nearer_origin)]
-            hi[tuple(nearer_origin)] = a[tuple(farther_from_origin)]
-            lo = np.where((np.abs(lo-a).max(axis=2) <= threshold)[..., None], lo, a)
-            hi = np.where((np.abs(hi-a).max(axis=2) <= threshold)[..., None], hi, a)
-            a = (lo + 2*a + hi + 2)//4
-    return a.astype(np.uint8)
+def blur_axis(rgb, axis, spacing, threshold):
+    lo, hi = taps(rgb, axis, spacing)
+    if threshold is not None:
+        lo = np.where((np.abs(lo-rgb).max(axis=2) <= threshold)[...,None], lo, rgb)
+        hi = np.where((np.abs(hi-rgb).max(axis=2) <= threshold)[...,None], hi, rgb)
+    return (lo + 2*rgb + hi + 2)//4
 
 
-def broad_context(rgb, spacing=16):
-    """Separable, unthresholded [1,2,1] around a fixed-distance center."""
-    a = np.asarray(rgb, dtype=np.int32)
+def planes(rgb, threshold_base=16, sector_radius=4, structure_step=4, context_step=16):
+    fine = np.asarray(rgb, dtype=np.int16)
     for axis in (1, 0):
-        pos = np.arange(a.shape[axis])
-        lo = np.take(a, np.where(pos >= spacing, pos-spacing, pos), axis=axis)
-        hi = np.take(a, np.where(pos+spacing < a.shape[axis], pos+spacing, pos), axis=axis)
-        a = (lo + 2*a + hi + 2)//4
-    return a
+        fine = blur_axis(fine, axis, 1, threshold_base)
+    y = (fine[...,0] + 2*fine[...,1] + fine[...,2]+2)//4
+    dark = np.zeros_like(y)
+    light = np.zeros_like(y)
+    for axis in (1, 0):
+        lo, hi = taps(y, axis, structure_step)
+        delta = y - (lo+hi+1)//2
+        dark = np.maximum(dark, -delta)
+        light = np.maximum(light, delta)
+    from sector_model import sector_surface
+    from directional_model import directional_masks
+    dark_q2, light_q2 = directional_masks(fine, fine_step=2, medium_step=6, pre_step=2)
+    surface = np.asarray(sector_surface(fine, dark_q2, light_q2, sector_radius), dtype=np.int16)
+    surround = surface
+    for axis in (1, 0):
+        surround = blur_axis(surround, axis, context_step, None)
+    return surface, surround, np.minimum(63,dark), np.minimum(63,light), dark_q2, light_q2
+
+
+def luma(rgb):
+    return (rgb[..., 0]+2*rgb[..., 1]+rgb[..., 2]+2)//4
+
+
+def finish_axis(rgb, axis, spacing, maximum_cutoff):
+    left, right = taps(rgb, axis, spacing)
+    yl, yc, yr = luma(left), luma(rgb), luma(right)
+    cutoff = np.maximum(0, maximum_cutoff-8+np.clip((yc-50)//8, 0, 8))
+    smooth = blur_axis(rgb, axis, spacing, cutoff)
+    if spacing == 1:
+        return smooth
+    dl, dr = np.abs(yl-yc), np.abs(yr-yc)
+    contrast = np.abs(yl-yr)
+    between = ((yl < yc) & (yc < yr)) | ((yr < yc) & (yc < yl))
+    restore = (between & (contrast >= 10) & (contrast <= 52) & (np.abs(dl-dr) >= 3)
+               & (np.minimum(dl, dr) >= 2) & ((yc <= 140) | (rgb[...,0]-rgb[...,1] >= 20)))
+    nearer = np.where((dl < dr)[...,None], left, right)
+    return np.where(restore[..., None], (rgb + 3*nearer + 2)//4, smooth)
+
+
+def clear_impulses(rgb):
+    left, right = taps(rgb, 1, 1)
+    above, below = taps(rgb, 0, 1)
+    ys = np.stack([luma(v) for v in (left, right, above, below)])
+    low, high = ys.min(axis=0), ys.max(axis=0)
+    center = luma(rgb)
+    gap = np.maximum(low-center, center-high)
+    replace = (gap >= 3) & (gap <= 28) & (high-low <= 18)
+    horizontal = (left+right+1)//2
+    vertical = (above+below+1)//2
+    return np.where(replace[..., None], (horizontal+vertical+1)//2, rgb)
 
 
 def expected(rgb):
-    """Return packed RGB10 words; each 8-bit result expands by MSB replication."""
-    detail = smooth(rgb)
-    rgb8 = np.asarray(tone_with_context(detail.astype(np.int32), broad_context(detail)),
-                      dtype=np.uint32)
-    rgb10 = (rgb8 << 2) | (rgb8 >> 6)
-    return (rgb10[..., 0] << 20) | (rgb10[..., 1] << 10) | rgb10[..., 2]
+    from live_tone_model import tone_with_structure
+    from stroke_model import reconstruct
+    surface, surround, *structure = planes(rgb)
+    out = tone_with_structure(surface, surround, *structure)
+    for spacing in (1, 2, 4):
+        for axis in (1, 0):
+            out = finish_axis(out, axis, spacing, maximum_cutoff=24)
+    out = reconstruct(out, surface, surround)
+    out8 = clear_impulses(out).astype(np.uint32)
+    out10 = (out8 << 2) | (out8 >> 6)
+    return (out10[..., 0] << 20) | (out10[..., 1] << 10) | out10[..., 2]
 
 
 def check(decoded, trace, frames=1, low_bits=False):

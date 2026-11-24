@@ -12,7 +12,7 @@ while {[gets $manifest path] >= 0} {
     if {[string trim $path] ne ""} {vcom -2008 -work work [file join $root $path]}
 }
 close $manifest
-set pic [file join $root images PIC1.JPG]
-set bmp [file join $root results PIC1.bmp]
+set pic [file join $root images PIC2.JPG]
+set bmp [file join $root results PIC2.bmp]
 vsim -onfinish exit -gG_INPUT=$pic -gG_OUTPUT=$bmp work.tb_pic1
 run -all

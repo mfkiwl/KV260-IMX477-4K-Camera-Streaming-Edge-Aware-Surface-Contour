@@ -1,0 +1,5 @@
+# do sim/questa.do
+# C:/mtitcl
+# C:/mtitcl/build/questa
+# ** Error: can't create directory "C:/mtitcl/build": no such file or directory
+# Executing ONERROR command at macro ./sim/questa.do line 5

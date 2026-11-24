@@ -6,8 +6,8 @@ use work.jpeg_reader_pkg.all;
 use work.bmp_writer_pkg.all;
 
 entity tb_pic1 is
-  generic (G_INPUT : string := "images/PIC1.JPG";
-           G_OUTPUT : string := "results/PIC1.bmp";
+  generic (G_INPUT : string := "images/PIC2.JPG";
+           G_OUTPUT : string := "results/PIC2.bmp";
            G_WIDTH : positive := 2048; G_HEIGHT : positive := 1152;
            G_STALLS : boolean := true;
            G_SECOND_OUTPUT : string := "";

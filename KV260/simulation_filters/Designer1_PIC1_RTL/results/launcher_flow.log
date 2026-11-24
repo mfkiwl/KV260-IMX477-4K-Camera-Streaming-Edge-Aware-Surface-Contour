@@ -1,0 +1,9 @@
+Full launcher Tcl flow exercised using NVC as the simulator backend. Native Windows Questa was unavailable.
+Input: /workspace/scratch/2d9ac3fe791b/inkline/qa/Windows Path With Spaces/images/PIC1.JPG (2048 x 1152)
+Saved /workspace/scratch/2d9ac3fe791b/inkline/qa/Windows Path With Spaces/results/PIC1_filtered.bmp
+Exact RGB pixels: 2,214/2,359,296. Mean absolute channel error: 10.5586.
+FAIL pixel equality. Report: /workspace/scratch/2d9ac3fe791b/inkline/qa/Windows Path With Spaces/results/PIC1_filtered_comparison.json
+Tcl exit code 1
+** Note: 25170545ns+0: AXI PASS: input=2359296 output=2359296 cycles=2517051 source_gap_cycles=0 output_stall_cycles=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/inkline/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+Byte comparison to stressed RTL capture passed. BMP SHA-256 db26f0a3f8d2bae38b87efc5ad35d7efd5dba4ddfc8910237c9d03cdfcc68a67
