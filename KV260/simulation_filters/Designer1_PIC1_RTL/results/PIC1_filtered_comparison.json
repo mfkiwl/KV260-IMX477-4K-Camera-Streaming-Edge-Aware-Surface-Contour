@@ -1,0 +1,49 @@
+{
+  "exact_match": false,
+  "width": 2048,
+  "height": 1152,
+  "total_pixels": 2359296,
+  "exact_rgb_pixels": 967,
+  "different_rgb_pixels": 2358329,
+  "exact_percent": 0.04098680284288195,
+  "mean_absolute_channel_error": 10.850670708550346,
+  "mean_absolute_error_by_channel_rgb": [
+    13.343247731526693,
+    9.333231608072916,
+    9.875532786051432
+  ],
+  "maximum_absolute_channel_error": 224,
+  "rmse": 18.195316033036704,
+  "psnr_db": 22.931611544378583,
+  "first_difference": {
+    "x": 0,
+    "y": 0,
+    "output_rgb": [
+      6,
+      49,
+      59
+    ],
+    "reference_rgb": [
+      25,
+      57,
+      68
+    ]
+  },
+  "output_file": "PIC1_filtered.bmp",
+  "output_file_sha256": "f5aff8fb789f86f43c1ccd210692de792e7fcaceac59681621b0e0d1296b3590",
+  "output_rgb_sha256": "d019315bf81279035f946b148b10b9c7e363d2579b27300480821e77fd1902e2",
+  "reference_file": "Designer1_PIC1_2048x1152.jpg",
+  "reference_file_sha256": "79cecdaec75fde5067a4b4dca58062876c1ccc491e163753c932d4ac83cb9d51",
+  "reference_rgb_sha256": "aa945d2a866c6f7d002517789f7609a4bf8f97c4f39413598841efbe865b4e83",
+  "pillow": "13.0.0",
+  "libjpeg_turbo": "3.2.0",
+  "simulation": {
+    "input_file": "PIC1.JPG",
+    "input_file_sha256": "4f681b9c3fe6cbd18bcb11024d9c6339a8897872aa7022fb079271f73d928e14",
+    "input_rgb_sha256": "793edc142c873ce600f64e105eda4ba5171785fee2941e7a5e6081ce29927584",
+    "simulator": "nvc 1.23.1 (1.23.1.r0.gfab54a9) (Using LLVM 18.1.3)",
+    "stress": true,
+    "packing": "shift",
+    "simulation_log": "PIC1_filtered_simulation.log"
+  }
+}

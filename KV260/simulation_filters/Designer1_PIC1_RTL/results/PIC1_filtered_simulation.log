@@ -1,0 +1,7 @@
+nvc 1.23.1 (1.23.1.r0.gfab54a9) (Using LLVM 18.1.3)
+G_WIDTH=2048 G_HEIGHT=1152 G_STRESS=true G_SHIFT=true G_TRACE=true
+** Note: 28598735ns+0: AXI PASS: input=2359296 output=2359296 cycles=2859870 source_gap_cycles=204866 output_stall_cycles=313214
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/revision/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd:71
+** Note: 28598735ns+0: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/revision/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd:184
