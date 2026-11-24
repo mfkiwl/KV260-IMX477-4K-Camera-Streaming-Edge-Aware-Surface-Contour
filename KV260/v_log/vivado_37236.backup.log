@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Nov 20 08:44:51 2026
-# Process ID: 1964
+# Start of session at: Mon Nov 23 21:16:11 2026
+# Process ID: 37236
 # Current directory: R:/KV260/v_log
 # Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
 # Log file: R:/KV260/v_log/vivado.log
@@ -126,7 +126,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'r:/KV260/ip_lib'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.965 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1372.926 ; gain = 0.000
 Board part csv name check:  KriaKV260 is unique on position 1.
 INFO: [TE_INIT-4] Board Part definition:
   TE::ID:             1 
@@ -144,38 +144,16 @@ INFO: [TE_INIT-4] Board Part definition:
   TE::NOTES:          NA 
   ------
 INFO: [TE_UTIL-2] Following block designs were found: 
-   R:/KV260/block_design/zusys_bd.tcl 
+   R:/KV260/block_design/apply_contour_timing.tcl 
+ R:/KV260/block_design/check_contour_synthesis.tcl 
+ R:/KV260/block_design/contour_control_clock.tcl 
+ R:/KV260/block_design/zusys_bd.tcl 
   ------
-INFO: [TE_INIT-8] Found BD-Design:
-  TE::BD_TCLNAME:       zusys_bd 
-  TE::PR_TOPLEVELNAME: zusys_wrapper 
-  ------
-  TE::IS_ZUSYS:        true
-WARNING: [TE_HW-23] Current top level name is set to kv260_video_wrapper, expect zusys_wrapper from default initialisation. Set TE::PR_TOPLEVELNAME to kv260_video_wrapper.
-INFO: [TE_HW-24] Restore project parameters:
-  TE::SIM_NAME:         sim_1  
-  TE::SYNTH_NAME:       synth_1  
-  TE::IMPL_NAME:        impl_1  
-  TE::CONST_NAME:       constrs_1  
-  ------
-Start GUI...all other messages will be print inside the GUI TCL console of Vivado
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [TE_INIT-139] Run project finished without Error. 
-  ------
------------------------------------------------------------------------
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 8
+WARNING: [TE_UTIL-3] Currently only one Block-Design is supported with TE-scripts, deleted or rename file-extension from unused *.tcl in R:/KV260/block_design or R:/KV260/block_design/kv260_som.
+ERROR: [TE_HW-21] Script (TE::INIT::check_bdtyp) failed: Currently only one Block-Design is supported with TE-scripts, deleted or rename file-extension from unused *.tcl in R:/KV260/block_design or R:/KV260/block_design/kv260_som..
+Error: (TE_HW-21) Script (TE::INIT::check_bdtyp) failed: Currently only one Block-Design is supported with TE-scripts, deleted or rename file-extension from unused *.tcl in R:/KV260/block_design or R:/KV260/block_design/kv260_som..
+ERROR: [TE_INIT-143] Script (TE::VIV::open_project) failed: .
+ERROR: (TE_INIT-143) Script (TE::VIV::open_project) failed: .
+ERROR:(TE) Script (TE::INIT::run_project) failed: .
+ERROR:(TE) Script (TE::main) failed: .
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 21:16:40 2026...

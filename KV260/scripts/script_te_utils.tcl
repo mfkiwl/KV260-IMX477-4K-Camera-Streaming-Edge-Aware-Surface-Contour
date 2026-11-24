@@ -294,7 +294,7 @@ namespace eval ::TE {
         set revDir [lindex [split ${TE::PCB_REV} "|"] 0]
         if { [catch {set bd_files [glob -join -dir ${TE::BD_PATH}/${revDir} *.tcl]}] } {
          #search  base folder
-          if { [catch {set bd_files [glob -join -dir ${TE::BD_PATH}/ *.tcl]}] } {
+          if { [catch {set bd_files [glob -join -dir ${TE::BD_PATH}/ *_bd.tcl]}] } {
             #check current project
             if { [catch {set bd_files [glob -join -dir ${TE::VPROJ_PATH}/${TE::VPROJ_NAME}.srcs/${TE::SOURCE_NAME}/bd/ * *.bd]}] } {
               TE::UTILS::te_msg TE_UTIL-0 WARNING "No external Block-Design Export was found in ${TE::BD_PATH}, start vivado without bd-design"

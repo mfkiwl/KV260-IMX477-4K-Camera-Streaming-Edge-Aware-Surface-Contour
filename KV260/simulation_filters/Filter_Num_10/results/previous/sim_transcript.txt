@@ -1,2 +1,0 @@
-# sim/run_questa.do
-# invalid command name "sim/run_questa.do"

@@ -1,6 +1,0 @@
-512 x 176 grayscale test through the RGB10 wrapper.
-Central 488 columns. See README.md for geometry, local-background and ink detection criteria.
-
-Input: ramp RMS 3.070 levels, boundary ink 1/488, longest gap 301 columns, median ink depth 2.0 levels, thin stroke present 488/488.
-Previous RTL: ramp RMS 0.845 levels, boundary ink 260/488, longest gap 37 columns, median ink depth 10.0 levels, thin stroke present 107/488.
-Refined RTL: ramp RMS 0.397 levels, boundary ink 488/488, longest gap 0 columns, median ink depth 73.0 levels, thin stroke present 488/488.
