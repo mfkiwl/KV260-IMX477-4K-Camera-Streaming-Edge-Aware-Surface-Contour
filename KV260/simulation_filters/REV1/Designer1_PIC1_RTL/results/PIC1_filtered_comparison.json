@@ -1,0 +1,50 @@
+{
+  "exact_match": false,
+  "width": 2048,
+  "height": 1152,
+  "total_pixels": 2359296,
+  "exact_rgb_pixels": 0,
+  "different_rgb_pixels": 2359296,
+  "exact_percent": 0.0,
+  "mean_absolute_channel_error": 82.70979464495623,
+  "mean_absolute_error_by_channel_rgb": [
+    97.5030500623915,
+    74.09540515475803,
+    76.53092871771918
+  ],
+  "maximum_absolute_channel_error": 255,
+  "rmse": 99.0329947863116,
+  "psnr_db": 8.215205359901404,
+  "first_difference": {
+    "x": 0,
+    "y": 0,
+    "output_rgb": [
+      147,
+      185,
+      173
+    ],
+    "reference_rgb": [
+      25,
+      57,
+      68
+    ]
+  },
+  "output_file": "PIC1_filtered.bmp",
+  "output_file_sha256": "89d9df883597ebe07c730359fb8d6b51547b57a7d8b2874fa710685ce84908c3",
+  "output_rgb_sha256": "8a8beff76e18ee3ad2e06e75976d4035a6e4dc1426e140669f4c215d68366d41",
+  "reference_file": "Designer1_PIC1_2048x1152.jpg",
+  "reference_file_sha256": "79cecdaec75fde5067a4b4dca58062876c1ccc491e163753c932d4ac83cb9d51",
+  "reference_rgb_sha256": "aa945d2a866c6f7d002517789f7609a4bf8f97c4f39413598841efbe865b4e83",
+  "pillow": "12.2.0",
+  "libjpeg_turbo": "3.1.4.1",
+  "simulation": {
+    "input_file": "PIC1.JPG",
+    "input_file_sha256": "aa5fc309390e808edc68c9d19ab0361b4e7b0f661a286081d0ee3b074a40cbde",
+    "input_rgb_sha256": "41d3ae230c878271cfc847a57ceb2504384b66387f5e302113d63528495dea1e",
+    "smoke": false,
+    "simulator": "Questa/ModelSim (vsim)",
+    "stress": false,
+    "packing": "shift",
+    "simulation_log": "PIC1_filtered_simulation.log"
+  }
+}

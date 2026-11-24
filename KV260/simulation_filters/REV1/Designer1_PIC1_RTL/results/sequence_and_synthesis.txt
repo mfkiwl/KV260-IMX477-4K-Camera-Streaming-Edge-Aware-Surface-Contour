@@ -1,0 +1,40 @@
+Questa 2024.1 compile correction
+
+Changed the local integer identifier strong to structure_strength at its declaration and both uses in rtl/portrait_region_axis.vhd.
+Corrected portrait_region_axis.vhd SHA-256: 1cdef22f8f185154796451443b69ca44f3f0128095fe802b5d867557c99788b4
+The independent VHDL-2008 analyzer vhdl_lang 0.88.0 reproduced the parser error at line 63 with the original source. The same full manifest and testbench analyzed with zero diagnostics after the rename.
+GHDL 5.0.1 analyzed the complete manifest and testbench with --std=08 -fpsl. The 128 x 72 smoke capture completed under AXI stalls and matched the independent model on all 9,216 pixels.
+GHDL synthesized axis_portrait_filter with G_WIDTH=2048 and G_HEIGHT=1152 to a 3,273,584-byte Verilog netlist.
+NVC 1.23.1 ran the full 2048 x 1152 frame with AXI backpressure. All 2,359,296 accepted RGB10 words matched the independent raster model. The new BMP is byte-identical to the previously verified full-frame BMP.
+BMP SHA-256: e3117c5e61ab5faf02714351bdd0dc03054043cfc7142b5b784c6943afc741b5
+The Windows transcript supplied for the previous source stopped during compilation. The corrected source has been tested with GHDL and NVC. A corrected-source native Windows Questa run is pending.
+
+Previous revision's sequence tests and corresponding source hashes
+
+Split-path portrait filter — RTL synthesis and sequence verification
+
+GHDL 5.0.1 VHDL-2008 synthesis passed at 2048 x 1152; top axis_portrait_filter.
+Generated 3,328,529 bytes of Verilog and 26 modules. GHDL warnings: 0.
+Inferred RAM shapes in bits x words: 26x2, 26x4096, 24x2, 26x4, 24x4096, 26x8192, 120x2048, 26x12330, 28x4, 26x8, 28x8192, 26x16384, 54x8212, 268x2052, 52x8208, 28x16, 26x32, 28x32768, 24x32768, 26x65536, 26x2, 28x2048, 26x4096, 28x2, 26x4, 28x4096, 26x8192, 28x4, 26x8, 28x8192, 26x16384, 26x2, 28x2048, 24x2048, 26x4096, 216x2048, 46x24732, 144x2048, 46x6156, 576x2048, 22x12330, 36x2048, 55x6156, 240x2048, 2x10270.
+Hardware utilization and post-route timing require a separate board implementation.
+
+NVC 1.23.1 accepted two successive 259 x 321 frames after one initial reset.
+Frame 1 is the 259 x 321 crop starting at PIC1 input coordinate (1110,290), with varying low input bits.
+Frame 2 is a seeded random RGB10 frame covering source lane codes 0..1023. All four low-bit patterns occur.
+input=166278 output=166278 cycles=265538 source_gap_cycles=23894 output_stall_cycles=59019 longest_output_stall=124
+Checks passed for output stability across stalls, transfer counts, SOF and EOL alignment, and frame drain.
+Every accepted 32-bit packed RGB10 word matched the independent raster model (83,139 of 83,139 per frame).
+The same frames, replayed separately with reset and no stalls, produced identical full RGB10 outputs.
+Two successive synthetic 127 x 95 frames of adjoining warm surfaces, cool shadow bands, near-neutral surfaces, and sparse impulses matched the raster model on all 24,130 accepted words.
+Two-frame GHDL cases at 1x1, 1x11, 13x1, 3x5, 13x15, 4x4, 16x16, 17x17, 5x5, 5x8 and 7x8 matched the model on every output.
+
+Final analyzed RTL source digests:
+e63f83cd0dcf90d6b4ab949e451b92f4bc2ae9ca99684e6a566cf79e28e86f16  rtl/live_tone_pkg.vhd
+97c1d77d3bccd42b1982f3b80168c56f27dfd2fd01ee349591e14f3633a2cd9e  rtl/portrait_smooth_axis.vhd
+cce8d8eab90cf4b5f5760f7b83aa3caf36187b4e33642d8444a0fdd21459569f  rtl/portrait_contour_axis.vhd
+2070b1b5a5b5069a8e8648a96e4679d17a6c86754fe1e1a9a96643157c37c62b  rtl/portrait_sector.vhd
+06b4efa6e2bbf930ff55edababa92f6b2f451c133ab56e8b12d969724cc49139  rtl/axis_stencil.vhd
+9ed9e82a69b938324fc6c65132cde1144716cb854f49add711170707b3205b9f  rtl/stroke_math_pkg.vhd
+e0d2439d6097ee9ae03d0cbd95d8ce7600a8db944a25452c48c9c03026743407  rtl/portrait_stroke_axis.vhd
+6c6481dea076a31483ebad3329881252b1335af2572b26f722543f0d58d72995  rtl/portrait_region_axis.vhd
+ccd763cca4da6ffd180091dbdc84708643b0ce50f2c236947cf5e8a5570e91f3  rtl/axis_portrait_filter.vhd

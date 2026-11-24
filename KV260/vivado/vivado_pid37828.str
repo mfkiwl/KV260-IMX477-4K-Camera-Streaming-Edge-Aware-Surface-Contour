@@ -96,3 +96,14 @@ dismissDialog("Sourcing Tcl script '../scripts/script_main.tcl'"); // bA
 // [GUI Memory]: 186 MB (+14440kb) [00:00:34]
 // Tcl Message: update_compile_order -fileset sources_1 
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1045 ms. Increasing delay to 3135 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 130 MB. Current time: 11/23/26, 10:16:46 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/23/26, 10:46:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/23/26, 11:16:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/23/26, 11:46:55 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/24/26, 12:16:56 AM EST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2473 ms. Increasing delay to 7419 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1079 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/24/26, 12:46:59 AM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2085 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/24/26, 1:17:02 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 73 MB. Current time: 11/24/26, 1:47:06 AM EST

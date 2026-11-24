@@ -1,0 +1,42 @@
+Sequence and synthesis verification
+
+vhdl_lang VHDL-2008 analysis passed all manifested RTL, the shipped testbench, and the sequence testbench with zero diagnostics.
+GHDL VOTE PASS 12 hand-calculated class, support, polarity and equal-luma chroma probes; all 7200 context, ridge and original contour-guide transfers aligned
+GHDL 2048 x 1152 synthesis emitted 3,838,718 Verilog bytes, 28 modules and 0 warnings. GHDL reported 47 RAM-inference messages before implementation.
+GHDL SEQUENCE PASS 1x1 frames=4 words=4 gaps=3 stalled=0 longest_stall=0
+GHDL SEQUENCE PASS 1x13 frames=4 words=52 gaps=19 stalled=217 longest_stall=51
+GHDL SEQUENCE PASS 15x1 frames=4 words=60 gaps=7 stalled=10 longest_stall=5
+GHDL SEQUENCE PASS 2x3 frames=4 words=24 gaps=3 stalled=3 longest_stall=2
+GHDL SEQUENCE PASS 3x5 frames=4 words=60 gaps=16 stalled=32 longest_stall=21
+GHDL SEQUENCE PASS 5x7 frames=4 words=140 gaps=12 stalled=18 longest_stall=5
+GHDL SEQUENCE PASS 8x8 frames=4 words=256 gaps=35 stalled=147 longest_stall=56
+GHDL SEQUENCE PASS 13x17 frames=4 words=884 gaps=155 stalled=399 longest_stall=58
+GHDL SEQUENCE PASS 17x17 frames=4 words=1156 gaps=151 stalled=468 longest_stall=53
+GHDL SEQUENCE PASS 31x33 frames=4 words=4092 gaps=622 stalled=1521 longest_stall=57
+NVC SEQUENCE PASS 127x95 frames=4 words=48260 gaps=0 stalled=0 longest_stall=0
+NVC SEQUENCE PASS 127x95 frames=4 words=48260 gaps=6788 stalled=18857 longest_stall=58
+NVC SEQUENCE PASS 259x193 frames=6 words=299922 gaps=0 stalled=0 longest_stall=0
+NVC SEQUENCE PASS 259x193 frames=6 words=299922 gaps=42000 stalled=115950 longest_stall=58
+
+Each sequence uses one initial reset. The first four frames contain spatially supported and isolated changes, chroma boundaries at equal luminance, a photographic crop, and seeded random pixels. The 259 x 193 case adds two matched fields with isolated 1-pixel and supported 9/17-pixel-wide features of identical contrast. All 32 output bits are compared to the raster model on every transfer, including RGB10 lane expansion. SOF, EOL, stability across backpressure, exact transfer count and frame drain are checked.
+Controlled scale-selectivity probe in the 259 x 193 sequence: the unperturbed cool RGB8 surface was (18,20,24). On the matched perturbed frame each channel was raised seven codes over 1 x 1, 9 x 9 and 17 x 17 squares on that surface. Weighted center output luma changes (R + 2G + B)/4 were 0, +13, +45.75 codes. The previous revision's model measured 0, +42, +41.75 on these same coordinates. Each revised RGB10 response was checked by the scoreboard under continuous and stalled traffic.
+Board implementation, resources and timing were not measured.
+
+Verified RTL and raster model SHA-256 hashes
+9c143429ec1f1a0686a881088aa11994d388f50c781bcf70b2b891d5a8b90807  rtl/live_tone_pkg.vhd
+156f1ed4aceb470f927a07767a574e9bfabc9c100d240095ded7dac4bcd09fc3  rtl/portrait_smooth_axis.vhd
+cce8d8eab90cf4b5f5760f7b83aa3caf36187b4e33642d8444a0fdd21459569f  rtl/portrait_contour_axis.vhd
+2070b1b5a5b5069a8e8648a96e4679d17a6c86754fe1e1a9a96643157c37c62b  rtl/portrait_sector.vhd
+06b4efa6e2bbf930ff55edababa92f6b2f451c133ab56e8b12d969724cc49139  rtl/axis_stencil.vhd
+9ed9e82a69b938324fc6c65132cde1144716cb854f49add711170707b3205b9f  rtl/stroke_math_pkg.vhd
+a8a964d6494af590b85cd33588aced01d46f3084754a10db21eed35bc2e9a98e  rtl/portrait_structure_vote.vhd
+e0d2439d6097ee9ae03d0cbd95d8ce7600a8db944a25452c48c9c03026743407  rtl/portrait_stroke_axis.vhd
+aa200787d20b5a9d41ca364b8a1f7b54b38d78e1a69d446081b90f5c35249286  rtl/portrait_region_axis.vhd
+64a5044e72c8494a687170f65186faa930975bf446e6ac336ab88437f2339a00  rtl/axis_portrait_filter.vhd
+a5ed61e800e0125d71c0caf295cecddca30af52f5a23a1e7922d9e2b3cd9ecd8  sim/check_model.py
+1f021c2297f5ae400ca3a937efdc3bd0f192854d8d40d957baa23cf4544ba560  sim/directional_model.py
+8e3494be3d1d27607097470f05299ef8fb8e816f28dfcdf7a81cacac8d30a078  sim/live_tone_model.py
+d4f219c960a5b3fa1bbabc291fafada5a7e93b1f55461fff80926c4a829f696b  sim/region_model.py
+ce2d28059c45956075e4ffe48212f0f9c37966fe7914ce29e24022fd5918954a  sim/sector_model.py
+a2637c08332b1cc6738cd65c5fdede63a412b01f392ad02a6fc485208148fd9f  sim/stroke_model.py
+b8219236ce496f0b56bd63b6c2ae299d49cbc9383a9b457e31ac0660a68c9f62  sim/vote_model.py

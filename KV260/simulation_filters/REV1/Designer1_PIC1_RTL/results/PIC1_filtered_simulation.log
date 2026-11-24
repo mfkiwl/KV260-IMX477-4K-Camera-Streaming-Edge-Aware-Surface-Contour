@@ -1,0 +1,390 @@
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:03 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/live_tone_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package live_tone_pkg
+# -- Compiling package body live_tone_pkg
+# -- Loading package live_tone_pkg
+# End time: 09:11:03 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:03 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity portrait_smooth_axis
+# -- Compiling architecture rtl of portrait_smooth_axis
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(261): (vcom-14439) Nonresolved signal 'aligned_detail' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(322):Conditional signal assignment line__322
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(307):Process line__307
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(311)
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(263): (vcom-14439) Nonresolved signal 'aligned_ridge' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(283):Conditional signal assignment line__283
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(272):Process line__272
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(276)
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(27): (vcom-14439) Nonresolved signal 'm_word' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(360):Process pipeline
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(373)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(240):Conditional signal assignment line__239
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(31): (vcom-14439) Nonresolved signal 'm_detail' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(335):Conditional signal assignment line__335
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(327):Process line__327
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(330)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(307):Process line__307
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(315)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(288):Process line__288
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(292)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(237):Conditional signal assignment line__237
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(33): (vcom-14439) Nonresolved signal 'm_ridge' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(360):Process pipeline
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(374)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_smooth_axis.vhd(238):Conditional signal assignment line__238
+# End time: 09:11:03 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:03 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_contour_axis.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity portrait_contour_axis
+# -- Compiling architecture rtl of portrait_contour_axis
+# End time: 09:11:03 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:03 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity portrait_sector
+# -- Compiling architecture rtl of portrait_sector
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(14): (vcom-14439) Nonresolved signal 'm_word' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(136):Process line__136
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(155)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(97):Conditional signal assignment line__97
+# ** Warning: R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(15): (vcom-14439) Nonresolved signal 'm_ridge' may have multiple sources.
+#   Drivers:
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(136):Process line__136
+#        Driven at:
+#           R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(155)
+#     R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_sector.vhd(97):Conditional signal assignment line__97__1
+# End time: 09:11:04 on Nov 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:04 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/axis_stencil.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity axis_stencil
+# -- Compiling architecture rtl of axis_stencil
+# End time: 09:11:04 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:04 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/stroke_math_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package stroke_math_pkg
+# -- Compiling package body stroke_math_pkg
+# -- Loading package stroke_math_pkg
+# End time: 09:11:04 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:04 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_stroke_axis.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package stroke_math_pkg
+# -- Compiling entity portrait_stroke_axis
+# -- Compiling architecture rtl of portrait_stroke_axis
+# -- Loading entity axis_stencil
+# End time: 09:11:04 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:04 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/portrait_region_axis.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package stroke_math_pkg
+# -- Compiling entity portrait_region_axis
+# -- Compiling architecture rtl of portrait_region_axis
+# -- Loading entity axis_stencil
+# End time: 09:11:04 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:04 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/rtl/axis_portrait_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package live_tone_pkg
+# -- Compiling entity axis_portrait_filter
+# -- Compiling architecture rtl of axis_portrait_filter
+# -- Loading entity portrait_smooth_axis
+# -- Loading entity portrait_contour_axis
+# -- Loading entity portrait_sector
+# -- Loading package stroke_math_pkg
+# -- Loading entity portrait_stroke_axis
+# -- Loading entity portrait_region_axis
+# End time: 09:11:04 on Nov 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 09:11:04 on Nov 24,2026
+# vcom -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -2008 -work work R:/KV260/simulation_filters/REV1/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Compiling entity tb_axis_portrait_filter
+# -- Compiling architecture bench of tb_axis_portrait_filter
+# -- Loading package live_tone_pkg
+# -- Loading entity axis_portrait_filter
+# End time: 09:11:05 on Nov 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -modelsimini C:/Users/Ali/AppData/Local/Temp/portrait-questa-c85md5na/modelsim.ini -onfinish stop work.tb_axis_portrait_filter -gG_SHIFT=true -gG_RETURN_TO_TCL=true -gG_WIDTH=2048 -gG_HEIGHT=1152 
+# Start time: 09:11:05 on Nov 24,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.live_tone_pkg(body)
+# Loading work.tb_axis_portrait_filter(bench)#1
+# Loading work.stroke_math_pkg(body)
+# Loading work.axis_portrait_filter(rtl)#1
+# Loading work.portrait_smooth_axis(rtl)#9
+# Loading work.portrait_smooth_axis(rtl)#10
+# Loading work.portrait_smooth_axis(rtl)#1
+# Loading work.portrait_smooth_axis(rtl)#2
+# Loading work.portrait_contour_axis(rtl)#1
+# Loading work.portrait_smooth_axis(rtl)#3
+# Loading work.portrait_smooth_axis(rtl)#4
+# Loading work.portrait_sector(rtl)#1
+# Loading work.portrait_smooth_axis(rtl)#5
+# Loading work.portrait_smooth_axis(rtl)#6
+# Loading work.portrait_smooth_axis(rtl)#11
+# Loading work.portrait_smooth_axis(rtl)#12
+# Loading work.portrait_smooth_axis(rtl)#13
+# Loading work.portrait_smooth_axis(rtl)#14
+# Loading work.portrait_smooth_axis(rtl)#15
+# Loading work.portrait_smooth_axis(rtl)#16
+# Loading work.portrait_stroke_axis(rtl)#1
+# Loading work.portrait_region_axis(rtl)#1
+# ** Note: TB START 2048 x 1152, expected pixels=2359296
+#    Time: 0 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI first input accepted at cycle 2
+#    Time: 55 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=32768 accepted_input=32687 captured=0/2359296 complete_output_rows=0
+#    Time: 327715 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=65536 accepted_input=65295 captured=0/2359296 complete_output_rows=0
+#    Time: 655395 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=98304 accepted_input=97819 captured=0/2359296 complete_output_rows=0
+#    Time: 983075 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=131072 accepted_input=130235 captured=0/2359296 complete_output_rows=0
+#    Time: 1310755 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI first output captured at cycle 144490
+#    Time: 1444935 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=163840 accepted_input=162651 captured=19152/2359296 complete_output_rows=9
+#    Time: 1638435 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=196608 accepted_input=195067 captured=51568/2359296 complete_output_rows=25
+#    Time: 1966115 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=229376 accepted_input=227483 captured=83984/2359296 complete_output_rows=41
+#    Time: 2293795 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=262144 accepted_input=259921 captured=116422/2359296 complete_output_rows=56
+#    Time: 2621475 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=294912 accepted_input=292337 captured=148838/2359296 complete_output_rows=72
+#    Time: 2949155 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=327680 accepted_input=324753 captured=181254/2359296 complete_output_rows=88
+#    Time: 3276835 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=360448 accepted_input=357169 captured=213670/2359296 complete_output_rows=104
+#    Time: 3604515 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=393216 accepted_input=389585 captured=246086/2359296 complete_output_rows=120
+#    Time: 3932195 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=425984 accepted_input=422001 captured=278514/2359296 complete_output_rows=135
+#    Time: 4259875 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=458752 accepted_input=454439 captured=310940/2359296 complete_output_rows=151
+#    Time: 4587555 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=491520 accepted_input=486855 captured=343356/2359296 complete_output_rows=167
+#    Time: 4915235 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=524288 accepted_input=519271 captured=375772/2359296 complete_output_rows=183
+#    Time: 5242915 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=557056 accepted_input=551687 captured=408188/2359296 complete_output_rows=199
+#    Time: 5570595 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=589824 accepted_input=584103 captured=440604/2359296 complete_output_rows=215
+#    Time: 5898275 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=622592 accepted_input=616529 captured=473035/2359296 complete_output_rows=230
+#    Time: 6225955 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=655360 accepted_input=648957 captured=505458/2359296 complete_output_rows=246
+#    Time: 6553635 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=688128 accepted_input=681373 captured=537874/2359296 complete_output_rows=262
+#    Time: 6881315 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=720896 accepted_input=713789 captured=570290/2359296 complete_output_rows=278
+#    Time: 7208995 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=753664 accepted_input=746205 captured=602706/2359296 complete_output_rows=294
+#    Time: 7536675 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=786432 accepted_input=778621 captured=635122/2359296 complete_output_rows=310
+#    Time: 7864355 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=819200 accepted_input=811049 captured=667560/2359296 complete_output_rows=325
+#    Time: 8192035 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=851968 accepted_input=843475 captured=699976/2359296 complete_output_rows=341
+#    Time: 8519715 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=884736 accepted_input=875891 captured=732392/2359296 complete_output_rows=357
+#    Time: 8847395 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=917504 accepted_input=908307 captured=764808/2359296 complete_output_rows=373
+#    Time: 9175075 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=950272 accepted_input=940723 captured=797224/2359296 complete_output_rows=389
+#    Time: 9502755 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=983040 accepted_input=973139 captured=829640/2359296 complete_output_rows=405
+#    Time: 9830435 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1015808 accepted_input=1005577 captured=862078/2359296 complete_output_rows=420
+#    Time: 10158115 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1048576 accepted_input=1037993 captured=894494/2359296 complete_output_rows=436
+#    Time: 10485795 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1081344 accepted_input=1070409 captured=926910/2359296 complete_output_rows=452
+#    Time: 10813475 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1114112 accepted_input=1102825 captured=959326/2359296 complete_output_rows=468
+#    Time: 11141155 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1146880 accepted_input=1135241 captured=991742/2359296 complete_output_rows=484
+#    Time: 11468835 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1179648 accepted_input=1167657 captured=1024158/2359296 complete_output_rows=500
+#    Time: 11796515 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1212416 accepted_input=1200095 captured=1056596/2359296 complete_output_rows=515
+#    Time: 12124195 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1245184 accepted_input=1232511 captured=1089012/2359296 complete_output_rows=531
+#    Time: 12451875 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1277952 accepted_input=1264927 captured=1121428/2359296 complete_output_rows=547
+#    Time: 12779555 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1310720 accepted_input=1297343 captured=1153844/2359296 complete_output_rows=563
+#    Time: 13107235 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1343488 accepted_input=1329759 captured=1186260/2359296 complete_output_rows=579
+#    Time: 13434915 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1376256 accepted_input=1362175 captured=1218676/2359296 complete_output_rows=595
+#    Time: 13762595 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1409024 accepted_input=1394613 captured=1251114/2359296 complete_output_rows=610
+#    Time: 14090275 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1441792 accepted_input=1427029 captured=1283530/2359296 complete_output_rows=626
+#    Time: 14417955 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1474560 accepted_input=1459445 captured=1315946/2359296 complete_output_rows=642
+#    Time: 14745635 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1507328 accepted_input=1491861 captured=1348362/2359296 complete_output_rows=658
+#    Time: 15073315 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1540096 accepted_input=1524277 captured=1380778/2359296 complete_output_rows=674
+#    Time: 15400995 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1572864 accepted_input=1556693 captured=1413194/2359296 complete_output_rows=690
+#    Time: 15728675 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1605632 accepted_input=1589131 captured=1445632/2359296 complete_output_rows=705
+#    Time: 16056355 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1638400 accepted_input=1621547 captured=1478048/2359296 complete_output_rows=721
+#    Time: 16384035 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1671168 accepted_input=1653963 captured=1510464/2359296 complete_output_rows=737
+#    Time: 16711715 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1703936 accepted_input=1686379 captured=1542880/2359296 complete_output_rows=753
+#    Time: 17039395 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1736704 accepted_input=1718795 captured=1575296/2359296 complete_output_rows=769
+#    Time: 17367075 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1769472 accepted_input=1751211 captured=1607712/2359296 complete_output_rows=785
+#    Time: 17694755 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1802240 accepted_input=1783649 captured=1640150/2359296 complete_output_rows=800
+#    Time: 18022435 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1835008 accepted_input=1816065 captured=1672566/2359296 complete_output_rows=816
+#    Time: 18350115 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1867776 accepted_input=1848481 captured=1704982/2359296 complete_output_rows=832
+#    Time: 18677795 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1900544 accepted_input=1880897 captured=1737398/2359296 complete_output_rows=848
+#    Time: 19005475 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1933312 accepted_input=1913313 captured=1769814/2359296 complete_output_rows=864
+#    Time: 19333155 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1966080 accepted_input=1945729 captured=1802239/2359296 complete_output_rows=879
+#    Time: 19660835 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=1998848 accepted_input=1978167 captured=1834668/2359296 complete_output_rows=895
+#    Time: 19988515 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2031616 accepted_input=2010583 captured=1867084/2359296 complete_output_rows=911
+#    Time: 20316195 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2064384 accepted_input=2042999 captured=1899500/2359296 complete_output_rows=927
+#    Time: 20643875 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2097152 accepted_input=2075415 captured=1931916/2359296 complete_output_rows=943
+#    Time: 20971555 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2129920 accepted_input=2107831 captured=1964332/2359296 complete_output_rows=959
+#    Time: 21299235 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2162688 accepted_input=2140247 captured=1996760/2359296 complete_output_rows=974
+#    Time: 21626915 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2195456 accepted_input=2172685 captured=2029186/2359296 complete_output_rows=990
+#    Time: 21954595 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2228224 accepted_input=2205101 captured=2061602/2359296 complete_output_rows=1006
+#    Time: 22282275 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2260992 accepted_input=2237517 captured=2094018/2359296 complete_output_rows=1022
+#    Time: 22609955 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2293760 accepted_input=2269933 captured=2126434/2359296 complete_output_rows=1038
+#    Time: 22937635 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2326528 accepted_input=2302349 captured=2158850/2359296 complete_output_rows=1054
+#    Time: 23265315 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2359296 accepted_input=2334777 captured=2191288/2359296 complete_output_rows=1069
+#    Time: 23592995 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2392064 accepted_input=2359296 captured=2223704/2359296 complete_output_rows=1085
+#    Time: 23920675 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2424832 accepted_input=2359296 captured=2256198/2359296 complete_output_rows=1101
+#    Time: 24248355 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2457600 accepted_input=2359296 captured=2288774/2359296 complete_output_rows=1117
+#    Time: 24576035 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2490368 accepted_input=2359296 captured=2321350/2359296 complete_output_rows=1133
+#    Time: 24903715 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI progress cycle=2523136 accepted_input=2359296 captured=2354029/2359296 complete_output_rows=1149
+#    Time: 25231395 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# ** Note: AXI PASS: input=2359296 output=2359296 cycles=2537623 source_gap_cycles=0 output_stall_cycles=0
+#    Time: 25376265 ns  Iteration: 0  Instance: /tb_axis_portrait_filter
+# if {$portrait_loaded} {catch {quit -sim}}
+# End time: 09:15:17 on Nov 24,2026, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 0
+# 0
+# cd $portrait_root
+# reading C:/questasim64_2024.1/win64/../modelsim.ini
+# if {$portrait_scratch ne ""} {catch {file delete -force $portrait_scratch}}
+# 0
+# quit -force -code $portrait_status

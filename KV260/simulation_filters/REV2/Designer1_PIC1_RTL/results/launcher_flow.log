@@ -1,0 +1,176 @@
+Questa Tcl flow with NVC executing simulator commands. The full-frame continuous BMP is byte-identical to the NVC AXI stress capture.
+Input: /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/images/PIC1.JPG (128 x 72)
+LOAD START 128 x 72. Transcript: /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/results/PIC1_smoke_filtered_simulation.log
+LOAD COMPLETE after 0 seconds. Starting clock.
+Saved /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/results/PIC1_smoke_filtered.bmp
+SMOKE PASS: 9216 captured RGB pixels matched the model
+Input: /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/images/PIC1.JPG (2048 x 1152)
+LOAD START 2048 x 1152. Transcript: /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/results/PIC1_filtered_simulation.log
+LOAD COMPLETE after 0 seconds. Starting clock.
+Saved /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/results/PIC1_filtered.bmp
+Exact RGB pixels: 1,797/2,359,296. Mean absolute channel error: 10.2790.
+FAIL pixel equality. Report: /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/results/PIC1_filtered_comparison.json
+** Note: 0ms+0: TB START 2048 x 1152, expected pixels=2359296
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 55ns+0: AXI first input accepted at cycle 2
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 327715ns+0: AXI progress cycle=32768 accepted_input=32687 captured=0/2359296 complete_output_rows=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 655395ns+0: AXI progress cycle=65536 accepted_input=65295 captured=0/2359296 complete_output_rows=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 983075ns+0: AXI progress cycle=98304 accepted_input=97805 captured=0/2359296 complete_output_rows=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 1310755ns+0: AXI progress cycle=131072 accepted_input=130109 captured=0/2359296 complete_output_rows=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 1592215ns+0: AXI first output captured at cycle 159218
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 1638435ns+0: AXI progress cycle=163840 accepted_input=162413 captured=4564/2359296 complete_output_rows=2
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 1966115ns+0: AXI progress cycle=196608 accepted_input=194717 captured=36868/2359296 complete_output_rows=18
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 2293795ns+0: AXI progress cycle=229376 accepted_input=227050 captured=69201/2359296 complete_output_rows=33
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 2621475ns+0: AXI progress cycle=262144 accepted_input=259354 captured=101505/2359296 complete_output_rows=49
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 2949155ns+0: AXI progress cycle=294912 accepted_input=291658 captured=133809/2359296 complete_output_rows=65
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 3276835ns+0: AXI progress cycle=327680 accepted_input=323962 captured=166113/2359296 complete_output_rows=81
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 3604515ns+0: AXI progress cycle=360448 accepted_input=356295 captured=198446/2359296 complete_output_rows=96
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 3932195ns+0: AXI progress cycle=393216 accepted_input=388599 captured=230750/2359296 complete_output_rows=112
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 4259875ns+0: AXI progress cycle=425984 accepted_input=420903 captured=263054/2359296 complete_output_rows=128
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 4587555ns+0: AXI progress cycle=458752 accepted_input=453207 captured=295358/2359296 complete_output_rows=144
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 4915235ns+0: AXI progress cycle=491520 accepted_input=485511 captured=327674/2359296 complete_output_rows=159
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 5242915ns+0: AXI progress cycle=524288 accepted_input=517844 captured=359995/2359296 complete_output_rows=175
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 5570595ns+0: AXI progress cycle=557056 accepted_input=550148 captured=392299/2359296 complete_output_rows=191
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 5898275ns+0: AXI progress cycle=589824 accepted_input=582452 captured=424603/2359296 complete_output_rows=207
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 6225955ns+0: AXI progress cycle=622592 accepted_input=614756 captured=456907/2359296 complete_output_rows=223
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 6553635ns+0: AXI progress cycle=655360 accepted_input=647089 captured=489240/2359296 complete_output_rows=238
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 6881315ns+0: AXI progress cycle=688128 accepted_input=679393 captured=521544/2359296 complete_output_rows=254
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 7208995ns+0: AXI progress cycle=720896 accepted_input=711697 captured=553848/2359296 complete_output_rows=270
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 7536675ns+0: AXI progress cycle=753664 accepted_input=744001 captured=586152/2359296 complete_output_rows=286
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 7864355ns+0: AXI progress cycle=786432 accepted_input=776305 captured=618468/2359296 complete_output_rows=301
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 8192035ns+0: AXI progress cycle=819200 accepted_input=808638 captured=650789/2359296 complete_output_rows=317
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 8519715ns+0: AXI progress cycle=851968 accepted_input=840942 captured=683093/2359296 complete_output_rows=333
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 8847395ns+0: AXI progress cycle=884736 accepted_input=873246 captured=715397/2359296 complete_output_rows=349
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 9175075ns+0: AXI progress cycle=917504 accepted_input=905550 captured=747701/2359296 complete_output_rows=365
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 9502755ns+0: AXI progress cycle=950272 accepted_input=937883 captured=780034/2359296 complete_output_rows=380
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 9830435ns+0: AXI progress cycle=983040 accepted_input=970187 captured=812338/2359296 complete_output_rows=396
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 10158115ns+0: AXI progress cycle=1015808 accepted_input=1002491 captured=844642/2359296 complete_output_rows=412
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 10485795ns+0: AXI progress cycle=1048576 accepted_input=1034795 captured=876946/2359296 complete_output_rows=428
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 10813475ns+0: AXI progress cycle=1081344 accepted_input=1067101 captured=909269/2359296 complete_output_rows=443
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 11141155ns+0: AXI progress cycle=1114112 accepted_input=1099432 captured=941583/2359296 complete_output_rows=459
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 11468835ns+0: AXI progress cycle=1146880 accepted_input=1131736 captured=973887/2359296 complete_output_rows=475
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 11796515ns+0: AXI progress cycle=1179648 accepted_input=1164040 captured=1006191/2359296 complete_output_rows=491
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 12124195ns+0: AXI progress cycle=1212416 accepted_input=1196344 captured=1038495/2359296 complete_output_rows=507
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 12451875ns+0: AXI progress cycle=1245184 accepted_input=1228677 captured=1070828/2359296 complete_output_rows=522
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 12779555ns+0: AXI progress cycle=1277952 accepted_input=1260981 captured=1103132/2359296 complete_output_rows=538
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 13107235ns+0: AXI progress cycle=1310720 accepted_input=1293285 captured=1135436/2359296 complete_output_rows=554
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 13434915ns+0: AXI progress cycle=1343488 accepted_input=1325589 captured=1167740/2359296 complete_output_rows=570
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 13762595ns+0: AXI progress cycle=1376256 accepted_input=1357905 captured=1200067/2359296 complete_output_rows=585
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 14090275ns+0: AXI progress cycle=1409024 accepted_input=1390226 captured=1232377/2359296 complete_output_rows=601
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 14417955ns+0: AXI progress cycle=1441792 accepted_input=1422530 captured=1264681/2359296 complete_output_rows=617
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 14745635ns+0: AXI progress cycle=1474560 accepted_input=1454834 captured=1296985/2359296 complete_output_rows=633
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 15073315ns+0: AXI progress cycle=1507328 accepted_input=1487138 captured=1329289/2359296 complete_output_rows=649
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 15400995ns+0: AXI progress cycle=1540096 accepted_input=1519471 captured=1361622/2359296 complete_output_rows=664
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 15728675ns+0: AXI progress cycle=1572864 accepted_input=1551775 captured=1393926/2359296 complete_output_rows=680
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 16056355ns+0: AXI progress cycle=1605632 accepted_input=1584079 captured=1426230/2359296 complete_output_rows=696
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 16384035ns+0: AXI progress cycle=1638400 accepted_input=1616383 captured=1458534/2359296 complete_output_rows=712
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 16711715ns+0: AXI progress cycle=1671168 accepted_input=1648699 captured=1490867/2359296 complete_output_rows=727
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 17039395ns+0: AXI progress cycle=1703936 accepted_input=1681020 captured=1523171/2359296 complete_output_rows=743
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 17367075ns+0: AXI progress cycle=1736704 accepted_input=1713324 captured=1555475/2359296 complete_output_rows=759
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 17694755ns+0: AXI progress cycle=1769472 accepted_input=1745628 captured=1587779/2359296 complete_output_rows=775
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 18022435ns+0: AXI progress cycle=1802240 accepted_input=1777932 captured=1620083/2359296 complete_output_rows=791
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 18350115ns+0: AXI progress cycle=1835008 accepted_input=1810265 captured=1652416/2359296 complete_output_rows=806
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 18677795ns+0: AXI progress cycle=1867776 accepted_input=1842569 captured=1684720/2359296 complete_output_rows=822
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 19005475ns+0: AXI progress cycle=1900544 accepted_input=1874873 captured=1717024/2359296 complete_output_rows=838
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 19333155ns+0: AXI progress cycle=1933312 accepted_input=1907177 captured=1749328/2359296 complete_output_rows=854
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 19660835ns+0: AXI progress cycle=1966080 accepted_input=1939500 captured=1781661/2359296 complete_output_rows=869
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 19988515ns+0: AXI progress cycle=1998848 accepted_input=1971814 captured=1813965/2359296 complete_output_rows=885
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 20316195ns+0: AXI progress cycle=2031616 accepted_input=2004118 captured=1846269/2359296 complete_output_rows=901
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 20643875ns+0: AXI progress cycle=2064384 accepted_input=2036422 captured=1878573/2359296 complete_output_rows=917
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 20971555ns+0: AXI progress cycle=2097152 accepted_input=2068726 captured=1910877/2359296 complete_output_rows=933
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 21299235ns+0: AXI progress cycle=2129920 accepted_input=2101059 captured=1943210/2359296 complete_output_rows=948
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 21626915ns+0: AXI progress cycle=2162688 accepted_input=2133363 captured=1975514/2359296 complete_output_rows=964
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 21954595ns+0: AXI progress cycle=2195456 accepted_input=2165667 captured=2007818/2359296 complete_output_rows=980
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 22282275ns+0: AXI progress cycle=2228224 accepted_input=2197971 captured=2040122/2359296 complete_output_rows=996
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 22609955ns+0: AXI progress cycle=2260992 accepted_input=2230298 captured=2072455/2359296 complete_output_rows=1011
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 22937635ns+0: AXI progress cycle=2293760 accepted_input=2262608 captured=2104759/2359296 complete_output_rows=1027
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 23265315ns+0: AXI progress cycle=2326528 accepted_input=2294912 captured=2137063/2359296 complete_output_rows=1043
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 23592995ns+0: AXI progress cycle=2359296 accepted_input=2327216 captured=2169367/2359296 complete_output_rows=1059
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 23920675ns+0: AXI progress cycle=2392064 accepted_input=2359296 captured=2201671/2359296 complete_output_rows=1075
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 24248355ns+0: AXI progress cycle=2424832 accepted_input=2359296 captured=2234046/2359296 complete_output_rows=1090
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 24576035ns+0: AXI progress cycle=2457600 accepted_input=2359296 captured=2266506/2359296 complete_output_rows=1106
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 24903715ns+0: AXI progress cycle=2490368 accepted_input=2359296 captured=2299026/2359296 complete_output_rows=1122
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 25231395ns+0: AXI progress cycle=2523136 accepted_input=2359296 captured=2331632/2359296 complete_output_rows=1138
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 25559075ns+0: AXI progress cycle=2555904 accepted_input=2359296 captured=2359296/2359296 complete_output_rows=1152
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 25600825ns+0: AXI PASS: input=2359296 output=2359296 cycles=2560079 source_gap_cycles=0 output_stall_cycles=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/coherent/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71

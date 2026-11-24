@@ -1,0 +1,4 @@
+/workspace/scratch/2d9ac3fe791b/src/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd:85:5:@0ms:(report note): TB START 128 x 72, expected pixels=9216
+/workspace/scratch/2d9ac3fe791b/src/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd:114:9:@75ns:(report note): AXI first input accepted at cycle 4
+/workspace/scratch/2d9ac3fe791b/src/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd:155:11:@107315ns:(report note): AXI first output captured at cycle 10728
+/workspace/scratch/2d9ac3fe791b/src/Designer1_PIC1_RTL/sim/tb_axis_portrait_filter.vhd:189:5:@231405ns:(report note): AXI PASS: input=9216 output=9216 cycles=23137 source_gap_cycles=840 output_stall_cycles=1162

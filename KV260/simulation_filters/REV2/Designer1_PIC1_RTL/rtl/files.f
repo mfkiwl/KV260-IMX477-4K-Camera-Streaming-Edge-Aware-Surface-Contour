@@ -1,0 +1,10 @@
+live_tone_pkg.vhd
+portrait_smooth_axis.vhd
+portrait_contour_axis.vhd
+portrait_sector.vhd
+axis_stencil.vhd
+stroke_math_pkg.vhd
+portrait_structure_vote.vhd
+portrait_stroke_axis.vhd
+portrait_region_axis.vhd
+axis_portrait_filter.vhd
