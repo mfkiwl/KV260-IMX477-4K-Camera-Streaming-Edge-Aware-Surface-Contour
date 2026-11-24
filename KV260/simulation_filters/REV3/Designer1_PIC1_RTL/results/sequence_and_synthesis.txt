@@ -1,0 +1,56 @@
+Sequence and synthesis verification
+
+vhdl_lang VHDL-2008 analysis passed all manifested RTL, the shipped testbench, and the sequence testbench with zero diagnostics.
+GHDL VOTE PASS 12 hand-calculated class, support, polarity and equal-luma chroma probes; all 7200 context, ridge and original contour-guide transfers aligned
+GHDL CONTEXT PASS 16 independently calculated field centers and 16384 tagged transfers
+GHDL 2048 x 1152 synthesis emitted 4,051,636 Verilog bytes, 28 modules and 0 warnings. GHDL reported 47 RAM-inference messages before implementation.
+GHDL SEQUENCE PASS 1x1 frames=4 words=4 gaps=3 stalled=0 longest_stall=0
+GHDL SEQUENCE PASS 1x13 frames=4 words=52 gaps=19 stalled=217 longest_stall=51
+GHDL SEQUENCE PASS 15x1 frames=4 words=60 gaps=7 stalled=10 longest_stall=5
+GHDL SEQUENCE PASS 2x3 frames=4 words=24 gaps=3 stalled=3 longest_stall=2
+GHDL SEQUENCE PASS 3x5 frames=4 words=60 gaps=16 stalled=32 longest_stall=21
+GHDL SEQUENCE PASS 5x7 frames=4 words=140 gaps=12 stalled=18 longest_stall=5
+GHDL SEQUENCE PASS 8x8 frames=4 words=256 gaps=35 stalled=147 longest_stall=56
+GHDL SEQUENCE PASS 13x17 frames=4 words=884 gaps=155 stalled=399 longest_stall=58
+GHDL SEQUENCE PASS 17x17 frames=4 words=1156 gaps=151 stalled=468 longest_stall=53
+GHDL SEQUENCE PASS 31x33 frames=4 words=4092 gaps=622 stalled=1521 longest_stall=57
+NVC SEQUENCE PASS 127x95 frames=4 words=48260 gaps=0 stalled=0 longest_stall=0
+NVC SEQUENCE PASS 127x95 frames=4 words=48260 gaps=6788 stalled=18857 longest_stall=58
+NVC SEQUENCE PASS 259x193 frames=6 words=299922 gaps=0 stalled=0 longest_stall=0
+NVC SEQUENCE PASS 259x193 frames=6 words=299922 gaps=42000 stalled=115950 longest_stall=58
+
+Each sequence uses one initial reset. The first four frames contain spatially supported and isolated changes, chroma boundaries at equal luminance, a photographic crop, and seeded random pixels. The 259 x 193 case adds two matched fields with isolated 1-pixel and supported 9/17-pixel-wide features of identical contrast. All 32 output bits are compared to the raster model on every transfer, including RGB10 lane expansion. SOF, EOL, stability across backpressure, exact transfer count and frame drain are checked.
+Controlled scale-selectivity probe in the 259 x 193 sequence: the unperturbed cool RGB8 surface was (18,20,24). On the matched perturbed frame each channel was raised seven codes over 1 x 1, 9 x 9 and 17 x 17 squares on that surface. Weighted center output luma changes (R + 2G + B)/4 were 0, +10, +45 codes. The previous revision's model measured 0, +13, +45.75 on these same coordinates. Each revised RGB10 response was checked by the scoreboard under continuous and stalled traffic.
+Directed medium-region examples. All offsets below are RGB8 codes above the same warm base (60,55,45). Each expected center covers nine samples in the inner field and 25 total samples on the two-distance grid. The independent test also checks every incoming broad-context word and contour-direction word with inserted stream stalls.
+uniform: center +0, inner +0, outer +0, broad +0, reconstructed +0
+isolated +3: center +3, inner +0, outer +0, broad +0, reconstructed +0
+positive plateau: center +8, inner +8, outer +0, broad +0, reconstructed +3
+uniform with broad offset: center +8, inner +8, outer +8, broad +0, reconstructed +0
+negative plateau: center -8, inner -8, outer +0, broad +0, reconstructed -3
+only the eight mixed positions raised by +8: center +0, inner +0, outer +0, broad +4, reconstructed +1
+broad-context sign conflict: center +8, inner +8, outer +0, broad +12, reconstructed +12
+strong-scale difference: center +28, inner +28, outer +0, broad +0, reconstructed +0
+strong directional guard (36 Q2): center +8, inner +8, outer +0, broad +0, reconstructed +0
+directional taper (20 Q2): center +8, inner +8, outer +0, broad +0, reconstructed +2
+already bright warm region: center +43, inner +43, outer +35, broad +35, reconstructed +35
+deep shadow: center -18, inner -18, outer -26, broad -26, reconstructed -26
+Board implementation, resources and timing were not measured.
+
+Verified RTL and raster model SHA-256 hashes
+950bfa6cd79eae52b277bf96556fc84251ae5df403ab3638384aa462a7bd3e18  rtl/live_tone_pkg.vhd
+0fd680e15c598d9eaae993f784789431560e44e713fec1d302b9d01ae0ded91d  rtl/portrait_smooth_axis.vhd
+cce8d8eab90cf4b5f5760f7b83aa3caf36187b4e33642d8444a0fdd21459569f  rtl/portrait_contour_axis.vhd
+2070b1b5a5b5069a8e8648a96e4679d17a6c86754fe1e1a9a96643157c37c62b  rtl/portrait_sector.vhd
+95913a6df9845195fcc2cfe1da5074e042bd96ddfc5b6e4aa0e49c85bfc97fef  rtl/axis_stencil.vhd
+9ed9e82a69b938324fc6c65132cde1144716cb854f49add711170707b3205b9f  rtl/stroke_math_pkg.vhd
+0a2e995a2365c75a0aa30ceb8cbad2fffc2d9c3df15468fc98a798a172a72108  rtl/portrait_structure_vote.vhd
+e0d2439d6097ee9ae03d0cbd95d8ce7600a8db944a25452c48c9c03026743407  rtl/portrait_stroke_axis.vhd
+0f75f54cc5aafe5f3b301259dbface62f273786ceaade3ca0a748136733c27f2  rtl/portrait_region_axis.vhd
+02587d81f060343c431591866b8c3be1586fb74b4887c3cbb84c7ced795ec884  rtl/axis_portrait_filter.vhd
+928a7ecb7973a81f73ea212e7a14b0689ba4cf4af69231fb25c989119a88e876  sim/check_model.py
+1f021c2297f5ae400ca3a937efdc3bd0f192854d8d40d957baa23cf4544ba560  sim/directional_model.py
+5edf4c4643e65c4a291c9f0a24e28ad98d3041b12f74d29e5ea8c60651b8f6ca  sim/live_tone_model.py
+21a1069d92bfa19395b24bc181ef6306e0bb5511646f63ac0d49f971a1398460  sim/region_model.py
+ce2d28059c45956075e4ffe48212f0f9c37966fe7914ce29e24022fd5918954a  sim/sector_model.py
+a2637c08332b1cc6738cd65c5fdede63a412b01f392ad02a6fc485208148fd9f  sim/stroke_model.py
+68029088ef18c3def604b4d555d0a798fc3f051416f7a859f5a87c6bbc31d847  sim/vote_model.py

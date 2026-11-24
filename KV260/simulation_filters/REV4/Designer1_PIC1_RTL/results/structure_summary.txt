@@ -1,0 +1,125 @@
+Comparison of PIC1 simulator captures with the decoded Designer1 reference
+Same coordinates for all frames. Edge F1 uses a two-pixel positional tolerance.
+Connected F1 retains only 8-connected components with at least 24 edge centers. Both F1 scores measure correspondence, independently of RGB equality.
+Flat area is a coverage statistic. Compare each flat-area percentage with the reference percentage in the same row.
+
+Region                Edge P prev/new  Edge R prev/new  F1 prev/new      Connected F1     Flat % prev/new/ref      RGB MAE prev/new
+Whole frame           0.612 / 0.601    0.370 / 0.377    0.461 / 0.464    0.400 / 0.401     58.33/ 56.77/ 55.39     9.979 / 9.941   
+Eye and brow          0.691 / 0.676    0.484 / 0.493    0.569 / 0.570    0.490 / 0.471     13.87/ 13.16/ 19.86     14.999 / 15.333 
+Upper hair            0.705 / 0.707    0.321 / 0.342    0.441 / 0.461    0.335 / 0.361     16.86/ 16.29/ 21.76     11.949 / 12.736 
+Forehead              0.598 / 0.676    0.264 / 0.275    0.367 / 0.391    0.244 / 0.287     64.88/ 63.74/ 51.46     6.872 / 6.534   
+Ear                   0.580 / 0.578    0.541 / 0.546    0.560 / 0.562    0.532 / 0.520     17.68/ 17.56/ 20.23     18.295 / 19.046 
+Nose and nostrils     0.489 / 0.484    0.449 / 0.467    0.468 / 0.475    0.436 / 0.418     21.30/ 20.33/ 34.43     13.790 / 13.941 
+Lips and lower face   0.315 / 0.303    0.332 / 0.338    0.323 / 0.320    0.235 / 0.235      9.32/  7.99/ 17.54     18.618 / 17.905 
+Hair highlights       0.631 / 0.618    0.252 / 0.266    0.360 / 0.372    0.290 / 0.304     27.98/ 25.72/ 29.22     10.786 / 11.423 
+Cheek                 0.390 / 0.354    0.180 / 0.197    0.246 / 0.253    0.197 / 0.207     58.85/ 57.53/ 57.21     5.765 / 5.972   
+Jacket collar         0.441 / 0.435    0.224 / 0.230    0.297 / 0.301    0.162 / 0.169     18.25/ 20.12/ 18.75     9.942 / 9.829   
+Jaw and chin          0.308 / 0.307    0.209 / 0.202    0.249 / 0.243    0.159 / 0.129     16.87/ 13.91/ 38.57     15.298 / 12.833 
+Chair logo            0.762 / 0.762    0.779 / 0.787    0.771 / 0.774    0.754 / 0.751     57.93/ 59.00/ 53.80     16.349 / 16.214 
+Background            0.000 / 0.000    0.000 / 0.000    0.000 / 0.000    0.000 / 0.000     91.13/ 75.81/ 92.99     3.311 / 3.341   
+
+Medium-scale surface structure
+The same reference-defined mask excludes centers within a 17 x 17 neighborhood of a strong edge.
+Surface coverage measures 6–24 code differences between smoothed RGB flanks 12 pixels apart.
+Transition F1 compares placement at identical pixels. Signed band errors measure smoothed local luminance and chroma differences.
+
+Region                Surface % prev/new/art   Transition F1    Band luma MAE    Band chroma MAE 
+Whole frame           18.09/18.57/14.75        0.399 / 0.390    1.050 / 1.071    0.886 / 0.902   
+Eye and brow          61.83/58.87/35.23        0.478 / 0.461    2.331 / 2.412    1.829 / 1.805   
+Upper hair            35.25/36.67/33.54        0.410 / 0.399    1.695 / 1.724    1.490 / 1.443   
+Forehead              27.48/26.64/19.45        0.396 / 0.390    1.372 / 1.384    0.812 / 0.822   
+Ear                   42.77/42.70/25.14        0.455 / 0.462    2.403 / 2.448    1.681 / 1.627   
+Nose and nostrils     61.83/61.90/43.38        0.570 / 0.559    2.611 / 2.683    1.906 / 1.903   
+Lips and lower face   61.17/58.69/58.05        0.619 / 0.577    3.173 / 3.325    3.101 / 3.126   
+Hair highlights       31.84/38.88/32.31        0.356 / 0.381    1.772 / 1.875    1.482 / 1.443   
+Cheek                 41.77/40.60/29.77        0.453 / 0.445    1.637 / 1.716    0.941 / 0.959   
+Jacket collar         46.31/49.91/48.56        0.498 / 0.526    2.605 / 2.507    1.567 / 1.535   
+Jaw and chin          58.28/57.10/40.84        0.594 / 0.574    2.157 / 2.281    2.165 / 2.121   
+Chair logo            13.02/12.66/2.35         0.114 / 0.112    1.111 / 1.096    0.674 / 0.680   
+Background            5.33/7.26/0.00           0.000 / 0.000    0.486 / 0.518    0.674 / 0.765   
+
+Flat-interior sizes in matching crops
+Largest is the percentage of crop pixels occupied by the largest connected 5x5-flat interior.
+Medium counts 8-connected flat interiors containing 32–1,024 pixels. Each crop is labeled independently.
+
+Region                Largest % prev/new/art      Medium count prev/new/art
+Whole frame           18.79/18.87/17.14           470/414/718
+Eye and brow          2.46/2.35/4.28              18/17/36
+Upper hair            6.69/5.39/4.26              14/12/29
+Forehead              19.00/17.67/17.03           8/6/20
+Ear                   7.39/7.39/8.42              18/18/30
+Nose and nostrils     7.02/5.30/4.54              31/29/40
+Lips and lower face   1.21/1.22/3.18              26/22/51
+Hair highlights       14.68/12.40/8.52            20/13/22
+Cheek                 22.35/17.94/17.29           16/17/18
+Jacket collar         9.45/11.26/3.74             25/20/51
+Jaw and chin          4.49/4.27/6.25              29/26/42
+Chair logo            39.13/53.62/36.50           12/11/7
+Background            91.04/74.85/92.98           0/3/0
+
+Surface detail within the common reference mask, in luma codes
+Fine RMS measures deviations within roughly one pixel. Medium RMS measures the signed sigma 2.5-to-9 difference.
+Polarity F1 measures same-sign coherent response overlap on positions outside the reference contour margin.
+
+Region                Fine RMS prev/new/art    Medium RMS prev/new/art   Coherent F1 prev/new
+Whole frame           0.635/0.644/0.563        2.623/2.681/1.894         0.463/0.468
+Eye and brow          0.940/0.869/0.654        3.913/4.195/3.381         0.559/0.578
+Upper hair            0.842/0.833/0.714        1.901/2.135/2.085         0.323/0.372
+Forehead              0.460/0.457/0.610        1.712/1.774/1.476         0.258/0.273
+Ear                   1.951/1.986/0.659        6.779/6.808/4.175         0.682/0.682
+Nose and nostrils     0.983/0.930/0.681        5.708/5.780/3.267         0.525/0.536
+Lips and lower face   2.053/1.993/0.789        6.033/5.759/3.412         0.613/0.563
+Hair highlights       0.839/0.825/0.761        1.896/2.040/1.857         0.211/0.190
+Cheek                 0.653/0.661/0.631        2.282/2.350/1.551         0.261/0.239
+Jacket collar         1.169/1.110/0.914        3.835/3.940/3.228         0.499/0.543
+Jaw and chin          1.366/1.276/0.688        3.310/3.345/2.018         0.370/0.343
+Chair logo            0.599/0.583/0.453        4.680/4.803/4.571         0.862/0.873
+Background            0.414/0.426/0.440        0.570/0.621/0.384         0.000/0.000
+
+Targeted eye and hair measurements. Definitions and coordinates in structure_metrics.json.
+
+Image                     Eye row MAE  Eye contrast MAE   Skin-brow   Skin-lid   Hair cov. %   Largest %  Clusters   Shape F1
+Previous medium-region RTL        7.779             5.071       32.65      49.72         18.03       12.15         3      0.692
+Directional surface regions        7.025             4.712       37.48      50.22         19.65       12.87         5      0.685
+Designer1 reference             0.000             0.000       45.01      52.59         17.21       12.34         4      1.000
+
+Interior crown highlights, measured separately from side hair in the preceding table.
+Image                       Coverage %    Largest %    Clusters    Shape F1
+Previous medium-region RTL        7.24         2.14           7       0.474
+Directional surface regions       10.23         3.64           5       0.567
+Designer1 reference              16.42         6.94           7       1.000
+
+Across-column separation of the skin band between brow and upper lid, in luma codes.
+Image                     Median column gap    Gap profile MAE     Mean brow / skin / lid
+Previous medium-region RTL             24.83              16.85     52.5 / 85.2 / 35.4
+Directional surface regions             33.10              15.22     51.0 / 88.5 / 38.3
+Designer1 reference                  44.79               0.00     42.1 / 87.1 / 34.5
+
+Smaller eye on the right of the image, measured independently in 25 columns.
+Image                       Median column gap      Gap profile MAE
+Previous medium-region RTL             10.26                23.19
+Directional surface regions             17.77                17.09
+Designer1 reference                    37.07                 0.00
+
+Mean opponent color in small upper- and lower-lip interior bands, in RGB8 codes.
+Image                         Upper R-G / G-B      Lower R-G / G-B   Four-value MAE
+Previous medium-region RTL     8.50 /  -1.22      84.32 /  19.34            16.64
+Directional surface regions    27.86 /   7.81      98.31 /  25.36             9.48
+Designer1 reference           34.49 /  -5.45      97.46 /  42.54             0.00
+
+Medium signed-luminance regions on the common surface mask. Mean best overlap per artwork patch.
+Region                Artwork patch count    Mean best IoU previous / new
+Cheek                                  42    0.115 / 0.114
+Forehead                               30    0.159 / 0.178
+Jacket collar                          27    0.181 / 0.207
+
+Tiny signed surface regions of 1–15 pixels, measured in the same crops and surface mask.
+Region                Count prev/new/art       % of selected surface prev/new/art
+Cheek                 40 / 46 / 30             0.328 / 0.210 / 0.201
+Forehead              26 / 44 / 29             0.200 / 0.308 / 0.360
+Jacket collar         36 / 27 / 37             0.929 / 0.760 / 1.558
+
+Full-frame RGB comparison
+The previous output had 1,776 exact RGB pixels and PSNR 22.9856 dB.
+The revised output had 1,747 exact RGB pixels and PSNR 23.0044 dB.
+Both comparisons include 2,359,296 pixels. Per-region detail, thresholds and decoded image hashes are in structure_metrics.json.

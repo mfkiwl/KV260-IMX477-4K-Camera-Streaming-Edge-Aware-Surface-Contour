@@ -1,0 +1,1 @@
+Frame 1 full-word model: 0 mismatches / 2,359,296

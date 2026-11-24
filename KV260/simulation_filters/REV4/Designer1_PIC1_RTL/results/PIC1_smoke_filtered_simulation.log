@@ -1,0 +1,8 @@
+** Note: 0ms+0: TB START 128 x 72, expected pixels=9216
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/planes/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 55ns+0: AXI first input accepted at cycle 2
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/planes/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 113815ns+0: AXI first output captured at cycle 11378
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/planes/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
+** Note: 231625ns+0: AXI PASS: input=9216 output=9216 cycles=23159 source_gap_cycles=0 output_stall_cycles=0
+   Process :tb_axis_portrait_filter:stream at /workspace/scratch/2d9ac3fe791b/planes/qa/Windows Path With Spaces/sim/tb_axis_portrait_filter.vhd:71
