@@ -9,8 +9,8 @@ use work.bmp_writer_pkg.all;
 
 entity tb_pic2 is
   generic (
-    G_INPUT : string := "images/PIC1.JPG";
-    G_OUTPUT : string := "results/PIC1_filtered.bmp";
+    G_INPUT : string := "images/PIC100.JPG";
+    G_OUTPUT : string := "results/PIC100_filtered.bmp";
     G_DECODED_BMP : string := "";
     G_SECOND_JPEG : string := "";
     G_SECOND_OUTPUT : string := "results/second_filtered.bmp";

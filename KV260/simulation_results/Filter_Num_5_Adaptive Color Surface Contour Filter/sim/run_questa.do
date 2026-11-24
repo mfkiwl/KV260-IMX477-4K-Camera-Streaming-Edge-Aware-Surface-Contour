@@ -8,7 +8,7 @@ if {![file exists sim/sources.txt]} {
     echo "Start Questa from the extracted Filter_Num_5 directory."
     quit -code 1
 }
-set input images/PIC3.JPG
+set input images/PIC101.JPG
 if {[info exists 1]} {set input [set 1]}
 set stem [file rootname [file tail $input]]
 set output [file join results "${stem}_filtered.bmp"]

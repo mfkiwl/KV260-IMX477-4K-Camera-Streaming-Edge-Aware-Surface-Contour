@@ -1,0 +1,701 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11e vcom 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dR:/KV260/simulation_results/pic_axis/adaptive_multi_scale_structure_reconstruction_filter
+T_opt
+!s110 1795241637
+VGbQo@MSdQo]EdmmcjS1Fn1
+Z2 04 7 5 work tb_pic2 bench 1
+=1-28d04394d850-6b0136a5-189-efb4
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work -g G_LEGACY_PIC2=false -g G_STALLS=true -g G_WIDTH=2048 -g G_INPUT=images/PIC99.jpg -g G_RGB10_WRAPPER=true -g G_HEIGHT=1152 -g G_OUTPUT=results/PIC99.bmp +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2024.1;79
+R1
+T_opt1
+!s110 1795242032
+V:m<oC2YeYm9Q8FzQEV6a90
+R2
+=1-28d04394d850-6b013830-a4-fe18
+R0
+R3
+R4
+R5
+o-quiet -auto_acc_if_foreign -work work -g G_LEGACY_PIC2=false -g G_STALLS=true -g G_WIDTH=2048 -g G_INPUT=images/PIC99.JPG -g G_RGB10_WRAPPER=true -g G_HEIGHT=1152 -g G_OUTPUT=results/PIC99.bmp +acc
+R6
+n@_opt1
+R7
+Eaxis_contour_finish
+Z8 w1795238644
+Z9 DPx4 work 10 pic2_types 0 22 dclMh@MYZzEL2JPXWR<8U0
+Z10 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 24
+R1
+Z13 8rtl/axis_contour_finish.vhd
+Z14 Frtl/axis_contour_finish.vhd
+l0
+L8 1
+VnD`OPXJLQYW_Xk<1D6Pho2
+!s100 [TWIHLZ<TZ;_7h0aTZgcL0
+Z15 OL;C;2024.1;79
+33
+Z16 !s110 1795242030
+!i10b 1
+Z17 !s108 1795242030.000000
+Z18 !s90 -2008|-work|work|rtl/axis_contour_finish.vhd|
+Z19 !s107 rtl/axis_contour_finish.vhd|
+!i113 0
+Z20 o-2008 -work work
+Z21 tExplicit 1 CvgOpt 0
+Artl
+Z22 DEx4 work 12 axis_window5 0 22 I4mVE2dZfCd9Ec9^DT=j]1
+R9
+R10
+R11
+R12
+Z23 DEx4 work 19 axis_contour_finish 0 22 nD`OPXJLQYW_Xk<1D6Pho2
+!i122 24
+l39
+L23 85
+VjZZhKbFQGP6UKd^7IBA^j2
+!s100 ;M84mBl6dh3DJ<NX@?TC>3
+R15
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Eaxis_full_grade
+R8
+Z24 DPx4 work 17 full_grade_coeffs 0 22 =Z2_C<c^:f;1aaT78KI3f0
+R10
+R9
+R11
+R12
+!i122 22
+R1
+Z25 8rtl/axis_full_grade.vhd
+Z26 Frtl/axis_full_grade.vhd
+l0
+L8 1
+VkLU@P]SJBVkn3:L^0T]E63
+!s100 LnMm@4<FCQ08T_KzlD0_g3
+R15
+33
+R16
+!i10b 1
+R17
+Z27 !s90 -2008|-work|work|rtl/axis_full_grade.vhd|
+Z28 !s107 rtl/axis_full_grade.vhd|
+!i113 0
+R20
+R21
+Artl
+Z29 DEx4 work 12 grade_affine 0 22 _PJ8GSh6KjSbU4]=5cUZ>1
+R24
+R10
+R9
+R11
+R12
+Z30 DEx4 work 15 axis_full_grade 0 22 kLU@P]SJBVkn3:L^0T]E63
+!i122 22
+l58
+L24 96
+V0dDK2eZ_Rbb9o?<;o3^Y91
+!s100 ezR6I^d2LY99VFEO5^M_`0
+R15
+33
+R16
+!i10b 1
+R17
+R27
+R28
+!i113 0
+R20
+R21
+Eaxis_surface_pass
+R8
+R10
+R11
+R12
+!i122 17
+R1
+Z31 8rtl/axis_surface_pass.vhd
+Z32 Frtl/axis_surface_pass.vhd
+l0
+Z33 L14 1
+V8R<lZnQBG;UI;7TjFSDGR3
+!s100 PZK4N5GWiTANPB@lHIa3?0
+R15
+33
+Z34 !s110 1795242029
+!i10b 1
+Z35 !s108 1795242029.000000
+Z36 !s90 -2008|-work|work|rtl/axis_surface_pass.vhd|
+Z37 !s107 rtl/axis_surface_pass.vhd|
+!i113 0
+R20
+R21
+Artl
+R9
+R22
+R10
+R11
+R12
+Z38 DEx4 work 17 axis_surface_pass 0 22 8R<lZnQBG;UI;7TjFSDGR3
+!i122 17
+l166
+L44 322
+V@U1HN76]eTX=JQ=VzEPbR0
+!s100 m:l]UOZ40<MOR9Xmi_`l>1
+R15
+33
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R20
+R21
+Eaxis_surround
+R8
+R9
+R10
+R11
+R12
+!i122 19
+R1
+Z39 8rtl/axis_surround.vhd
+Z40 Frtl/axis_surround.vhd
+l0
+L8 1
+VQnWf1S^C>YGnKV>1zdN760
+!s100 iijSHdcAV<BhS;2_lF:=52
+R15
+33
+R34
+!i10b 1
+R35
+Z41 !s90 -2008|-work|work|rtl/axis_surround.vhd|
+Z42 !s107 rtl/axis_surround.vhd|
+!i113 0
+R20
+R21
+Artl
+R22
+R9
+R10
+R11
+R12
+Z43 DEx4 work 13 axis_surround 0 22 QnWf1S^C>YGnKV>1zdN760
+!i122 19
+l37
+L24 61
+VVF243LBhF=Pd>`9j`hRWI0
+!s100 ]hG[kiCKFlmCJDj=o4XAG2
+R15
+33
+R34
+!i10b 1
+R35
+R41
+R42
+!i113 0
+R20
+R21
+Eaxis_tone_contour
+R8
+Z44 DPx4 work 17 pic2_grade_coeffs 0 22 ZM1cBRBW1BT_SnCR>KN8D0
+R9
+R10
+R11
+R12
+!i122 23
+R1
+Z45 8rtl/axis_tone_contour.vhd
+Z46 Frtl/axis_tone_contour.vhd
+l0
+L10 1
+V1GB=Cljhe4:T?gjdbik;A1
+!s100 MFEYa<A1O]RT;9GaelYD22
+R15
+33
+R16
+!i10b 1
+R17
+Z47 !s90 -2008|-work|work|rtl/axis_tone_contour.vhd|
+Z48 !s107 rtl/axis_tone_contour.vhd|
+!i113 0
+R20
+R21
+Artl
+R24
+R30
+R22
+R44
+R9
+R10
+R11
+R12
+Z49 DEx4 work 17 axis_tone_contour 0 22 1GB=Cljhe4:T?gjdbik;A1
+!i122 23
+l77
+L27 224
+Vh9hd5j1IToGcHb24SkaiS2
+!s100 Wjl;2RKQ_W]<<Ga8IY[8D1
+R15
+33
+R16
+!i10b 1
+R17
+R47
+R48
+!i113 0
+R20
+R21
+Eaxis_window5
+R8
+R9
+R10
+R11
+R12
+!i122 16
+R1
+Z50 8rtl/axis_window5.vhd
+Z51 Frtl/axis_window5.vhd
+l0
+L16 1
+VI4mVE2dZfCd9Ec9^DT=j]1
+!s100 Sa[NMPiZFB2g5YGZo``1I3
+R15
+33
+R34
+!i10b 1
+R35
+Z52 !s90 -2008|-work|work|rtl/axis_window5.vhd|
+Z53 !s107 rtl/axis_window5.vhd|
+!i113 0
+R20
+R21
+Artl
+R9
+R10
+R11
+R12
+R22
+!i122 16
+l64
+L45 138
+V8@h4nc`<m;c>NhL8R=h>L2
+!s100 Y2hVYHUdgfa:2j2dZcUj21
+R15
+33
+R34
+!i10b 1
+R35
+R52
+R53
+!i113 0
+R20
+R21
+Pbmp_writer_pkg
+Z54 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z55 DPx4 work 15 jpeg_reader_pkg 0 22 :CgGE5Q>dOM3^5OFb1j=P1
+R9
+R12
+R11
+R10
+!i122 28
+R8
+R1
+Z56 8tb/bmp_writer_pkg.vhd
+Z57 Ftb/bmp_writer_pkg.vhd
+l0
+L6 7
+VB5;V=?fc8k`?Yn6X0HCGk1
+!s100 WQEY]oCQH66MafnYld<3a3
+R15
+33
+b1
+Z58 !s110 1795242031
+!i10b 1
+Z59 !s108 1795242031.000000
+Z60 !s90 -2008|-work|work|tb/bmp_writer_pkg.vhd|
+Z61 !s107 tb/bmp_writer_pkg.vhd|
+!i113 0
+R20
+R21
+Bbody
+Z62 DPx4 work 14 bmp_writer_pkg 0 22 B5;V=?fc8k`?Yn6X0HCGk1
+R54
+R55
+R9
+R12
+R11
+R10
+!i122 28
+l0
+L14 33
+VDze>dE7ZS]iYg9kR6^M0B3
+!s100 LMRB?Fo6AEgfc1RVmP2W_1
+R15
+33
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R20
+R21
+Pfull_grade_coeffs
+R10
+R11
+R12
+R9
+!i122 20
+R8
+R1
+8rtl/full_grade_coeffs.vhd
+Frtl/full_grade_coeffs.vhd
+l0
+L4 116
+V=Z2_C<c^:f;1aaT78KI3f0
+!s100 jdJR@G^7Co3kLIQ=eT5WZ0
+R15
+33
+R34
+!i10b 1
+R35
+!s90 -2008|-work|work|rtl/full_grade_coeffs.vhd|
+!s107 rtl/full_grade_coeffs.vhd|
+!i113 0
+R20
+R21
+Egrade_affine
+R8
+R10
+R9
+R11
+R12
+!i122 21
+R1
+Z63 8rtl/grade_affine.vhd
+Z64 Frtl/grade_affine.vhd
+l0
+L6 1
+V_PJ8GSh6KjSbU4]=5cUZ>1
+!s100 ]Dl]lO751;EzGDk2zR11I3
+R15
+33
+R16
+!i10b 1
+R35
+Z65 !s90 -2008|-work|work|rtl/grade_affine.vhd|
+Z66 !s107 rtl/grade_affine.vhd|
+!i113 0
+R20
+R21
+Artl
+R10
+R9
+R11
+R12
+R29
+!i122 21
+l27
+L22 90
+Vo_LVfUK91GRe_X>jDW0al1
+!s100 o7oLlD>LXXmBP6YROKKf]3
+R15
+33
+R16
+!i10b 1
+R35
+R65
+R66
+!i113 0
+R20
+R21
+Pjpeg_reader_pkg
+R10
+R11
+R12
+R9
+R54
+!i122 27
+R8
+R1
+Z67 8tb/jpeg_reader_pkg.vhd
+Z68 Ftb/jpeg_reader_pkg.vhd
+l0
+L7 6
+V:CgGE5Q>dOM3^5OFb1j=P1
+!s100 Y>>b=0_U62JR>[^>?UcfN0
+R15
+33
+b1
+R58
+!i10b 1
+R59
+Z69 !s90 -2008|-work|work|tb/jpeg_reader_pkg.vhd|
+Z70 !s107 tb/jpeg_reader_pkg.vhd|
+!i113 0
+R20
+R21
+Bbody
+R55
+R10
+R11
+R12
+R9
+R54
+!i122 27
+l0
+L14 316
+V07CN7Q1AHFJkW`Q1=4Cj91
+!s100 OWo5;`gJ:Q^J]Dg?2lM4?3
+R15
+33
+R58
+!i10b 1
+R59
+R69
+R70
+!i113 0
+R20
+R21
+Epic2_filter_axis
+R8
+R10
+R11
+R12
+!i122 25
+R1
+Z71 8rtl/pic2_filter_axis.vhd
+Z72 Frtl/pic2_filter_axis.vhd
+l0
+L8 1
+VM741KBa1BPnKRmS64@9>43
+!s100 <2BK;?WlXJlbEYAR78CZa2
+R15
+33
+R16
+!i10b 1
+R17
+Z73 !s90 -2008|-work|work|rtl/pic2_filter_axis.vhd|
+Z74 !s107 rtl/pic2_filter_axis.vhd|
+!i113 0
+R20
+R21
+Artl
+R23
+R44
+R49
+R9
+R43
+R38
+R10
+R11
+R12
+Z75 DEx4 work 16 pic2_filter_axis 0 22 M741KBa1BPnKRmS64@9>43
+!i122 25
+l64
+L41 177
+Vbe3BSOLf88J05Q7MNW:<A2
+!s100 P=]INHUn105`C`E_2JO0]2
+R15
+33
+R16
+!i10b 1
+R17
+R73
+R74
+!i113 0
+R20
+R21
+Ppic2_grade_coeffs
+!i122 18
+R8
+R1
+8rtl/pic2_grade_coeffs.vhd
+Frtl/pic2_grade_coeffs.vhd
+l0
+L4 44
+VZM1cBRBW1BT_SnCR>KN8D0
+!s100 Ok8Q^b[i50OQX>;9W4CcL2
+R15
+33
+R34
+!i10b 1
+R35
+!s90 -2008|-work|work|rtl/pic2_grade_coeffs.vhd|
+!s107 rtl/pic2_grade_coeffs.vhd|
+!i113 0
+R20
+R21
+Ppic2_types
+R10
+R11
+R12
+!i122 15
+R8
+R1
+Z76 8rtl/pic2_types.vhd
+Z77 Frtl/pic2_types.vhd
+l0
+L13 68
+VdclMh@MYZzEL2JPXWR<8U0
+!s100 la`cnih_N6H2:zRGM?N;^0
+R15
+33
+b1
+R34
+!i10b 1
+Z78 !s108 1795242028.000000
+Z79 !s90 -2008|-work|work|rtl/pic2_types.vhd|
+Z80 !s107 rtl/pic2_types.vhd|
+!i113 0
+R20
+R21
+Bbody
+R9
+R10
+R11
+R12
+!i122 15
+l0
+L82 114
+V_02lk=Hd5KDFD01cf5e`E0
+!s100 IlDIW0^N]9mQYk9EFE]<_3
+R15
+33
+R34
+!i10b 1
+R78
+R79
+R80
+!i113 0
+R20
+R21
+Esurface_contour_select
+R8
+R10
+R11
+R12
+!i122 26
+R1
+Z81 8rtl/surface_contour_select.vhd
+Z82 Frtl/surface_contour_select.vhd
+l0
+R33
+VDCLGUdgWJ4FjZbL@IQ;?I1
+!s100 ek`5GY5z<UhPlgg@ghSLj1
+R15
+33
+R16
+!i10b 1
+R17
+Z83 !s90 -2008|-work|work|rtl/surface_contour_select.vhd|
+Z84 !s107 rtl/surface_contour_select.vhd|
+!i113 0
+R20
+R21
+Artl
+R75
+R10
+R11
+R12
+Z85 DEx4 work 22 surface_contour_select 0 22 DCLGUdgWJ4FjZbL@IQ;?I1
+!i122 26
+l80
+L49 175
+V@RK9XCi:9TB?8>:?6K[Yl0
+!s100 C7j^RXj8MbHJRcMF>[7@V2
+R15
+33
+R16
+!i10b 1
+R17
+R83
+R84
+!i113 0
+R20
+R21
+Etb_pic2
+Z86 w1795239516
+R62
+R54
+R55
+R9
+Z87 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
+R10
+R11
+R12
+!i122 29
+R1
+Z88 8tb/tb_pic2.vhd
+Z89 Ftb/tb_pic2.vhd
+l0
+L9 1
+V0DJJ?_k_B[X=EC5TTaUDO2
+!s100 bU@7=@KZW:N43lAzOce@d3
+R15
+33
+R58
+!i10b 1
+R59
+Z90 !s90 -2008|-work|work|tb/tb_pic2.vhd|
+Z91 !s107 tb/tb_pic2.vhd|
+!i113 0
+R20
+R21
+Abench
+R85
+R75
+R62
+R54
+R55
+R9
+R87
+R10
+R11
+R12
+DEx4 work 7 tb_pic2 0 22 0DJJ?_k_B[X=EC5TTaUDO2
+!i122 29
+l36
+L25 157
+VT^mk4^@UT3aIAQ>N:heU13
+!s100 akM6jEL3g18Fe9BdB5UUF3
+R15
+33
+R58
+!i10b 1
+R59
+R90
+R91
+!i113 0
+R20
+R21

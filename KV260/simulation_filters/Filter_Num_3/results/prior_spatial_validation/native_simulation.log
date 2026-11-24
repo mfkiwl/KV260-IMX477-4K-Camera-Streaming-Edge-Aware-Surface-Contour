@@ -1,0 +1,12 @@
+** Note: 40ns+0: JPEG decoded: /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/images/PIC1.JPG (2048 x 1152)
+   Procedure READ_JPEG [STRING, FRAME_PTR, NATURAL, NATURAL] at /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/tb/jpeg_reader_pkg.vhd:54
+   Process :tb_pic2:drive at /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/tb/tb_pic2.vhd:80
+** Note: 33613815ns+0: Input frame 1 accepted: 2359296 pixels
+   Process :tb_pic2:drive at /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/tb/tb_pic2.vhd:73
+** Note: 34605515ns+0: Output frame 1: 2359296 pixels, 1152 EOL, 1 SOF; first/last cycles 78734/3460548
+   Process :tb_pic2:capture at /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/tb/tb_pic2.vhd:121
+** Note: 34605905ns+0: AXI capture PASS: 1 frame(s), 2359296 accepted output pixels, 999022 stalled output cycles
+   Process :tb_pic2:capture at /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/tb/tb_pic2.vhd:121
+** Note: 34605905ns+1: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_pic2:capture at /workspace/scratch/5c1d3e4e3a67/raster_fix/pic2_axis/tb/tb_pic2.vhd:172

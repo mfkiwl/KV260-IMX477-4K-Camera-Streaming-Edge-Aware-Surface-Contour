@@ -1,0 +1,48 @@
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 64 bits, depth: 101376
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 60 bits, depth: 2048
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 56 bits, depth: 512
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 40 bits, depth: 4096
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 72 bits, depth: 128
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 40 bits, depth: 512
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 88 bits, depth: 32
+  signal memory : words_t;
+         ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:17:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of memory : signal is MEMORY_STYLE;
+            ^
+RGB10_Designer1/rtl/portrait_sdp_ram.vhd:15:10:note: found RAM "memory", width: 40 bits, depth: 64
+  signal memory : words_t;
+         ^

@@ -1,0 +1,19 @@
+** Note: 1315ns+0: Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 2225ns+0: Meter mean RGB 108,113,113  Q8 gain 125,114,97  shadow lift 14
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 3485ns+0: Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 4785ns+0: Meter mean RGB 108,113,113  Q8 gain 125,114,97  shadow lift 14
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 6085ns+0: Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 6985ns+0: Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 8235ns+0: Meter mean RGB 32,34,25  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_scene_exposure:dut:meter at ../pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 8505ns+0: PASS: meter-only suppression, first-frame unity, live frame transitions, grid corners and AXI stalls
+   Process :tb_scene_exposure:check at ../pic2_axis/tb/tb_scene_exposure.vhd:53
+** Note: 8505ns+0: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_scene_exposure:check at ../pic2_axis/tb/tb_scene_exposure.vhd:80

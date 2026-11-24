@@ -1,0 +1,11 @@
+Actual: PIC1.bmp (2048 x 1152)
+Reference: Designer1_PIC1_2048x1152.jpg (decoded RGB8)
+Exact RGB match: FAIL
+Identical RGB pixels: 13,488 / 2,359,296 (0.571696%)
+Mismatched RGB pixels: 2,345,808
+Mean absolute channel error: 5.260488 / 255
+Maximum absolute channel error: 221 / 255
+RGB PSNR: 26.9145 dB
+First mismatch (x=0, y=0): RTL=[19, 56, 64] reference=[25, 57, 68]
+RTL decoded RGB SHA-256: 9b9f7bd392b2f0a126ed9f82e8ef89c180c09371d7260ce79026f7cc43e6ad4c
+reference decoded RGB SHA-256: aa945d2a866c6f7d002517789f7609a4bf8f97c4f39413598841efbe865b4e83

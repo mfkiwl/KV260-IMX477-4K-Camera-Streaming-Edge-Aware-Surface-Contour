@@ -1,0 +1,5 @@
+** Note: 65117295ns+0: PASS: 4681728 pixel coordinates and markers checked in two frames with input gaps and output backpressure
+   Process :tb_designer_view:scoreboard at ../pic2_axis/tb/tb_designer_view.vhd:37
+** Note: 65117295ns+0: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_designer_view:scoreboard at ../pic2_axis/tb/tb_designer_view.vhd:77

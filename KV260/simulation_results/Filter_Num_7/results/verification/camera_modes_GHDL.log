@@ -1,0 +1,2 @@
+tb/tb_live_camera_modes.vhd:84:11:@245695ns:(report note): Camera modes PASS: four frames, varying sizes, bypass, RGB10 packing and 3552 stalled cycles
+simulation finished @245695ns

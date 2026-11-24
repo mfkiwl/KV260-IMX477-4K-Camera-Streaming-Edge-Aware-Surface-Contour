@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Nov 23 21:11:09 2026
+# Process ID: 41072
+# Current directory: R:/KV260/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: R:/KV260/v_log/vivado.log
+# Journal file: R:/KV260/v_log\vivado.jou
+# Running On: LAPTOP-I3ECBFK4, OS: Windows, CPU Frequency: 2795 MHz, CPU Physical cores: 8, Host memory: 16363 MB
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+-----------------------------------------------------------------------
+INFO:(TE) Load Settings Script finished
+INFO:(TE) Load environment script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Utilities script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Vivado script finished
+INFO:(TE) Load Designs script finished
+INFO:(TE) Load User Command scripts finished
+INFO:(TE) Load SDSoC script finished
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           KV260 
+  TE::VPROJ_PATH:           R:/KV260/vivado 
+  TE::VLABPROJ_PATH:        R:/KV260/vivado_lab 
+  TE::BOARDDEF_PATH:        R:/KV260/board_files 
+  TE::FIRMWARE_PATH:        R:/KV260/firmware 
+  TE::IP_PATH:              R:/KV260/ip_lib 
+  TE::BD_PATH:              R:/KV260/block_design 
+  TE::XDC_PATH:             R:/KV260/constraints 
+  TE::HDL_PATH:             R:/KV260/hdl 
+  TE::SET_PATH:             R:/KV260/settings 
+  TE::PETALINUX_PATH:				R:/KV260/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   R:/KV260/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   R:/KV260/workspace/sdk 
+  TE::LIB_PATH:             R:/KV260/sw_lib 
+  TE::SCRIPT_PATH:          R:/KV260/scripts 
+  TE::DOC_PATH:             R:/KV260/doc 
+  TE::PREBUILT_BI_PATH:     R:/KV260/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     R:/KV260/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     R:/KV260/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     R:/KV260/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: R:/KV260/../export 
+  TE::LOG_PATH:             R:/KV260/v_log 
+  TE::BACKUP_PATH:          R:/KV260/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             R:/KV260/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           R:/KV260/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          R:/KV260/misc/sd 
+  TE::TMP_PATH:             R:/KV260/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+-----------------------------------------------------------------------
+INFO:(TE) Parameter Index: 0
+INFO:(TE) Parameter Option: --gui
+INFO:(TE) Parameter Option Value: 1
+-----------------------------------------------------------------------
+INFO: [TE_INIT-129] Run TE::INIT::run_project NA 0 1 0
+INFO: [TE_INIT-0] Script Info:
+  Xilinx Directory:                           C:/Xilinx
+  Vivado Version:                             Vivado v2022.1 (64-bit)
+  TE Script Version:                          2020.2.9
+  Board Part (Definition Files) CSV Version:  1.4
+  Software IP CSV Version:                    2.4
+  Board Design Modify CSV Version:            1.1
+  ZIP ignore CSV Version:                     1.0
+  ---
+  Start project with:                         OPEN_PROJECT_GM
+  ------
+INFO: [TE_INIT-1] Script Environment:
+  TIMEOUT Setting:        	120 
+  RUNNING_JOBS Setting:    	16 
+  Vivado Setting:       		1 
+  LabTools Setting:     		0 
+  VITIS Setting:        		1 
+  SDSOC Setting(obsolete):	0 
+  ------
+INFO: [TE_INIT-3] Initial project names and paths:
+  TE::VPROJ_NAME:           KV260 
+  TE::VPROJ_PATH:           R:/KV260/vivado 
+  TE::VLABPROJ_PATH:        R:/KV260/vivado_lab 
+  TE::BOARDDEF_PATH:        R:/KV260/board_files 
+  TE::FIRMWARE_PATH:        R:/KV260/firmware 
+  TE::IP_PATH:              R:/KV260/ip_lib 
+  TE::BD_PATH:              R:/KV260/block_design 
+  TE::XDC_PATH:             R:/KV260/constraints 
+  TE::HDL_PATH:             R:/KV260/hdl 
+  TE::SET_PATH:             R:/KV260/settings 
+  TE::PETALINUX_PATH:				R:/KV260/os/petalinux 
+  TE::WORKSPACE_HSI_PATH:   R:/KV260/workspace/hsi 
+  TE::WORKSPACE_SDK_PATH:   R:/KV260/workspace/sdk 
+  TE::LIB_PATH:             R:/KV260/sw_lib 
+  TE::SCRIPT_PATH:          R:/KV260/scripts 
+  TE::DOC_PATH:             R:/KV260/doc 
+  TE::PREBUILT_BI_PATH:     R:/KV260/prebuilt/boot_images 
+  TE::PREBUILT_HW_PATH:     R:/KV260/prebuilt/hardware 
+  TE::PREBUILT_SW_PATH:     R:/KV260/prebuilt/software 
+  TE::PREBUILT_OS_PATH:     R:/KV260/prebuilt/os 
+  TE::PREBUILT_EXPORT_PATH: R:/KV260/../export 
+  TE::LOG_PATH:             R:/KV260/v_log 
+  TE::BACKUP_PATH:          R:/KV260/backup 
+  TE::ZIP_PATH:             C:/Program Files/7-Zip/7z.exe 
+  TE::XRT_PATH:             R:/KV260/xrt 
+  TE::XRT_USED:             false 
+  TE::SDSOC_PATH:           R:/KV260/../SDSoC_PFM 
+  TE::ADD_SD_PATH:          R:/KV260/misc/sd 
+  TE::TMP_PATH:             R:/KV260/tmp 
+  TE::XILINXGIT_DEVICETREE: B:/xilinx_git/device-tree-xlnx 
+  TE::XILINXGIT_UBOOT:       
+  TE::XILINXGIT_LINUX:       
+  ------
+INFO: [TE_INIT-16] Read board part definition list (File R:/KV260/board_files/board_files.csv).
+INFO: [TE_INIT-21] No software apps_list used.
+INFO: [TE_INIT-24] No Zip ignore list used.
+Open existing project (File: R:/KV260/vivado/KV260.xpr).
+INFO: [TE_INIT-69] Set Board Definition path: R:/KV260/board_files
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'r:/KV260/ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1356.020 ; gain = 0.000
+Board part csv name check:  KriaKV260 is unique on position 1.
+INFO: [TE_INIT-4] Board Part definition:
+  TE::ID:             1 
+  TE::PRODID:         KriaKV260 
+  TE::PARTNAME:       xck26-sfvc784-2LV-c 
+  TE::BOARDPART:      xilinx.com:kv260_som:part0:1.3 
+  TE::SHORTDIR:       kv260_som 
+  TE::ZYNQFLASHTYP:   qspi-x8-dual_parallel 
+  TE::FPGAFLASHTYP:   mt25qu512-qspi-x8-dual_parallel 
+  TE::PCB_REV:        REV01 
+  TE::DDR_SIZE:       2GB 
+  TE::FLASH_SIZE:     128MB 
+  TE::EMMC_SIZE:      NA 
+  TE::OTHERS:         NA 
+  TE::NOTES:          NA 
+  ------
+INFO: [TE_UTIL-2] Following block designs were found: 
+   R:/KV260/block_design/apply_contour_timing.tcl 
+ R:/KV260/block_design/check_contour_synthesis.tcl 
+ R:/KV260/block_design/contour_control_clock.tcl 
+ R:/KV260/block_design/zusys_bd.tcl 
+  ------
+WARNING: [TE_UTIL-3] Currently only one Block-Design is supported with TE-scripts, deleted or rename file-extension from unused *.tcl in R:/KV260/block_design or R:/KV260/block_design/kv260_som.
+ERROR: [TE_HW-21] Script (TE::INIT::check_bdtyp) failed: Currently only one Block-Design is supported with TE-scripts, deleted or rename file-extension from unused *.tcl in R:/KV260/block_design or R:/KV260/block_design/kv260_som..
+Error: (TE_HW-21) Script (TE::INIT::check_bdtyp) failed: Currently only one Block-Design is supported with TE-scripts, deleted or rename file-extension from unused *.tcl in R:/KV260/block_design or R:/KV260/block_design/kv260_som..
+ERROR: [TE_INIT-143] Script (TE::VIV::open_project) failed: .
+ERROR: (TE_INIT-143) Script (TE::VIV::open_project) failed: .
+ERROR:(TE) Script (TE::INIT::run_project) failed: .
+ERROR:(TE) Script (TE::main) failed: .
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 21:12:00 2026...

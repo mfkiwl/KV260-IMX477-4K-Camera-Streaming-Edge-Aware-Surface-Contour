@@ -1,0 +1,42 @@
+PIC1 RGB10 AXI4-Stream verification
+
+Input JPEG file SHA-256 = 910b50372c49a8a0580f37fe48f3ed1333af010a911aa24320d5962a11d244d2
+Reference JPEG file SHA-256 = 79cecdaec75fde5067a4b4dca58062876c1ccc491e163753c932d4ac83cb9d51
+Captured BMP file SHA-256 = a24314c890a77a08d2e5fdf8f08fb69fb17e460fffafc320a93256569e7fb368
+Decoded stimulus RGB SHA-256 = f2fe394b524d7a8209199b76209fef5b9a14a3ae3725cb05da88b1d5b496d5ef
+Direct VHDL JPEG decoding gave the same RGB frame in NVC and GHDL.
+Reference comparison used Pillow 13.0.0 with libjpeg-turbo 3.2.0.
+
+Full-frame NVC 1.23.1, VHDL-2008. Source gaps and downstream backpressure enabled.
+** Note: 35756295ns+0: Output frame 1 accepted 2359296 pixels; first/last transfer cycles 302276/3575625
+** Note: 35756925ns+0: AXI PASS. Input=2359296 output=2359296 SOF=1 EOL=1152 stalled output cycles=798131 input gap cycles=265678
+Frame 1 independent RGB10 model: 0 mismatched words / 2,359,296
+
+Full-frame NVC 1.23.1 with continuously valid stimulus and downstream ready.
+** Note: 26511655ns+0: Output frame 1 accepted 2359296 pixels; first/last transfer cycles 268846/2651161
+** Note: 26512285ns+0: AXI PASS. Input=2359296 output=2359296 SOF=1 EOL=1152 stalled output cycles=0 input gap cycles=1
+The continuous and stalled captures are byte-identical BMP files.
+
+Additional tests with the final RTL
+Two consecutive 133 x 151 frames exercised partial edge tiles, odd frame length, line-memory wrap, source gaps, downstream stalls, varying low RGB10 bits and changed frame content.
+** Note: 931825ns+0: AXI PASS. Input=40166 output=40166 SOF=2 EOL=302 stalled output cycles=13432 input gap cycles=4978
+Independent RGB10 model matched all 20,083 words of each frame.
+GHDL passed one-frame 1 x 1 and 11 x 31 regressions. Every output matched the integer model.
+
+Synthesis
+GHDL 5.0.1 emitted a Verilog netlist for the VHDL synthesis top at 2048 x 1152 and 3840 x 2160. Inferred RAM sizes are in the synthesis logs. GHDL ignored the vendor ram_style attribute. Vivado physical implementation and camera-board operation are unverified.
+
+Reference score
+Actual: PIC1.bmp (2048 x 1152)
+Reference: Designer1_PIC1_2048x1152.jpg (decoded RGB8)
+Exact RGB match: FAIL
+Identical RGB pixels: 13,488 / 2,359,296 (0.571696%)
+Mismatched RGB pixels: 2,345,808
+Mean absolute channel error: 5.260488 / 255
+Maximum absolute channel error: 221 / 255
+RGB PSNR: 26.9145 dB
+First mismatch (x=0, y=0): RTL=[19, 56, 64] reference=[25, 57, 68]
+RTL decoded RGB SHA-256: 9b9f7bd392b2f0a126ed9f82e8ef89c180c09371d7260ce79026f7cc43e6ad4c
+reference decoded RGB SHA-256: aa945d2a866c6f7d002517789f7609a4bf8f97c4f39413598841efbe865b4e83
+
+The strict reference comparison returns exit code 1. The AXI protocol checks and independent RGB10 model comparison pass.

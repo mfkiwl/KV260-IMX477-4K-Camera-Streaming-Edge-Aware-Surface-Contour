@@ -1,0 +1,13 @@
+** Note: 40ns+0: JPEG decoded: images/PIC1.JPG (2048 x 1152)
+   Procedure READ_JPEG [STRING, FRAME_PTR, NATURAL, NATURAL] at tb/jpeg_reader_pkg.vhd:54
+   Process :tb_pic2:drive at tb/tb_pic2.vhd:90
+** Note: 23684795ns+0: Input frame 1 accepted: 2359296 pixels
+   Process :tb_pic2:drive at tb/tb_pic2.vhd:83
+** Note: 24055275ns+0: Output frame 1: 2359296 pixels, 1152 EOL, 1 SOF; first/last cycles 37045/2405524
+   Process :tb_pic2:capture at tb/tb_pic2.vhd:131
+** Note: 24055665ns+0: PASS: 1 frame(s), 2359296 accepted output pixels, 0 stalled output cycles
+   Process :tb_pic2:capture at tb/tb_pic2.vhd:131
+** Note: 24055665ns+1: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_pic2:capture at tb/tb_pic2.vhd:182
+** Note: setup:132ms run:130705ms user:131342ms sys:169ms maxrss:140496kB static:2887kB

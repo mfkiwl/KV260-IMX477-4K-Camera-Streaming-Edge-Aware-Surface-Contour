@@ -1,0 +1,12 @@
+** Note: 0ms+0: JPEG decoded: images/PIC1.JPG (2048 x 1152)
+   Procedure READ_JPEG [STRING, FRAME_PTR, NATURAL, NATURAL] at tb/jpeg_reader_pkg.vhd:54
+   Process :tb_pic1:source at tb/tb_pic1.vhd:55
+** Note: 23801825ns+0: Input frame 1 accepted 2359296 pixels
+   Process :tb_pic1:source at tb/tb_pic1.vhd:50
+** Note: 26511655ns+0: Output frame 1 accepted 2359296 pixels; first/last transfer cycles 268846/2651161
+   Process :tb_pic1:capture at tb/tb_pic1.vhd:90
+** Note: 26512285ns+0: AXI PASS. Input=2359296 output=2359296 SOF=1 EOL=1152 stalled output cycles=0 input gap cycles=1
+   Process :tb_pic1:capture at tb/tb_pic1.vhd:90
+** Note: 26512285ns+0: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_pic1:capture at tb/tb_pic1.vhd:145

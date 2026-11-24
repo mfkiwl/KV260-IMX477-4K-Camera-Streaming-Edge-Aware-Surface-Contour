@@ -1,0 +1,16 @@
+** Note: 40ns+0: JPEG decoded: /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/images/PIC1.JPG (2048 x 1152)
+   Procedure READ_JPEG [STRING, FRAME_PTR, NATURAL, NATURAL] at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/tb/jpeg_reader_pkg.vhd:54
+   Process :tb_pic2:drive at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/tb/tb_pic2.vhd:103
+** Note: 26541795ns+0: Meter mean RGB 68,67,54  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_pic2:portrait_view:dut:input_exposure:meter at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 59892705ns+0: Input frame 1 accepted: 2359296 pixels
+   Process :tb_pic2:drive at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/tb/tb_pic2.vhd:74
+** Note: 59892725ns+0: Meter mean RGB 68,67,54  Q8 gain 256,256,256  shadow lift 0
+   Process :tb_pic2:portrait_view:dut:input_exposure:meter at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/rtl/axis_scene_exposure.vhd:62
+** Note: 61586985ns+0: Output frame 1: 2359296 pixels, 1152 EOL, 1 SOF; first/last cycles 2788552/6158695
+   Process :tb_pic2:capture at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/tb/tb_pic2.vhd:130
+** Note: 61587375ns+0: AXI capture PASS: 1 frame(s), 2359296 accepted output pixels, 996686 stalled output cycles
+   Process :tb_pic2:capture at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/tb/tb_pic2.vhd:130
+** Note: 61587375ns+1: FINISH called
+   Procedure FINISH [] at lib/std.08/env-body.vhd:42
+   Process :tb_pic2:capture at /workspace/scratch/5c1d3e4e3a67/color_fix/pic2_axis/tb/tb_pic2.vhd:181

@@ -1,0 +1,228 @@
+rtl/axis_tone_contour.vhd:35:13:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+  attribute ram_style of context_ram : signal is "block";
+            ^
+rtl/axis_tone_contour.vhd:33:10:note: found RAM "context_ram", width: 32 bits, depth: 16396
+  signal context_ram : context_ram_t;
+         ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n1.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n2.ram", width: 24 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n1.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n2.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n3.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n4.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n1.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n2.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n3.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n4.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n5.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n6.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n7.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n8.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n9.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n10.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n11.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n12.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n13.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n14.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n15.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n16.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n17.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n18.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n19.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n20.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n21.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n22.ram", width: 24 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n1.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n2.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n3.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n4.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n5.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n6.ram", width: 24 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:105:15:warning: unhandled attribute "ram_style" [-Wunhandled-attribute]
+    attribute ram_style of ram : signal is "ultra";
+              ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n1.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n2.ram", width: 72 bits, depth: 2048
+    signal ram : ram_t;
+           ^
+rtl/axis_window5.vhd:102:12:note: found RAM "banks.n3.ram", width: 48 bits, depth: 2048
+    signal ram : ram_t;
+           ^

@@ -1,0 +1,358 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 20 09:06:39 2026
+# Process ID: 20228
+# Current directory: R:/KV260/v_log
+# Command line: vivado.exe -source ../scripts/script_main.tcl -mode batch -notrace -tclargs --gui 1
+# Log file: R:/KV260/v_log/vivado.log
+# Journal file: R:/KV260/v_log\vivado.jou
+# Running On: LAPTOP-I3ECBFK4, OS: Windows, CPU Frequency: 2795 MHz, CPU Physical cores: 8, Host memory: 16363 MB
+#-----------------------------------------------------------
+source ../scripts/script_main.tcl -notrace
+update_compile_order -fileset sources_1
+open_bd_design {R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd}
+validate_bd_design -force
+save_bd_design
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_bd_design [get_bd_designs kv260_video]
+write_hw_platform -fixed -include_bit -force -file R:/KV260/vitis/kv260_video_wrapper.xsa
+source R:/KV260/block_design/apply_contour_timing.tcl
+regenerate_bd_layout
+save_bd_design
+validate_bd_design -force
+save_bd_design
+close_bd_design [get_bd_designs kv260_video]
+open_bd_design {R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd}
+set_property location {1 129 76} [get_bd_cells PS_VIDEO]
+ipx::edit_ip_in_project -upgrade true -name vfp_v2_0_project -directory R:/KV260/vivado/KV260.tmp/vfp_v2_0_project r:/KV260/ip_lib/vfp_2.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 162 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path r:/KV260/ip_lib
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_clk_wiz_ila_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { [ delete_ip_run [get_ips -all kv260_video_axi_smc_0] ] }
+catch { config_ip_cache -export [get_ips -all kv260_video_rst_clk_wiz_ctrl_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_clk_wiz_ila_0_synth_1 kv260_video_vfp_0_0_synth_1 kv260_video_rst_clk_wiz_ctrl_0_synth_1 kv260_video_auto_cc_0_synth_1 -jobs 8
+wait_on_run kv260_video_clk_wiz_ila_0_synth_1
+wait_on_run kv260_video_vfp_0_0_synth_1
+wait_on_run kv260_video_rst_clk_wiz_ctrl_0_synth_1
+wait_on_run kv260_video_auto_cc_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+source R:/KV260/block_design/apply_contour_timing.tcl
+source R:/KV260/block_design/check_contour_synthesis.tcl
+set bd [get_files */kv260_video.bd]
+open_bd_design $bd
+set ic [get_bd_cells /PS_VIDEO/TO_PS/ps8_0_axi_periph]
+set_property CONFIG.M03_HAS_REGSLICE 1 $ic
+validate_bd_design
+save_bd_design
+generate_target all $bd
+source R:/KV260/block_design/check_contour_synthesis.tcl
+close_design
+open_run synth_1 -name synth_1
+close_design
+startgroup
+set_property -dict [list CONFIG.C_HS_LINE_RATE {900} CONFIG.DPY_LINE_RATE {900} CONFIG.C_EN_CNTS_BYTE_CLK {false} CONFIG.C_HS_SETTLE_NS {146}] [get_bd_cells PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0]
+endgroup
+save_bd_design
+validate_bd_design -force
+save_bd_design
+catch { [ delete_ip_run -quiet [get_ips -all bd_04f9_r_sync_0] ] }
+catch { [ delete_ip_run -quiet [get_ips -all bd_04f9_vfb_sync_0] ] }
+catch { [ delete_ip_run -quiet [get_ips -all bd_04f9_rx_0] ] }
+catch { [ delete_ip_run -quiet [get_ips -all bd_04f9_vfb_0_0] ] }
+catch { [ delete_ip_run -quiet [get_ips -all bd_04f9_phy_0] ] }
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all bd_04f9_r_sync_0] }
+catch { config_ip_cache -export [get_ips -all bd_04f9_vfb_sync_0] }
+catch { config_ip_cache -export [get_ips -all bd_04f9_rx_0] }
+catch { config_ip_cache -export [get_ips -all bd_04f9_phy_0] }
+catch { config_ip_cache -export [get_ips -all bd_04f9_vfb_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_m03_regslice_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+reset_run kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1
+launch_runs kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+source {R:/KV260/block_design/check_contour_synthesis.tcl}
+open_bd_design {R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd}
+set rx0 [get_bd_cells /PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0]
+puts "RX0 line rate = [get_property CONFIG.DPY_LINE_RATE $rx0] Mb/s"
+startgroup
+set_property -dict [list CONFIG.C_HS_LINE_RATE {900} CONFIG.DPY_LINE_RATE {900} CONFIG.C_EN_CNTS_BYTE_CLK {false} CONFIG.C_HS_SETTLE_NS {146}] [get_bd_cells PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0]
+endgroup
+set rx0 [get_bd_cells /PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0]
+set_property -dict [list \
+    CONFIG.C_RCVE_DESKEW_SEQ  {false} \
+    CONFIG.C_HS_LINE_RATE     {900} \
+    CONFIG.DPY_LINE_RATE      {900} \
+    CONFIG.C_EN_CNTS_BYTE_CLK {false} \
+    CONFIG.C_HS_SETTLE_NS     {146} \
+] $rx0
+set rx0 [get_bd_cells /PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0]
+set_property CONFIG.C_RCVE_DESKEW_SEQ false $rx0
+puts "Deskew = [get_property CONFIG.C_RCVE_DESKEW_SEQ $rx0]"
+puts "Line rate = [get_property CONFIG.DPY_LINE_RATE $rx0]"
+startgroup
+set_property -dict [list CONFIG.C_HS_LINE_RATE {900} CONFIG.DPY_LINE_RATE {900} CONFIG.C_EN_CNTS_BYTE_CLK {false} CONFIG.C_HS_SETTLE_NS {146}] [get_bd_cells PS_VIDEO/RX_VIDEO/mipi_csi2_rx_subsyst_0]
+endgroup
+save_bd_design
+reset_run kv260_video_mipi_csi2_rx_subsyst_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+validate_bd_design
+save_bd_design
+foreach p {C_RCVE_DESKEW_SEQ C_HS_LINE_RATE DPY_LINE_RATE} {
+    puts "$p = [get_property CONFIG.$p $rx0]"
+}
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+close_design
+report_ip_status -name ip_status 
+open_run synth_1 -name synth_1
+source {R:/KV260/block_design/check_contour_synthesis.tcl}
+set buf [get_cells -hier -filter {NAME =~ */mipi_csi2_rx_subsyst_0/*pll0_clkout1_buf}]
+if {[llength $buf] == 1} {
+    set pin [get_pins -of_objects $buf -filter {REF_PIN_NAME == O}]
+    set loads [all_fanout -flat -endpoints_only -from $pin]
+    puts "RX0 CLKOUT1 buffer: $buf"
+    puts "Endpoint count: [llength $loads]"
+    foreach load [lrange $loads 0 19] {puts $load}
+} else {
+    puts "Expected one RX0 buffer. Matched: $buf"
+}
+foreach rx {0 1} {
+    set pattern "*/mipi_csi2_rx_subsyst_${rx}/*pll0_clkout1_buf"
+    set buf [get_cells -quiet -hier -filter "NAME =~ $pattern"]
+    if {[llength $buf] != 1} {
+        puts "RX${rx}: matched [llength $buf] buffers"
+        continue
+    }
+
+    set pin [get_pins -of_objects $buf -filter {REF_PIN_NAME == O}]
+    set nets [get_nets -quiet -segments -of_objects $pin]
+    if {![llength $nets]} {
+        puts "RX${rx}: buffer O has no connected net"
+        continue
+    }
+
+    set loads [get_pins -quiet -leaf -of_objects $nets -filter {DIRECTION != OUT}]
+    set ports [get_ports -quiet -of_objects $nets -filter {DIRECTION != IN}]
+    puts "RX${rx}: [llength $loads] load pins, [llength $ports] output ports"
+    foreach obj [concat $loads $ports] {puts "  $obj"}
+}
+opt_design -sweep
+puts "Remaining CLKOUT1 buffers: [get_cells -quiet -hier -filter {NAME =~ */pll0_clkout1_buf}]"
+set out [get_property DIRECTORY [get_runs synth_1]]
+report_pulse_width -file [file join $out contour_after_sweep_pulse_width.rpt]
+set out [get_property DIRECTORY [get_runs synth_1]]
+report_timing_summary -delay_type min_max -report_unconstrained -max_paths 20 \
+    -file [file join $out contour_after_sweep_timing_summary.rpt]
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file R:/KV260/vitis/kv260_video_wrapper.xsa
+open_run impl_1
+set out [get_property DIRECTORY [get_runs impl_1]]
+report_timing_summary -delay_type min_max -report_unconstrained -max_paths 20 \
+    -file [file join $out contour_post_route_timing_summary.rpt]
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:vfp:2.0 [get_ips  kv260_video_vfp_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips kv260_video_vfp_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+catch { config_ip_cache -export [get_ips -all kv260_video_vfp_0_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all kv260_video_m03_regslice_0] }
+catch { config_ip_cache -export [get_ips -all kv260_video_auto_cc_0] }
+export_ip_user_files -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd]
+launch_runs kv260_video_vfp_0_0_synth_1 -jobs 8
+wait_on_run kv260_video_vfp_0_0_synth_1
+export_simulation -of_objects [get_files R:/KV260/vivado/KV260.srcs/sources_1/bd/kv260_video/kv260_video.bd] -directory R:/KV260/vivado/KV260.ip_user_files/sim_scripts -ip_user_files_dir R:/KV260/vivado/KV260.ip_user_files -ipstatic_source_dir R:/KV260/vivado/KV260.ip_user_files/ipstatic -lib_map_path [list {modelsim=R:/KV260/vivado/KV260.cache/compile_simlib/modelsim} {questa=R:/KV260/vivado/KV260.cache/compile_simlib/questa} {riviera=R:/KV260/vivado/KV260.cache/compile_simlib/riviera} {activehdl=R:/KV260/vivado/KV260.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_bd_design [get_bd_designs kv260_video]
+write_hw_platform -fixed -include_bit -force -file R:/KV260/vitis/kv260_video_wrapper.xsa
+report_ip_status -name ip_status 
